@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script>
+
+        var config = {
+            apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+            authDomain: "guideology-cc2b5.firebaseapp.com",
+            databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+            projectId: "guideology-cc2b5",
+            storageBucket: "guideology-cc2b5.appspot.com",
+            messagingSenderId: "130250364586",
+            appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+            measurementId: "G-RSC5CNSPEG"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+    <style type="text/css">
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        #txt {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0px 5px 20px 5px rgba(211, 211, 211, 0.541) !important;
+        }
+
+        #compost {
+            width: 215px;
+            height: 45px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: #5680E9 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            font: normal normal 614 15px/12px Montserrat;
+            letter-spacing: 0px;
+            /* margin-left: -606px; */
+        }
+
+        #beforedat_a {
+            color: #707070;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+            text-align: centers;
+            /* margin-left: 150px; */
+
+        }
+
+        #navbtn {
+            background-color: #fff !important;
+            height: auto;
+            box-shadow: 0px 5px 20px 5px rgba(211, 211, 211, 0.541) !important;
+            padding: 5px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .active1,
+        .btn1:hover {
+            /* background-color: none !important; */
+            color: #5680E9 !important;
+        }
+
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            #beforedat_a {
+                font-size: 11px;
+            }
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-container {
+            /* position: absolute; */
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .card-container .card {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+            height: 250px;
+            padding: 20px;
+            overflow: hidden;
+            background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+            transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+            z-index: 2;
+            transition: all 1s;
+        }
+
+        .card-container .card h1 {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .card-container .card h1:nth-of-type(2) {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .card-container .card h3 {
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-container .card h3:nth-of-type(2) {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .card-container .card .circle {
+            position: absolute;
+            margin: auto;
+            top: 10%;
+            bottom: 0;
+            right: -50%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: linear-gradient(135deg, #667eea 5%, #764ba2 90%);
+            z-index: -2;
+        }
+
+        .card-container .card .circle:nth-of-type(2) {
+            width: 100px;
+            height: 100px;
+            top: 90%;
+            right: -20%;
+            z-index: -1;
+            background-image: linear-gradient(135deg, #667eea 10%, #764ba2 90%);
+        }
+
+        @media only screen and (max-width: 780px) {
+            .card-container .card {
+                width: 270px;
+                height: 200px;
+                transition: none;
+            }
+
+            .card-container .card h1 {
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: -3px;
+            }
+
+            #name {
+                margin-bottom: 3px;
+                margin-top: 6px;
+            }
+
+            .card-container .card h1:nth-of-type(2) {
+                font-size: 16px;
+            }
+
+            .card-container .card h3 {
+                font-size: 14px;
+            }
+
+            .card-container .card h3:nth-of-type(2) {
+                font-size: 12px;
+            }
+
+            .card-container .card .circle {
+                right: -70%;
+            }
+        }
+
+        .disabled a {
+            /* pointer-events: none; */
+            pointer-events: none;
+            display: none;
+        }
+        @media only screen and (min-width: 290px) and (max-width: 600px){
+    #navbtn{
+        border-bottom: 2px solid #5680E9 !important;
+        margin-left: 13px;
+    }
+    #introImg{
+    width: 310px !important;
+    margin-left: -45px;
+    }
+}
+    </style>
+      <!-- Facebook Meta Pixel Code  Start-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="min-height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar"
+            data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/Introduction.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Introduction</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat" aria-expanded="false"> <img
+                                    src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2"
+                                    style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/takingdat.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">The Application Process</span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing" aria-expanded="false"><img
+                                    src="../assets/images/white_icons/interviewing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interviewing</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img
+                                src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/academics.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/experience.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Experiences</span></a></li>
+                        <li id="active" class="sidebar-item"> <a
+                                class="sidebar-link waves-effect waves-dark sidebar-link" href="./evaluations"
+                                aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt="">
+                                <span style="font-size: 12px;" class="hide-menu ml-2">Evaluations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./dat" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./writing" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/writing_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Schools</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Application Status</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewquestion" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interview_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interview Questions</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img
+                                src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./statementediting" aria-expanded="false">
+                                <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Personal Statement
+                                    Editing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./scheduleinterviews" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Schedule Mock Interview</span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./personalizeschoolselection" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Personalized School Selection</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>  
+
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img
+                                src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/contactus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">Forums</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img
+                                src="../assets/images/grey_icons/me.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/myaccount.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/collaboration.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/referafriend.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Refer a Friend</span></a></li>
+
+                        <div id="bottom_becomeamember"></div>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="margin-bottom: 50px;">
+            <div id="become"></div>
+            <div class="container mt-5" style="max-width: 1920px;" id="creditCard">
+                <div class="container">
+                    <div class="row col-lg-12 d-none d-md-block" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row ml-3" style="margin-top: 50px;     justify-content: center;
+                        align-items: center;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Expectations</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Interview Styles </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Post Interview</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Reapplying</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="margin-top: 20px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Expectations</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Interview Styles </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Post Interview</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="justify-content: center;
+                        align-items: center;">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Reapplying</a></li>
+
+                        </ul>
+                    </div>
+                    
+
+                </div>
+               <div class="row m-2">
+                    <div class="col-lg-9 col-md-8 class-sec p-5" style="border: none;
+                    background: white;
+                    box-shadow: 0px 5px 20px 5px rgb(211 211 211 / 54%) !important;">
+                    <div style="display: flex; justify-content:center; align-items:center;">
+                    <img src="../assets/images/premium-quality.png" alt="image" style="width: 20%; margin-bottom: 5px;">
+                 </div>
+                          <h3 class="referafriend_heading" style="color:#5680E9; font-size: 18px; text-align: center;line-height: inherit;"> Thanks for creating an account with DentXcel </h3>
+                          <p style="text-align: center; font-size: 14px;">
+                           <strong> 
+                             This page is exclusive to “Dent-Quest” or “Set to Xcel” members. 
+                              <br>
+                                <!-- <i class="bi bi-check-circle-fill" style="color: #19e919;"></i>  To view our plans, click below. <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> 9-Page Software <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> 4 Extra Services
+                                <br>
+                                <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> Student Forums <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> & Live Support  -->
+                           </strong>
+                          
+                        </p>
+
+                        <!-- <h3 id="hdpage" style="color:#5680E9; text-align: center; font-size: 18px; font-weight: 800;"> By Becoming A Member Below </h3> -->
+                        <!-- <div style="display: flex; justify-content:center; align-items:center;">
+                        <a href="./becomeamember.html" style="font-weight: 800;
+                        margin: auto; background-color: #8860d0; color: #fff; padding: 12px 24px; border-radius: 10px; margin-top: 5px;">Take me there </a></div> -->
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <a href="./becomeamember.html" style="font-weight: 800;
+                              margin: auto; background-color: #8860d0; color: #fff; padding: 12px 24px; border-radius: 10px; margin-top: 5px;">
+                              Take me there
+                              <img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3432-thumb.png" alt="Rocket Icon" class="Rocimage" 
+                              style="width: 30px; height: 30px; margin-right: 5px;"
+                              >
+                            </a>
+                          </div>
+                          
+                          
+                      </div>
+                   </div>
+               </div>
+            <!-- <div class="card-container" id="creditCard">
+                <div class="card">
+                    <div style="display: flex; flex-direction:row;">
+                  <h1><i aria-hidden="true"></i>Guideology</h1>
+                  <img src="../assets/images/white-logo.png"  style="width: 30px; height:30px; margin-left: 10px;">
+                  
+                </div>
+                <div style="display: flex; flex-direction:row;">
+                <img src="../assets/images/chip.png"  style="width: 50px; height:50px; margin-top: -10px; margin-left: 10px; margin-bottom: 10px;">
+              </div>
+                  <h1>1776 420 XXX XXXX</h1>
+                  <h3 id="name"></h3>
+                  <a href="./becomeamember.html" style="font-weight: 800;
+                  margin: auto; background-color: #fff; color: #8860d0; padding: 5px 10px; border-radius: 10px; margin-top: 5px;"> Become a Member</a>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div> -->
+            <div id="show" style="display: none;">
+                <div class="container">
+                    <div class="row col-lg-12 d-none d-md-block" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row ml-3" style="margin-top: 50px;     justify-content: center;
+                        align-items: center;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Expectations</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Interview Styles </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Post Interview</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Reapplying</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="margin-top: 20px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Expectations</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Interview Styles </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Post Interview</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="justify-content: center;
+                        align-items: center;">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Reapplying</a></li>
+
+                        </ul>
+                    </div>
+                    
+
+                </div>
+                <!-- <div id="down_container"> -->
+                <div class="container" style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+                    <div class="row m-2">
+                        <div class="col-lg-12 class-sec p-5">
+                            <h3 id="hdpage" style="color:#5680E9; "> Interviewing: Introduction </h3>
+                            <p text-align=left;>
+                                <br>
+                                The “Interviewing” section will discuss everything you can expect from your interview.
+                                This section is essential as your interview is the final step in your application
+                                process and can determine the school’s decision. This section is split into four
+                                subsections that will ensure you are prepared for all types of interviews.
+                            </p>
+                            <br>
+
+                            <img src="../assets/images/interviewing_image.jpg" alt=""
+                                style="width: inherit; height:auto;" id="introImg">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="text-center m-5">
+                <img src="../assets/images/introduction_icon.png" alt="" style="width: 30px;">
+                All Rights Reserved © 2022 by Guideology. Designed and Developed by <a
+                    href="https://renexcode.com/">Renexcode</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+        </div>
+
+        <!-- ##################################3 -->
+  
+        <!-- ####################################333 -->
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../dist/js/header.js"></script>
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/card.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script>
+        // var okay = prompt('Write your id here')
+
+
+        // document.oncontextmenu = document.body.oncontextmenu = function () { return false; }
+
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.keyCode == 17) {
+                return false;
+            }
+            if (event.keyCode == 67) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    // if (role !== "accept") {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .addClass("disabled")
+    //   .find("a").prop("disabled", true);
+    //   title = 'Become a Member'
+    // } else {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .removeClass("disabled")
+    //   .find("a").prop("disabled", false);
+    // }
+    </script>
+
+    <script>
+        var a = document.getElementById("navbtn");
+        var b = a.getElementsByClassName("btn1");
+        for (var i = 0; i < b.length; i++) {
+            b[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active1");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active1", "");
+                }
+                this.className += " active1";
+            });
+        }
+        const introduce1 = document.getElementById('beforethedat_main');
+        function introduce_1() {
+            const g = introduce1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2">  <div class="col-lg-12 class-sec p-5">
+                            <h3 id="hdpage" style="color:#5680E9; "> Interviewing: Introduction </h3>
+                            <p text-align=left;>
+                                <br>
+                                The “Interviewing” section will discuss everything you can expect from your interview. This section is essential as your interview is the final step in your application process and can determine the school’s decision. This section is split into four subsections that will ensure you are prepared for all types of interviews.
+                            </p>
+                            <br>
+                            
+                            <img src="../assets/images/interviewing_image.png" alt=""
+                                style="width: inherit; height:auto;">
+
+                        </div></div></div>`
+        }
+        const pick1 = document.getElementById('beforethedat_main');
+        function pick_1() {
+            const h = pick1.innerHTML = `    <div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"> <div class="col-lg-12 class-sec p-5"> <h3 id="hdpage" style="color: #5680E9;"> Interviewing: Expectations </h3> <br><p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;> <br><b> Goal: </b>    This subsection aims to discuss what dental schools and interviewers expect from you during interview day. We’ll discuss what to wear and bring to your interview. We’ll also introduce you to what a typical interview day would look like. <br><br>Your first step after receiving your interview invite should be to confirm your spot for the interview. Email the school back and schedule your interview for the closest date possible. One of the most common questions is whether students should schedule a virtual or in-person interview. <br> <br> We recommend scheduling an in-person interview as it helps showcase your interest in the school. However, I would not worry if this were not possible for you, as virtual interviews are just as good. Now that you’ve scheduled your interview let’s move on to the specifics.<br><br><h4>What do I wear?</h4> <br>AYour attire will be your first impression with your interviewer. Therefore, it’s essential to look professional and wear the appropriate clothing. For men, it is recommended you wear a suit, tie, and dress shoes. We would recommend keeping flashy colors to a minimum, you can’t go wrong with a black, grey, or navy suit. For women, similar attire is expected, a suit jack with either suit pants or a formal skirt with appropriate, professional footwear. <br> <br> <h4>What do I bring?</h4> <br>For students participating in virtual interviews, your attire and smile will suffice. For students participating in in-person interviews, we would recommend bringing a few items. Print out your experiences and personal statement straight from your application; you can never go wrong by being over-prepared. You can place your paperwork in a professional folder and keep it with you at all times. Be sure also to bring anything mentioned in your interview invite email. Now that we’re looking good and ready, <br><br> <h4> What should I expect from interview day?</h4> <br> For virtual interviews, you’ll start by joining the zoom link sent to you via email. You’re likely to start the day with one large group of interviewees and be taken through a set of presentations presenting you with information regarding the school. <br> <br> They’ll discuss financial information, admissions, curriculum, etc. Expect them to have you introduce yourself. So, prepare a brief introduction and a fun fact about yourself if they ask. Once this part of the interview day is complete, you’ll begin your interview. At this point, you’ll be connected to a new room, including yourself, the interviewers, and any other interviewees, if applicable.  <br> <br> Once your interview is complete, you are likely to be done; some schools, however, will have a student panel available post-interview to answer any questions you may have. We would recommend you get involved in these panels and ask any questions you may have. <br> <br> For in-person interviews, the process is very similar.  <br> <br> Students will go through a tour of the school, various presentations of the program, and finally, your interviews will be conducted. <br> <br> <p style="text-align: center;"><strong>If any questions or concerns arise, please do not hesitate to contact us by chatting with us live or emailing us at <a href="mailto:support@guideology.co">support@guideology.co</a>
+
+                        Thank you!
+                         </strong></p> </p><br><br></div></div></div>`
+
+
+        }
+        const choose1 = document.getElementById('beforethedat_main');
+        function choose_1() {
+            const h = choose1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"> <div class="col-lg-12 class-sec p-5"> <h3 id="hdpage" style="color: #5680E9;"> Interviewing: Interview Styles </h3> <p text-align=left;> <br><b> Goal: </b>  Our goal for this subsection is to brief you on all the different interview styles you may encounter during interview day. We’ll discuss their similarities, differences, and expectations. Finally, we’ll conclude by introducing you to the best method of preparing for your interviews.<br><br>We’ve discussed the general idea of what to expect, and now we’ll dive into how the interview will be conducted. Interview styles will vary from school to school, and it is essential to be prepared for each. <br> <br> Remember that these interviews can be conducted with or without viewing your application beforehand. Some interviewers will be familiar with your application and personal statement, whereas others will conduct a closed file interview. <br> <br> <h4>One-on-one: </h4> <br>In this interview style, you will be in a room with one interviewer. One-on-one interviews are often less intimating than the rest. Keep in mind that depending on the school and interviewer, the interview can be either conversational or strictly question & answer. We would expect a conversational interview with one-on-one interviews.<br><br><h4>Two on one: </h4> <br>Most schools conduct a two-on-1 interview, with two interviewers and yourself in the room. These interviews are typically more challenging than one on one as it gives you less time to think before an interviewer asks a follow-up question. These interviews are usually less conversational and are typically a rapid-fire questionnaire.<br><br> <h4>Multiple Mini interviews: </h4> <br>MMI’s are pretty challenging but allow for more mistakes. With MMI’s, you’ll be answering different questions at various stations. You’ll rotate through rooms and be allowed a small amount of time to answer each question. Due to the difference in questions and interviewers, you can make up for any mistakes at a different station. <br><br> <h4>Group interviews:</h4> <br> In group interviews, you will be interviewed by 2-3 interviewers alongside 3-5 other applicants. These interviews are pretty hard to manage; you must be patient enough not to interrupt others and, at the same time, be eager to join the conversation. You will typically have more time to formulate your answer as you wait on other students to respond. However, some interviewers will call on names, so you must always be ready with an answer. <br> <br> It is normal to feel nervous when it’s interview time, and interviewers know it, so don’t worry too much. Just do your best to stay calm and collected and answer questions confidently. <br> <br> We highly recommend preparing for questions by answering sample questions out loud. However, we do not suggest you write your answers down or memorize them word for word, as it will likely mess you up during your interview. <br> <br> All interview styles can be managed by preparing yourself for any question. Interviewers can ask questions that are personal, ethical, behavioral, etc. The best way to prepare yourself is by preparing for the specific school you are interviewing at. <br> <br> <h4>So, how do I do that?</h4> <br> First, head over to this <a href="https://www.studentdoctor.net/schools/schools/3/dental-interview-feedback/1">link</a>. SDN has done a beautiful job in compiling questions that schools have asked in the past. <br> <br> Start by scrolling down and finding the school you are interviewing at. Clicking on the school will take you to previous interview experiences at that given school and, more importantly, to interview questions that have been asked in the past. <br> <br> Click on “View all Questions & Responses.” Then, click “Show more responses” under Questions 1, 2, and 3 until all questions are displayed. We recommend copying this list of questions and pasting it into your own word document. From here, you can begin practicing all the questions available.<br> <br> <p style="text-align: center;"><strong>If any questions or concerns arise, please do not hesitate to contact us by chatting with us live or emailing us at <a href="mailto:support@guideology.co">support@guideology.co</a>
+
+                        Thank you!
+                         </strong></p></p><br><br></div></div></div> `
+
+
+        }
+        const Academics1 = document.getElementById('beforethedat_main');
+        function Academics_1() {
+            const h = Academics1.innerHTML = `        <div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"> <div class="col-lg-12 class-sec p-5"> <h3 id="hdpage" style="color: #5680E9;">Interviewing: Post Interview </h3><p text-align=left;><br><b> Goal: </b> In this subsection, we’ll discuss what comes after interviewing. We’ll discuss what emails to send out post-interview, when to expect a decision, and what to keep an eye out for after you’ve been accepted.<br> <br> Following your interview, your first task should be to write thank you letters to your interviewers. You should pay attention during interview day and record the emails shared with you. Often, the instructors will provide the emails of your interviewers before or after your interview. If so, write a thank you email thanking them for the opportunity and their time. If their emails have not been provided, we would not recommend searching for their information to send out your email.<br> <br> After your interviews, you will likely just be waiting for their decisions. Therefore, attempt to accumulate more shadowing/volunteering hours. During this time, you can contact admissions with updates to your file, including any new hours or courses completed. You can also work on writing your top schools a letter of intent. In this email, you can discuss why their school is your top choice and your intentions of accepting their offer if they were to accept you. <br> <br> If you receive an interview invite before December, you can receive their decision on <strong>December 1st.</strong>  This is the first day that dental schools will send out their decisions. If you are lucky enough, your anxiety will end here. Otherwise, you’ll have to keep waiting until you receive a decision at a later time. <br><br> <h4>Decisions </h4> <br>Dental schools will either accept, decline, or place you on a waitlist. Students on a waitlist can continue to update their applications when possible. For students who have been accepted, we recommend staying up to date with emails from the school. You’ll receive deadlines to pay your deposit. Schools will require a deposit ranging from $200 to around $1000. Failure to pay the deposit on time will result in your acceptance being retracted. Once you have paid the deposit and decided on attending the school, you’ll work on completing the necessary requested documents as well as submitting any necessary immunizations. <br><br> <h4>Choosing Between Schools</h4> <br> You might struggle to choose between your options if you've been accepted to multiple dental schools. Unfortunately, students often focus solely on comparing tuition and location. However, we'll give you all the essential factors when comparing schools. <br><br> <h4>#1. Tuition:</h4> <br> Although tuition may be a significant factor for some, often, dental schools are very similar in pricing. Therefore, tuition is a good factor to consider when schools vary significantly in price. However, if both schools are similar in tuition, we'd highly recommend you focus more on the other factors below. <br><br> <h4>#2. Location:</h4> <br> Factoring in location when choosing schools is more about enhancing your overall experience while in dental school. For example, you can analyze each location's weather, the area in which you'll be staying, and whether you have family and friends to help support you throughout. <br> <br> <h4>#3. Curriculum:</h4> <br> Each school's curriculum is essential to analyze before deciding. Although you'll mostly learn the same material, each school's curriculum is structured differently. For example, some schools use a semester system, like most undergraduate universities, while others incorporate a quarterly system with a faster pace and more frequent examinations. Even though this may seem like an insignificant difference, choosing a system where you feel the most comfortable will ensure you are successful during dental school. <br> <br> <h4>#4. Board Examinations & Graduation</h4> <br> Board statistics are important to look into to ensure you're placing yourself in a school that can help you succeed. We recommend checking each school's NBDE part 1 & 2 pass rates. We also recommend you check each school's graduation rate and accreditation status. <br><br> <h4>#5. School environment</h4> <br> One of the most important factors that will help you succeed in school is the support you'll have from your faculty and classmates. We recommend researching the school online and reading about how the faculty deals with student complaints and concerns. Ensure you are entering a learning environment where the student's success is the faculty's priority.  <br> <p style="text-align: center;"><strong>If any questions or concerns arise, please do not hesitate to contact us by chatting with us live or emailing us at <a href="mailto:support@guideology.co">support@guideology.co</a>
+
+            Thank you!
+             </strong></p> </p><br><br></div></div></div>`
+
+
+        }
+        const volunteering1 = document.getElementById('beforethedat_main');
+        function Volunteering_1() {
+            const h = volunteering1.innerHTML = ` <div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"> <div class="col-lg-12 class-sec p-5"> <h3 id="hdpage" style="color: #5680E9;">Interviewing: Reapplying </h3> <br><b> Goal: </b> In this final subsection, we’ll discuss the factors that could have resulted in your rejections and brief you on the options you may have for reapplying. <br><br>Hopefully, by now, most of you will be accepted into the dental school of your choice. However, for students who have not had the pleasure of receiving an acceptance offer, well, go through your options. <br><br> There are many reasons why you could not have received an acceptance offer. The first thing we’ll recommend all students do, is email the schools you applied to and request any information as to why your application was rejected. This feedback can be helpful in improving your application. <br> <br> Reasons for your rejection can be due to many factors. Since we’ve discussed how to choose dental schools to apply to, we’ll assume your rejection was not due to failing to take any required courses or from being an out-of-state applicant. With that said, your rejection could be from poor academics/DAT scores, lack of hours, a lacking personal statement, an unsuccessful interview, or even applying later in the cycle. <br> <br> We’ll go through how you can work on improving each section to strengthen your application for the next cycle. <br> <br> First, let’s discuss academics. If you’ve applied between your junior and senior years, your best option would be to work hard on improving your grades during your last year of undergrad. This will be extremely helpful as significantly improving your grades during those final intense courses will be a strength in your application. <br> <br> For students who have already graduated and do not plan on taking subsequent courses, completing a post-baccalaureate or master's is the best way to display your academic potential. In addition, many programs offer guaranteed interview spots for students who complete their master’s program and maintain a specified GPA. <br> <br> If you believe your DAT scores are what set you back during the application process, your best course of action would be to retake the DAT. Ensure you give yourself enough time to prepare and work on focusing on the subjects you want to improve. Receiving a higher score on the science sections could definitely help you improve your application. We recommend expanding your study resources and not retaking the DAT using only the previously used resources. <br> <br> <h4>Experiences, Letters of Recommendation, & Personal Statement</h4> <br> Although your experiences can help your application, we do not believe they could be the reason for your rejection if you met the required minimums. Therefore, we recommend ensuring you have the minimum hours for shadowing and decent volunteering experiences. As for your letters of recommendation, ensure you have a letter from two science professors and a dentist. <br> <br> Regarding your personal statement, there is always room for improvement. If you believe you could have done more your first time, we recommend sending your application to a professional editor/proofreader to ensure your paper is free of mistakes. <br> <br> Finally, as we discussed, your interviews are crucial to your overall application. Therefore, we recommend using mock interviews when you reapply. This will not only be a good tool for practicing, but the feedback received can help improve the quality of your answers. <br> <br>Any of the discussed topics above can help improve your application. However, If you believe your GPA, DAT, and the rest of your application are acceptable, we recommend you do the following. <br> <br> <h4>Apply early & to More Schools</h4> <br> During your second time applying, you want to ensure you have everything prepared to submit your application the day the cycle opens. This is highly recommended when reapplying as it will improve your chances of getting interviews/accepted. <br> <br> Lastly, apply to more schools. Although your application can be competitive, there is still plenty of students to choose from with similar statistics. So, don’t let it come down to chance; apply to more schools to help increase your odds. <br> <br> <p style="text-align: center;"><strong>If any questions or concerns arise, please do not hesitate to contact us by chatting with us live or emailing us at <a href="mailto:support@guideology.co">support@guideology.co</a>
+
+                        Thank you!
+                         </strong></p></p><br><br></div></div></div> `
+
+
+        }
+       
+    </script>
+     <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+             	<!-- Favicon  -->
+               <link rel="icon" href="../assets/images/icon.png">
+               <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+               <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+             
+               <script>
+                   
+            var config = {
+               apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+               authDomain: "guideology-cc2b5.firebaseapp.com",
+               databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+               projectId: "guideology-cc2b5",
+               storageBucket: "guideology-cc2b5.appspot.com",
+               messagingSenderId: "130250364586",
+               appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+               measurementId: "G-RSC5CNSPEG"
+             };
+             
+             firebase.initializeApp(config);
+               </script>
+                 <!-- Facebook Meta Pixel Code  Start-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+<style>
+    /* Import poppins - Goole Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  /* background: #f1f1f1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.open {
+  padding: 20px 80px;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  background: #2466ff;
+  cursor: pointer;
+  font-weight: 500;
+}
+.open.hidden {
+  display: none;
+  pointer-events: none;
+}
+.box {
+  padding: 30px 40px;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 650px;
+
+  border-radius: 10px;
+
+  display: none;
+  pointer-events: none;
+}
+.box.visible {
+  display: block;
+  pointer-events: all;
+}
+.box .imgBox {
+  text-align: center;
+}
+.box img {
+  width: 180px;
+}
+.title {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 32px;
+  color: #222;
+}
+.box p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #777;
+}
+.btnContainer {
+  display: flex;
+  justify-content: center;
+}
+.gotodasboard {
+  margin-top: 30px;
+  width: 220px;
+  height: 54px;
+  cursor: pointer;
+  font-size: 17px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #5680E9;
+  border-radius: 5px;
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #777 !important;
+    border: none !important;
+}
+
+#ol>li{
+    margin-left: 150px;
+    color: red;
+    font-weight: 600;
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <!-- <button class="open">Claim Your Reward</button> -->
+        <!-- modal -->
+        <div class="box">
+          <div class="imgBox">
+            <img src="../assets/images/success.png" alt="" />
+          </div>
+          <h2 class="title">Congratulations! 🌟</h2>
+          <p>
+            Now you are a Member of Guideology.
+          </p>
+          <p style="color: #3faf47;"> 🌟 Enjoy the Guidelogy membership </p>
+            <p style="color: #3faf47;"> 🌟 First Click on Confirm Membership </p> 
+            <p style="color: #3faf47;"> 🌟 Without confirm not get Membership access </p>
+            <p style="color: #3faf47;"> 🌟 Not close this tab without confirm membership </p>
+          <div class="btnContainer" style="display: flex; flex-direction: row;">
+              <button style="font-size: 14px;" type="submit" class="btn btn-primary btn-lg" onclick="test()">Confirm Membership</button>
+              <a href="./introduction.html">
+                <button  type="button" onclick="xz()" class="btn btn-primary btn-lg" style="margin-left: 10px; font-size: 14px;" id="xyz" disabled>Go to Dashboard</button>
+                <!-- <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button> -->
+              </a>
+          
+          </div>
+        </div>
+      </div>
+      <!-- <script src="./dist/js/confetti.min.js"></script> -->
+      <!-- <script src="../dist/js/showdb/card.js"></script> -->
+      <script src="../dist/js/db/sendData.js"></script>
+      <script>
+        const openbtn = document.querySelector(".open");
+        const modal = document.querySelector('.box');
+        const closeBtn = document.querySelector('.close');
+        // we are saying that when we click This
+        
+          modal.classList.add('visible')
+          openbtn.classList.add('hidden');
+          const startit = () => {
+            setTimeout(function () {
+              confetti.start();
+            }, 1000);
+          };
+          // Stops
+          const stopit = () => {
+            setTimeout(function () {
+              confetti.stop();
+            }, 5000);
+          };
+          // playing start
+          startit();
+          // stoping it
+          stopit();
+
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('visible')
+          openbtn.classList.remove('hidden');
+        })
+      </script>
+      <script>
+    
+        document.onkeydown = function(e)
+    {
+        if(event.keyCode == 123)
+        {
+            return false;
+        }
+        if(event.keyCode == 17)
+        {
+            return false;
+        }
+        if(event.keyCode == 67)
+        {
+            return false;
+        }
+        if(event.keyCode == 122)
+        {
+            return true;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+        {
+            return false;
+        }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0))
+    {
+      return false;
+    }
+    }
+      </script>
+      <!-- <script>
+        (function hideMyURL() {
+    var re = new RegExp(/^.*\//);
+    window.history.pushState("object or string", "Title", re.exec(window.location.href));
+})();
+      </script> -->
+       <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

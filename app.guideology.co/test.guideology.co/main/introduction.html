@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+    content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+  <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+     <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+       <script>
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+    authDomain: "guideology-cc2b5.firebaseapp.com",
+    databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+    projectId: "guideology-cc2b5",
+    storageBucket: "guideology-cc2b5.appspot.com",
+    messagingSenderId: "130250364586",
+    appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+    measurementId: "G-RSC5CNSPEG"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  </script>
+  <style>
+      @media only screen and (min-width: 290px) and (max-width: 600px){
+#introImg {
+    width: 310px !important;
+    margin-left: -45px;
+    margin-top: -25px;
+}
+      }
+  </style>
+    <!-- Facebook Meta Pixel Code  Start-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="height: 100% !important;position: fixed;" id="leftCol" class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img src="../assets/images/white_icons/introduction.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Introduction</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat.html" aria-expanded="false"> <img src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2" style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat.html" aria-expanded="false"><img src="../assets/images/grey_icons/takingdat.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess.html" aria-expanded="false"><img src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">The Application Process</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing.html" aria-expanded="false"><img src="../assets/images/grey_icons/interviewing.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Interviewing</span></a></li>
+                                    <li class="sidebar-item" style="margin-top: 30px;"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+                      
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline.html" aria-expanded="false"><img src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics.html" aria-expanded="false"><img src="../assets/images/grey_icons/academics.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience.html" aria-expanded="false"><img src="../assets/images/grey_icons/experience.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Experiences</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./evaluations.html" aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt=""> <span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Evaluations</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./dat.html" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">DAT</span></a></li>
+                                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="./writing.html" aria-expanded="false"><img src="../assets/images/grey_icons/writing_grey.svg" alt=""><span style="font-size: 12px;"
+                                                    class="hide-menu ml-2">Writing</span></a></li>
+                                       
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./error-404.html" aria-expanded="false"><img src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Schools</span></a></li>
+                       
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus.html" aria-expanded="false"><img src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Application Status</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./interviewquestion.html" aria-expanded="false"><img src="../assets/images/grey_icons/interview_grey.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2">Interview Questions</span></a></li>
+                                            <li class="sidebar-item" style="margin-top: 30px;"><span
+                                                class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./statementediting.html" aria-expanded="false">
+                                            <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personal Statement Editing</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./scheduleinterviews.html" aria-expanded="false"><img src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Schedule Mock Interview</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./personalizeschoolselection.html" aria-expanded="false"><img src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2 ">Personalized School Selection</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>
+                                    <li class="sidebar-item" style="margin-top: 30px;"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus.html" aria-expanded="false"><img src="../assets/images/grey_icons/contactus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter.html" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums.html" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Forums</span></a></li>
+                                    <li class="sidebar-item" style="margin-top: 30px;"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img src="../assets/images/grey_icons/me.svg" alt=""  class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount.html" aria-expanded="false"><img src="../assets/images/grey_icons/myaccount.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration.html" aria-expanded="false"><img src="../assets/images/grey_icons/collaboration.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram.html" aria-expanded="false"><img src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend.html" aria-expanded="false"><img src="../assets/images/grey_icons/referafriend.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Refer a Friend</span></a></li>
+                      
+                                    <div style="background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%); box-shadow: 10px 10px 20px 5px #667eea40 !important; border-radius: 30px; padding-top: 10px; margin-top: 10px !important;" id="bottom_apps">
+                                        <li class="sidebar-item" style=" margin-top: 10px;"><span
+                                                    class="hide-menu" style="font-size: 16px !important; font-weight: 800; margin-left: 30px; color: #fff;">Apps</span><img src="../assets/images/white_icons/mob.svg" alt="" class="ml-3"></li>
+                                        <li  class="sidebar-item ml-2" id="bottom_apps_li"> <img src="../assets/images/white_icons/android.svg"/><span style="font-size: 14px !important; margin-left: 25px;  color: #fff"
+                                                    class="hide-menu ml-2">Google Store</span></li>
+                                        <li class="sidebar-item ml-2" id="bottom_apps_li"> <img src="../assets/images/white_icons/apple.svg"/><span style="font-size: 14px !important; margin-left: 25px;  color: #fff"
+                                                    class="hide-menu ml-2">Apple Store</span></li>
+                                      
+                                        <li class="text-center p-20 upgrade-btn" style="margin-top: -5px;">
+                                            <a href="./becomeamember.html"
+                                                class="btn d-block w-100 btn-danger text-white"  style="background-color: #ffff; color: #647279 !important; font-weight: 600; font-size: 13px; border: none; outline: none; border-radius: 20px;">Become a Member</a>
+                                        </li>
+                                    </div>       
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <div id="become"></div>
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row align-items-center">
+                    <div class="col-12 d-flex flex-direction-row">
+                        <div id="dayImg">
+                            <!-- <img src="../assets/images/Afternoon.svg" alt=""> -->
+                        </div>
+                        <h4 class="mb-0 fw-bold" style="font-family: Montserrat !important; margin-left: 10px;" id="day" ></h1> 
+                        <!-- <h4 class="mb-0 fw-bold ml-2" id="dashboard_user_name"></h1> -->
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container" style="max-width: 1920px;">
+                <!-- <h1 class="referafriend_heading mx-3" style="font-size: 30px;"> What To Expect From Guideology </h1> -->
+                <div class="row m-2">
+                   <div class="col-lg-12 class-sec p-5">
+                    <img src="../assets/images/introduction-img.jpg" alt="" id="introImg" style="width: inherit; height:auto;">
+          
+                      <!-- <hr style="height:3px;border-width:0;color:rgba(112,112,112,1);background-color: rgba(112,112,112,1);"> -->
+                      <!-- <h3 style="color: #5680E9;">
+                        Hello everyone and welcome to Guideology.
+                      </h3>
+                      <p text-align=left; font-style=normal; font-weight=normal; font-size=25px;>
+                         <br>
+                         We want to thank all of you for being here and giving us the opportunity to help you through this important and overwhelming part of your life.
+                         
+                         <br>
+                         <br>
+                         Guideology was created by dental students for future dental students such as yourself. Our goal is to provide you with an inclusive and accurate guide that will cover every step of the path you will take in pursuing dental school.
+          
+                         <strong>
+                            <h6 style="font-family: Montserrat !important;">To summarize our program, Guideology is made up of 5 sections. </h6>
+                         </strong>
+                         
+                         <br>
+                       
+                         <strong> Section #1  </strong>is the Guideology guide itself. The pre-dental guide consists of 4 major segments.
+                         <br>
+                         <br>
+                      <strong>
+                        Before the DAT <br/> Taking the DAT <br/> Applying <br/> Interviewing
+                      </strong>
+                      <br />
+                      <br />
+                      Each segment is split into 5 minor sections that together compile all the information necessary for your success.
+                         <br>
+                         <br>
+                         <strong style="color: black;"> Section #2  </strong> is the “Your Progress” tab. This section allows you to record all your hours, planned courses, letters, DAT scores, saving schools, personal statement, application statuses, and much more.
+                         <br>
+                         <br>
+                         We highly recommend inputting all your information as it makes the entire pre-dental process simpler and more organized.
+                          <br />               
+                          <br />
+                          <strong style="color: black;"> Section #3  </strong> consists of your support team. Guideology’s support team is there to help during the entirety of the pre-dental process. You can email us or even chat with us live.
+          <br />               
+          <br />
+          With our group of dental students and advisors we’ll ensure all your questions are answered to the fullest extent.
+          
+          If in our sole judgment you fail,or we suspect that you have failed,to comply with any term or provision of these Terms of Service,we also    
+          
+          <br />
+          <br />
+          <strong style="color: black;"> Section #4  </strong> is a student forum that we believe is crucial to your success. Here, you’ll be able to interact with our private student community and view hundreds of student questions and discussions.
+
+          <br />
+          <br />
+          We suggest reading the experiences in the forum and learning from other’s discussions as well as being active to encourage making this process a group effort. 
+
+          <br />
+          <br />
+          <strong style="color: black;"> Section #5  </strong>includes extra services available only to Guideology members. We currently offer personal statement editing, mock interviews, and personalized school selection. 
+          <br />
+          <br />
+          These extra services are a great way to improve your application and ensure you’re maximizing your odds of getting into dental school.
+          <br />
+          <br /> -->
+          <h3 style="color: #5680E9;">
+            From the Guideology team:
+          </h3>
+          <strong> <em>
+            We are very excited to meet every new member of Guideology and we look forward to ensuring all your needs are met through what has been a program years in the making. We encourage everyone to not hesitate in contacting us as we are all always available to answer your questions and concerns.
+        </em></strong>
+        <br />
+        <br />
+        <strong>
+            Thank you Future Dents <span style="color: #5680E9;"> &#128578; </span>
+        </strong>
+                      </p>
+          <div class="d-flex justify-content-center">
+            <a href="./becomeamember.html">
+                <input type="submit" value="Become a Member" class="becomeamember_btn">
+            </a>
+              
+          </div>
+                    
+                   </div>
+                </div>
+             </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="text-center m-5">
+                <img src="../assets/images/introduction_icon.png" alt="" style="width: 30px;">
+                All Rights Reserved © 2022 by Guideology. Designed and Developed by <a
+                    href="https://renexcode.com/">Renexcode</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- <div class="container">
+        <button class="open" style="visibility:hidden;">Claim Your Reward</button>
+        <div class="box">
+          <div class="imgBox">
+            <img src="../images/logo.png" alt="" />
+          </div>
+          <h2 class="title">Congratulations! 🌟</h2>
+          <p>
+            Your account has been successfully Logged in.
+          </p>
+          <div class="btnContainer">
+              <a href="../dashboard/index.html">
+                <button class="gotodasboard">Go to Dashboard</button>
+              </a>
+          
+          </div>
+        </div>
+      </div> -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../js/confetti.min.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script src="../dist/js/auth/signOut.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script src="../dist/js/header.js"></script>
+    <script src="../web2/js/become.js"></script>
+    <script>
+        const openbtn = document.querySelector(".open");
+        const modal = document.querySelector('.box');
+        const closeBtn = document.querySelector('.close');
+        // we are saying that when we click This
+        
+          modal.classList.add('visible')
+          openbtn.classList.add('hidden');
+          const startit = () => {
+            setTimeout(function () {
+              confetti.start();
+            }, 1000);
+          };
+          // Stops
+          const stopit = () => {
+            setTimeout(function () {
+              confetti.stop();
+            }, 5000);
+          };
+          // playing start
+          startit();
+          // stoping it
+          stopit();
+
+        closeBtn.addEventListener('click', () => {
+          modal.classList.remove('visible')
+          openbtn.classList.remove('hidden');
+        })
+      </script>
+
+    <script>
+
+function goodMorning() {
+var morning = document.createElement("img");
+morning.setAttribute("src", "../assets/images/morning.svg");
+morning.setAttribute("width", "50");
+morning.setAttribute("height", "50");
+morning.setAttribute("alt", "The Pulpit Rock");
+document.body.appendChild(morning);
+}
+function goodAfternoon() {
+var afternoon = document.createElement("img");
+afternoon.setAttribute("src", "Afternoon.svg");
+afternoon.setAttribute("width", "50");
+afternoon.setAttribute("height", "50");
+afternoon.setAttribute("alt", "The Pulpit Rock");
+document.body.appendChild(afternoon);
+}
+function goodEvening() {
+var evening = document.createElement("img");
+evening.setAttribute("src", "../assets/images/Evening.svg");
+evening.setAttribute("width", "50");
+evening.setAttribute("height", "50");
+evening.setAttribute("alt", "The Pulpit Rock");
+document.body.appendChild(evening);
+}
+    var myDate = new Date();
+    var hrs = myDate.getHours();
+
+    var greet;
+
+    if (hrs < 12){
+        greet = 'Good Morning';
+        document.getElementById('dayImg').innerHTML = `<img src='../assets/images/morning.svg' alt='Morning Image' style="width:30px; margin-top: -5px; height:auto;" />`;
+    }
+   else if (hrs >= 12 && hrs <= 17){
+       greet = 'Good Afternoon';
+       document.getElementById('dayImg').innerHTML = `<img src="../assets/images/Afternoon.svg" alt="Afternoon" style="width:30px; margin-top: -5px; height:auto;" />`;
+   }
+      
+    else if (hrs >= 17 && hrs <= 24){
+        greet = 'Good Evening';
+        document.getElementById('dayImg').innerHTML = `<img src="../assets/images/Evening.svg" alt="Good Evening Image" style="width:30px; margin-top: -5px; height:auto;" />`;
+}
+       
+    document.getElementById('day').innerHTML =
+        '<b>' + greet + '</b> and welcome to Guideology!';
+    </script>
+     <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

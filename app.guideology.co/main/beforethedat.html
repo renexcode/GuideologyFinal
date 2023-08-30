@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+    <script>
+
+        var config = {
+            apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+            authDomain: "guideology-cc2b5.firebaseapp.com",
+            databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+            projectId: "guideology-cc2b5",
+            storageBucket: "guideology-cc2b5.appspot.com",
+            messagingSenderId: "130250364586",
+            appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+            measurementId: "G-RSC5CNSPEG"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+
+    <style type="text/css">
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        #txt {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0px 5px 20px 5px rgba(211, 211, 211, 0.541) !important;
+        }
+
+        .referafriend_heading {
+            font-size: 24px;
+            line-height: inherit;
+        }
+
+        #compost {
+            width: 215px;
+            height: 45px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: #5680E9 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            font: normal normal 614 15px/12px Montserrat;
+            letter-spacing: 0px;
+            /* margin-left: -606px; */
+        }
+
+        #beforedat_a {
+            color: #707070;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+            text-align: centers;
+            /* margin-left: 150px; */
+
+        }
+
+        #navbtn {
+            background-color: #fff !important;
+            height: auto;
+            box-shadow: 0px 5px 20px 5px rgba(211, 211, 211, 0.541) !important;
+            padding: 5px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .active1,
+        .btn1:hover {
+            /* background-color: none !important; */
+            color: #5680E9 !important;
+        }
+
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            #beforedat_a {
+                font-size: 11px;
+            }
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-container {
+            /* position: absolute; */
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .card-container .card {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+            height: 250px;
+            padding: 20px;
+            overflow: hidden;
+            background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+            transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+            z-index: 2;
+            transition: all 1s;
+        }
+
+        .card-container .card h1 {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .card-container .card h1:nth-of-type(2) {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .card-container .card h3 {
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-container .card h3:nth-of-type(2) {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .card-container .card .circle {
+            position: absolute;
+            margin: auto;
+            top: 10%;
+            bottom: 0;
+            right: -50%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: linear-gradient(135deg, #667eea 5%, #764ba2 90%);
+            z-index: -2;
+        }
+
+        .card-container .card .circle:nth-of-type(2) {
+            width: 100px;
+            height: 100px;
+            top: 90%;
+            right: -20%;
+            z-index: -1;
+            background-image: linear-gradient(135deg, #667eea 10%, #764ba2 90%);
+        }
+
+        @media only screen and (max-width: 780px) {
+            .card-container .card {
+                width: 270px;
+                height: 200px;
+                transition: none;
+            }
+
+            .referafriend_heading {
+                font-size: 12px;
+                line-height: inherit;
+            }
+
+            .card-container .card h1 {
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: -3px;
+            }
+
+            #name {
+                margin-bottom: 3px;
+                margin-top: 6px;
+            }
+
+            .card-container .card h1:nth-of-type(2) {
+                font-size: 16px;
+            }
+
+            .card-container .card h3 {
+                font-size: 14px;
+            }
+
+            .card-container .card h3:nth-of-type(2) {
+                font-size: 12px;
+            }
+
+            .card-container .card .circle {
+                right: -70%;
+            }
+        }
+
+        .disabled a {
+            /* pointer-events: none; */
+            pointer-events: none;
+            display: none;
+            /* color: grey; */
+            /* display: block; */
+            /* background-color: lightgray; */
+            /* margin-top: 3px; */
+            /* cursor: pointer; */
+        }
+        @media only screen and (min-width: 290px) and (max-width: 600px){
+    #navbtn{
+        border-bottom: 2px solid #5680E9 !important;
+        margin-left: 13px;
+    }
+    #introImg{
+    width: 310px !important;
+    margin-left: -45px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="min-height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar"
+            data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/Introduction.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Introduction</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">All-In-One Guide</span>
+                                        <!-- <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"> -->
+                                   
+                                   </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat" aria-expanded="false"> <img
+                                    src="../assets/images/white_icons/takingdat_white.svg" alt=""> <span
+                                    class="hide-menu ml-2" style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/takingdat.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">The Application Process</span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interviewing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interviewing</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img
+                                src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/academics.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/experience.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Experiences</span></a></li>
+                        <li id="active" class="sidebar-item"> <a
+                                class="sidebar-link waves-effect waves-dark sidebar-link" href="./evaluations"
+                                aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt="">
+                                <span style="font-size: 12px;" class="hide-menu ml-2">Evaluations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./dat" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./writing" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/writing_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">School Stats & Prereqs.</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Application Status</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewquestion" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interview_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interview Questions</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img
+                                src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./statementediting" aria-expanded="false">
+                                <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Personal Statement
+                                    Editing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./scheduleinterviews" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Schedule Mock Interview</span></a>
+                        </li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./personalizeschoolselection" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Personalized School Selection</span></a></li> -->
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>  
+                                            <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="./podcast.html" aria-expanded="false"><img
+                                                    src="../assets/images/grey_icons/podcast.svg" alt=""><span
+                                                    style="font-size: 12px;" class="hide-menu ml-2 ">Podcast</span></a></li> -->
+                                                           <!--  salman-->
+<li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+    style="font-size: 16px; font-weight: 600; margin-left: 15px;">Other</span>
+   
+    <img
+    src="../assets/images/grey_icons/podcast.svg" alt="" class="ml-3">
+   </li>
+   <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="./merch.html" aria-expanded="false"><img
+        src="../assets/images/grey_icons/product.svg" alt=""><span
+        style="font-size: 12px;" class="hide-menu ml-2 ">Merch</span></a></li>
+  <!-- salman -->
+                                                    <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                        href="./products.html" aria-expanded="false"><img
+                                                            src="../assets/images/grey_icons/product.svg" alt=""><span
+                                                            style="font-size: 12px;" class="hide-menu ml-2 ">Products</span></a></li> -->
+
+                        <li class="sidebar-item"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img
+                                src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/contactus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Contact Us</span></a></li>
+
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">Forums</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img
+                                src="../assets/images/grey_icons/me.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/myaccount.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/collaboration.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/referafriend.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Refer a Friend</span></a></li>
+
+                        <div id="bottom_becomeamember"></div>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="margin-bottom: 50px;">
+            <div id="become">
+
+            </div>
+            <!-- Card Start here -->
+            <div class="mt-5" style="max-width: 1920px;" id="creditCard">
+                <div class="container">
+                    <div class="row col-lg-12 d-none d-md-block" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row ml-3" style="margin-top: 50px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Choosing a Major</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Picking Courses </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Academics</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Volunteering & Shadowing</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Extracurricular_1()">Extracurricular Activities, Work, & Research
+                                </a>
+                            </li></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="margin-top: 20px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Choosing a Major</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Picking Courses </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Academics</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Volunteering & Shadowing</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Extracurricular_1()">Extracurricular activities, Work, & Research
+                                </a>
+                            </li></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="row m-2">
+                    <div class="row m-2">
+                        <div class="col-lg-9 col-md-8 class-sec p-5" style="border: none;
+                    background: white;
+                    box-shadow: 0px 5px 20px 5px rgb(211 211 211 / 54%) !important;">
+                    <div style="display: flex; justify-content:center; align-items:center;">
+                    <img src="../assets/images/premium-quality.png" alt="image" style="width: 20%; margin-bottom: 5px;">
+                 </div>
+                          <h3 class="referafriend_heading" style="color:#5680E9; font-size: 18px; text-align: center;line-height: inherit;"> Thanks for creating an account with DentXcel </h3>
+                          <p style="text-align: center; font-size: 14px;">
+                           <strong> 
+                             This page is exclusive to “Dent-Quest” or “Set to Xcel” members. 
+                              <br>
+                                <!-- <i class="bi bi-check-circle-fill" style="color: #19e919;"></i>  To view our plans, click below. <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> 9-Page Software <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> 4 Extra Services
+                                <br>
+                                <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> Student Forums <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> & Live Support  -->
+                           </strong>
+                          
+                        </p>
+
+                        <!-- <h3 id="hdpage" style="color:#5680E9; text-align: center; font-size: 18px; font-weight: 800;"> By Becoming A Member Below </h3> -->
+                        <!-- <div style="display: flex; justify-content:center; align-items:center;">
+                        <a href="./becomeamember.html" style="font-weight: 800;
+                        margin: auto; background-color: #8860d0; color: #fff; padding: 12px 24px; border-radius: 10px; margin-top: 5px;">Take me there </a></div> -->
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <a href="./introduction.html" style="font-weight: 800;
+                              margin: auto; background-color: #8860d0; color: #fff; padding: 12px 24px; border-radius: 10px; margin-top: 5px;">
+                              Take me there
+                              <img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3432-thumb.png" alt="Rocket Icon" class="Rocimage" 
+                              style="width: 30px; height: 30px; margin-right: 5px;"
+                              >
+                            </a>
+                          </div>
+                          
+                          
+                      </div>
+                       </div>
+                  </div>
+               </div>
+            <!-- <div class="card-container" id="creditCard">
+    <div class="card">
+        <div style="display: flex; flex-direction:row;">
+      <h1><i aria-hidden="true"></i>Guideology</h1>
+      <img src="../assets/images/white-logo.png"  style="width: 30px; height:30px; margin-left: 10px;">
+      
+    </div>
+    <div style="display: flex; flex-direction:row;">
+    <img src="../assets/images/chip.png"  style="width: 50px; height:50px; margin-top: -10px; margin-left: 10px; margin-bottom: 10px;">
+  </div>
+      <h1>1776 420 XXX XXXX</h1>
+      <h3 id="name"></h3>
+      <a href="./becomeamember.html" style="font-weight: 800;
+      margin: auto; background-color: #fff; color: #8860d0; padding: 5px 10px; border-radius: 10px; margin-top: 5px;"> Become a Member</a>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </div> -->
+            <!-- Card End Here -->
+            <div id="show" style="display: none;">
+                <div class="container">
+                    <div class="row col-lg-12 d-none d-md-block" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row ml-3" style="margin-top: 50px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Choosing a Major</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Picking Courses </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Academics</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Volunteering & Shadowing</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Extracurricular_1()">Extracurricular Activities, Work, & Research
+                                </a>
+                            </li></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="margin-top: 20px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">Choosing a Major</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Picking Courses </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Academics</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Volunteering & Shadowing</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Extracurricular_1()">Extracurricular activities, Work, & Research
+                                </a>
+                            </li></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- <div id="down_container"> -->
+                <div class="container" style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+                    <div class="row m-2">
+                        <div class="col-lg-12 class-sec p-5">
+                            <h3 id="hdpage" style="color:#5680E9; "> Before the DAT: Introduction </h3>
+                            <p text-align=left;>
+                                <br>
+                                In this series of pages, we will explore essential aspects of preparing for dental school, providing valuable insights and practical advice. The subsequent sections will delve into various topics, including Choosing a Major, Picking Courses, Academics, Volunteering/Shadowing, and Extracurricular Activities/Work/Research. Let's take a closer look at what each section entails:
+
+                            </p>
+                            
+                            <h4>Choosing a Major: </h4>
+                            <br> 
+                            Choosing the right major is an important decision for aspiring dental students. This section will explore the best majors for dental school, taking into account their relevance and benefits. We will examine degree statistics, providing insights into the percentage of students who choose specific majors. Additionally, we will discuss the advantages of pursuing minor degrees and how they can enhance your dental school application. 
+
+                            <br><br> 
+                            <h4>Picking Courses: </h4>
+                            <br> 
+                            To gain admission to dental school, certain prerequisites must be fulfilled. In this section, we will dive into the dental school prerequisites, explaining what they are and why they matter. We will guide you on when to take these courses and highlight specific requirements of different dental schools. Emphasizing the importance of sequencing courses correctly, we will demonstrate how the order in which you take these courses can assist in preparing for the Dental Admission Test (DAT).
+
+                            <br><br> 
+                            <h4>Academics: </h4>
+                            <br> 
+                            Academic performance plays a vital role in the dental school application process. In this section, we will explore the different types of GPAs (Grade Point Averages) that dental schools consider. We will provide you with insightful dental school statistics, including GPA trends and acceptance rates, allowing you to gain a comprehensive understanding of the academic landscape. Additionally, we will discuss the implications of withdrawing from or retaking courses and how these decisions can impact your dental school prospects.
+
+
+                            <br><br> 
+                            <h4>Volunteering/Shadowing: </h4>
+                            <br> 
+                            Volunteering and shadowing experiences are crucial for aspiring dentists. This section will guide you through the various types of volunteering and shadowing opportunities that can bolster your dental school application. We will provide statistical insights into schools' requirements regarding these experiences, empowering you to make informed decisions. Furthermore, we will offer valuable advice on finding volunteering and shadowing opportunities and provide email templates to facilitate your communication with potential opportunities.
+
+                            <br><br> 
+                            <h4>Extracurricular Activities/Work/Research:</h4>
+                            <br> 
+                            Beyond academics, dental schools seek well-rounded applicants who are actively engaged in extracurricular activities, work experiences, and research. This section will underline the significance of involvement in these areas and how they contribute to your overall profile. We will provide guidance on how to explore and participate in extracurricular activities, secure relevant work experiences, and engage in research opportunities. Understanding the importance of each aspect will enable you to showcase your diverse skill set to dental school admissions committees.
+                            <br><br> 
+                            By delving into these critical areas of dental school preparation, this guide aims to equip you with comprehensive knowledge and practical strategies. Whether you are just starting your journey or looking to enhance your application, "Before the DAT" will serve as a valuable resource, empowering you to navigate the complexities of the dental school application process.
+                            <br><br> 
+                            <h3 class="referafriend_heading" style="color:#5680E9; text-align: center;"> *All statistics
+                                for required courses, GPA school averages, and other requirements are researched and
+                                obtained from the 2021 school year* </h3>
+
+                            <!-- <img src="../assets/images/beforeDat_image.jpg" alt="" style="width: inherit; height:auto;" id="introImg"> -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="text-center m-5">
+                <img src="../assets/images/introduction_icon.png" alt="" style="width: 30px;">
+                All Rights Reserved © 2022 by Guideology. Designed and Developed by <a
+                    href="https://renexcode.com/">Renexcode</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+        </div>
+
+        <!-- ############################################ -->
+       
+        <!-- ############################################ -->
+
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <script src="../dist/js/header.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/card.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script src="../dist/js/lockScreenCard.js"></script>
+    <script src="../dist/js/showdb/showUserData.js"></script>
+    <script>
+        var a = document.getElementById("navbtn");
+        var b = a.getElementsByClassName("btn1");
+        for (var i = 0; i < b.length; i++) {
+            b[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active1");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active1", "");
+                }
+                this.className += " active1";
+            });
+        }
+        const introduce1 = document.getElementById('beforethedat_main');
+        function introduce_1() {
+            const g = introduce1.innerHTML = `<div  style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"><div class="col-lg-12 class-sec p-5">
+                                <h3 id="hdpage" style="color:#5680E9; "> Before the DAT: Introduction </h3>
+                                <p text-align=left;>
+                                    <br>
+                                    Before the DAT embarks on the various tasks pre-dental students must follow while they begin their undergraduate studies. This section is essential because it helps prepare you for the DAT and ensures you do everything necessary to make you a strong applicant. We have split this section into five subsections that will include all the necessary information. 
+                                </p>
+                                <br>
+                                <h3 class="referafriend_heading" style="color:#5680E9; text-align: center;"> *All statistics for required courses, GPA school averages, and other requirements are researched and obtained from the 2021 school year* </h3>
+    
+                                <img src="../assets/images/beforeDat_image.png" alt="" style="width: inherit; height:auto;">
+    
+                            </div></div></div>`
+        }
+        const pick1 = document.getElementById('beforethedat_main');
+        function pick_1() {
+            const h = pick1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+            <div class="row m-2">
+                <div class="col-lg-12 class-sec p-5">
+                    <h3 id="hdpage" style="color: #5680E9;">Before the DAT: Choosing a Major </h3>
+                    <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                        <br><b> Goal: </b> Our goal for this sub-section is to learn what a major is and understand which majors are more time-efficient and less financially costly. We’ll also look into your different options and which make more sense as a pre-dental student. Finally, we’ll briefly discuss the pros and cons of choosing to take a minor.<br><br>
+                        
+                        One of the primary considerations when entering college is selecting a major, which determines the subject you will specialize in during your undergraduate studies to pursue a bachelor's degree. Typically spanning four years and comprising around 120 credits (approximately 40 courses), this process allows students to shape their academic trajectory and align it with their career goals.
+                        
+                        <br />
+<br />
+It is common for students to be uncertain about their desired path, leading to changes in their majors as they refine their objectives. If your intention is to pursue dentistry, you may find yourself pondering the following question: "What is the most suitable major to choose?"<br/>
+In the context of dental school admissions, there are no strictly defined "right" majors, as science-based degrees are not obligatory for acceptance. Numerous students with non-science backgrounds have successfully gained admission to dental school. However, it is worth noting that certain majors can offer practical advantages and facilitate a smoother academic journey.
+<br />
+<br />
+While any major can fulfill the requirements for dental school admission, a science major is highly recommended. Pursuing a science-oriented degree often allows for the completion of prerequisite courses while progressing toward the degree itself. In contrast, students with non-science majors must ensure they enroll in additional prerequisite courses not inherently included in their chosen degree program. This discrepancy can lead to increased time and financial investment. Thus, the efficiency and practicality of a science major become apparent.
+<br />
+<br />
+
+But does having a non-science major make it harder to gain admission to dental school? In short, the answer is no. Most dental schools do not heavily weigh the specific major during the evaluation process. Instead, the focus lies on whether the applicant has successfully completed the required prerequisites. Consequently, regardless of the field in which you complete your undergraduate degree, meeting these prerequisite course requirements is of utmost importance before enrolling in dental school.
+
+<br />
+<br />
+
+Now, let's delve into some statistics to shed further light on the relationship between majors and dental school prerequisites.
+
+<br />
+<h4><i>Figure 1. Majors and their compatibility:</i></h4>
+<br />
+The table below illustrates some common degrees held by dental students, along with the degree's compatibility with dental school prerequisites. It is noteworthy that as we move away from science-related majors, the percentage of prerequisite compatibility diminishes significantly.  <br />
+<br />
+
+
+
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="color: #5680E9;">Degree Field</th>
+                                    <th scope="col" style="color: #5680E9;">% Of Dental Students</th>
+                                    <th scope="col" style="color: #5680E9;">Prerequisite Compatibility</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Biomedical Sciences</td>
+                                    <td>18.5%</td>
+                                    <td>98%</td>
+                                </tr>
+                                <tr>
+                                    <td>Biology</td>
+                                    <td>16.7%</td>
+                                    <td>98%</td>
+                                </tr>
+                                <tr>
+                                    <td>Microboilogy</td>
+                                    <td>14.3%</td>
+                                    <td>98%</td>
+                                </tr>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>13.9%</td>
+                                    <td>92%</td>
+                                </tr>
+                                <tr>
+                                    <td>Biomedical Engineering</td>
+                                    <td>4.6%</td>
+                                    <td>88%</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>8.1%</td>
+                                    <td>68%</td>
+                                </tr>
+                                <tr>
+                                    <td>Humanities</td>
+                                    <td>3.1%</td>
+                                    <td>16%</td>
+                                </tr>
+                                <tr>
+                                    <td>Business</td>
+                                    <td>2.8%</td>
+                                    <td>16%</td>
+                                </tr> <tr>
+                                    <td>Other Non-Science Majors</td>
+                                    <td>18%</td>
+                                    <td>16%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br><br>
+                    Having discussed the considerations surrounding major selection, let us now turn our attention to minor degrees. A minor degree can be likened to a "mini-degree" that typically involves the completion of 6-10 courses in a specific field.
+                     <br><br>
+                     While having a minor is not a requirement and dental schools do not extensively scrutinize it, successfully completing a minor program could potentially enhance your application and set you apart from other candidates.
+
+
+                     <br><br> <h4>Is pursuing a minor degree worth it?</h4> <br> 
+                     While completing a minor can modestly bolster your application, it is essential to weigh the potential impact on your grades. Undertaking a minor entails enrolling in additional courses, which may strain your schedule and potentially compromise your academic performance. In such cases, the risks associated with pursuing a minor could outweigh the benefits it might bring to your application. Consequently, prioritizing your grades and excelling in your major field of study holds greater significance than opting for a minor.
+                     <br><br> 
+                     By considering these factors and making informed decisions regarding your major and minor choices, you can chart a strategic academic path that optimizes your chances of gaining admission to dental school while also nurturing your personal and intellectual growth.
+
+                     <br><br> 
+
+                     <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+
+                    </strong></p>                </p><br><br>
+                </div>
+            </div>
+        </div>`
+
+
+        }
+        const choose1 = document.getElementById('beforethedat_main');
+        function choose_1() {
+            const h = choose1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+            <div class="row m-2">
+                <div class="col-lg-12 class-sec p-5">
+                                <h3 id="hdpage" style="color: #5680e9;">Before the DAT: Picking Courses</h3>
+            <p text-align="left;">
+                <br />
+                <b> Goal: </b> Our goal for this sub-section is to introduce you to the prerequisites of dental school and discuss the connection between taking courses and the Dental Admission Test (DAT). <br />
+                <br />
+                When it comes to planning your undergraduate course schedule, the task of selecting the right courses can be quite daunting. Unfortunately, college advisors often overlook two crucial factors that should be considered when enrolling in classes. Let's delve into these important considerations in more detail:<br />
+                <br />
+
+            </p>
+            <h4>#1. Ensuring you meet the course requirements of dental schools.</h4>
+            <br />
+            It is not uncommon for advisors to guide students based solely on their degree requirements, overlooking the specific prerequisites mandated by dental schools. At DentXcel, we prioritize discussing the prerequisites of dental schools to ensure that you are aware of the courses you need to complete. To provide a comprehensive overview, we will divide the requirements of dental schools into two figures. Figure 2 will encompass courses required by all dental schools, while Figure 3 will include additional courses required by some institutions.
+<br />
+<br />
+            <h4><i>Figure 2: Requirements of ALL Dental Schools:</i></h4>
+            <br />
+            
+            In the table below, you will find a comprehensive list of courses that all dental schools require. If you are pursuing a science major, you will likely satisfy these requirements as you progress through your degree program. However, for students with non-science majors, it is crucial to ensure that you are taking these courses to meet the prerequisites.
+
+                    
+                    <table id="introtable">
+                        <tr>
+                            <th style="color: #5680E9;">Courses Required by All Dental SchoolS</th>
+                        </tr>
+                        <tr>
+                            <td>Cellular Processes (Biology I) w/lab</td>
+                        </tr>
+                        <tr>
+                            <td>Biodiversity (Biology II) w/lab</td>
+                        </tr>
+                        <tr>
+                            <td>General Chemistry I & II w/lab </td>
+                        </tr>
+                        <tr>
+                            <td>Oranic Chemistry I & II w/lab</td>
+                        </tr>
+                        <tr>
+                            <td>Physics I & II w/lab</td>
+                        </tr>
+                        <tr>
+                            <td>2 English Courses (6 credits)</td>
+                        </tr>
+                    </table> <br><br>
+                    
+                    <h4><i> Figure 3: Requirements of Select Schools:</i></h4>
+                    <br />
+                    In this table, we present a comprehensive list of all dental schools in the US and the specific courses they require to be completed prior to enrollment. When choosing upper-level science courses, it may be necessary to prioritize certain courses over others, as completing all the listed courses can be challenging. <br />
+                    <br />
+                    <iframe
+                        style="width: -webkit-fill-available; height: 700px;"
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0iMqRAamBckgKav0dNQ0COn9a82_pvEQu8zfxFjkEh5tg9DHwpno8xk_QfYt8rXs8n96RIq4ZInwl/pubhtml?widget=true&amp;headers=false"
+                    ></iframe>
+                    <br />
+                    <br />
+                    We highly recommend completing the courses that are required by a majority of dental schools, such as Biochemistry, Microbiology, Statistics, and possibly Anatomy. However, for courses that are required by only a few schools (five or fewer), we suggest considering them if they align with your top choice dental programs. These courses may include Psychology, Humanities, Calculus, Zoology, Histology, and Sociology. It is important to regularly refer to the table above and ensure that you are completing the necessary courses for the schools to which you plan to apply.
+
+                    <br />
+                    <br />
+                    Now, let's explore the second crucial element to keep in mind when selecting courses.
+ <br />
+                    <br />
+                    <strong> #2.</strong> Prioritizing the completion of certain courses before others to prepare for the DAT. <br />
+                    <br />
+                    As you may already be aware, the Dental Admission Test (DAT) serves as the entrance exam to dental school. Preparing for the DAT is an essential component of the application process and requires a significant investment of time and effort. The DAT assesses your knowledge in various subjects, making it crucial to complete relevant coursework before attempting the exam to enhance your preparation.
+ <br />
+                    <br />
+                    In the table below, you will find an overview of the subjects tested on the DAT, along with recommendations on whether these courses should be completed before the exam and their feasibility.
+ <br />
+                    <br />
+                    <h4>Figure 4: Courses highly recommended to be completed before the DAT:</h4>
+                    
+
+
+                    <table id="introtable">
+                        <tr>
+                            <th style="color: #5680E9;" colspan="2">Highly Recommended</th>
+                        </tr>
+                       
+                        <tr>
+                            <td>Cellular Processes (Biology I)</td>
+                        </tr>
+                        <tr>
+                            <td>Biodiversity (Biology II)</td>
+                        </tr>
+                        <tr>
+                            <td>General Chemistry I & II</td>
+                        </tr>
+                        </tr>
+                       
+                        <tr>
+                            <td>Organic Chemistry I</td>
+                        </tr>
+                        <tr>
+                            <td style="color:#5680E9;">Organic Chemistry II </td>
+                        </tr>
+                        <tr>
+                            <td>Algebra</td>
+                        </tr>
+                        <tr>
+                            <td>Statistics</td>
+                        </tr>
+                    </table> <br><br>
+                    These courses are heavily tested on the DAT and completing them will significantly contribute to your preparation for the exam. Most students typically complete all the courses listed below before taking the DAT, with the exception of Organic Chemistry 2, which is often completed concurrently with or after studying for the exam.
+                    <br><br>
+                    <h4> <i> Figure 5: Courses lightly recommended to be completed prior to the DAT:</i></h4> 
+                    <table id="introtable">
+                        <tr>
+                            <th style="color: #5680E9;" colspan="2">Lightly Recommended</th>
+                        </tr>
+                        
+                        <tr>
+                            <td>Genetics</td>
+                        </tr>
+                        <tr>
+                            <td>Microbiology</td>
+                        </tr>
+                        <tr>
+                            <td>Biochemistry</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Trigonometry</td>
+                        </tr>
+                    </table> <br><br>
+                    While these courses are less heavily tested on the DAT, completing them before you begin studying for the exam may aid in your preparation. However, it is important to note that taking these courses before the DAT is not necessary, and you can still perform well without them. Additionally, completing these courses before the exam can be challenging, as they are typically scheduled for senior year.
+
+                    <br><br>
+                    By carefully considering these factors and making informed decisions about your course selection, you can ensure that you are on the right track to meet the prerequisites of dental schools and adequately prepare for the DAT. 
+
+                    
+                    <br><br>
+                    <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                    </strong></p>
+                    </p><br><br>
+                </div>
+            </div>
+        </div>`
+
+
+        }
+        const Academics1 = document.getElementById('beforethedat_main');
+        function Academics_1() {
+            const h = Academics1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+            <div class="row m-2">
+                <div class="col-lg-12 class-sec p-5">
+                    <h3 id="hdpage" style="color: #5680E9;">Before the DAT: Academics </h3>
+                    <p text-align=left;><br><b>Goal: </b> Our goal for this sub-section is to introduce the three important types of GPAs and to look at dental schools in the US and their GPA averages. We’ll also discuss the importance of trends in dental schools. Finally, we’ll look at the effects of withdrawing or retaking courses. 
+                        
+                        
+                        <br />
+            <br />
+            The academic performance of pre-dental students is a topic that often causes significant stress and self-reflection. Many students find themselves contemplating whether their grades are sufficient to secure a spot in dental school. While the application process is indeed competitive, it is important to note that dental schools take a holistic approach, and a perfect GPA is not the sole determinant of admission.<br />
+            <br />
+            <h4>What GPAs do dental schools consider?</h4>
+            <br />
+            Dental schools typically evaluate three key GPAs during the application process:
+Science GPA (BCPM): This includes most biology, chemistry, physics, and math courses.
+BCP GPA: This includes most biology, chemistry, and physics courses.
+Cumulative GPA: This encompasses all courses taken throughout your undergraduate studies.
+<br />
+            <br />
+            It is crucial to track and monitor these different GPAs throughout your academic journey, as they all carry significance in the eyes of dental schools. <br />
+            <br />
+            <h4><i>Figure 6: Average GPAs of accepted dental students:</i></h4>
+            <br />
+            In the table below, you will find the average science and cumulative GPAs of admitted students for each dental school in the US. Please bear in mind that these numbers are merely averages and are provided to give you a general understanding of the GPAs dental schools typically seek in applicants. It is important not to overly fixate on these figures, as each applicant is assessed holistically. <br />
+            <br />
+            <iframe
+                style="width: -webkit-fill-available; height: 700px;"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTH5-mpc9ojrPwy-TAdwTZMLKcmDxOafmEZcYTavNFkvzU5smfQ7inBAiDWUmUfH5pmElSp3e1rHWdV/pubhtml?widget=true&amp;headers=false"
+            ></iframe>
+            <br />
+            However, GPA is not the sole factor dental schools consider when evaluating applicants. They also pay attention to the trend of your GPA over the course of your undergraduate studies.
+ <br />
+            <br />
+            <h4>GPA Trends</h4>
+            <br />
+            As you progress through your degree, it is common for the courses you take to become more challenging. Dental schools are aware of this and analyze the trend of your grades to discern whether they are decreasing, remaining stable, or improving over time.
+ <br />
+            <br />
+            In many cases, students may experience a slight decline in their grades as they tackle more demanding coursework. However, it is important not to be overly concerned about the specific trend your grades follow, as it can be challenging to control. What matters is that you demonstrate perseverance and improvement in your final years. Successfully rebounding from a period of poor performance early in your undergraduate studies can have a significant positive impact on the strength of your dental school application.
+ <br />
+            <br />
+            Let's now address the situation of failing or withdrawing from courses. When faced with failing or close-to-failing grades towards the end of the semester, you will have two options to consider.
+
+ <br />
+            <br />
+            <h4>Option #1: Withdrawing from the course</h4>
+            <br />
+            If you believe that bringing your grade up is not a viable option, you may consider withdrawing from the course. Withdrawing will result in a "W" on your transcript, which dental schools will be able to see during the application review process. The advantage of withdrawing is that it does not affect your GPA, and schools can only speculate on the reasons for your withdrawal. However, it is important to note that the withdrawal deadline is typically early in the semester, so choosing this option removes the possibility of attempting to pass the course. <br />
+            <br />
+            <h4>Option #2: Remaining in the course and risk failing</h4>
+            <br />
+            The second option is to continue in the course and strive to improve your grades. However, if your efforts are unsuccessful and you fail the course, it will result in a grade of "D/F" on your transcript, which could significantly impact your GPA. If the failed course is a requirement for your degree and you choose to retake it, you may be offered grade forgiveness. Grade forgiveness allows you to replace your previous grade with the new one. While your school will only utilize the new grade to calculate your GPA, dental schools will consider both the old and new grades when evaluating your application.
+<br />
+            <br />
+            <h4>So, what should I do?</h4>
+            <br />
+            We highly recommend monitoring the withdrawal deadline while diligently working towards improving your grades. If the calculated grades needed to pass the course appear unattainable as the withdrawal deadline approaches, withdrawing may be the better option.<br />
+            <br />
+            Please remember that although either option may slightly weaken your application, it will not prevent you from being accepted into dental school. Do not be discouraged and strive to limit such situations to once or twice during your undergraduate studies. Your dedication, resilience, and overall academic performance will be evaluated in a comprehensive manner by dental schools during the application process.
+
+            <br />
+            <br />
+
+            <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                    </strong></p>
+                    </p><br><br>
+                </div>
+            </div>
+        </div>`
+
+
+        }
+        const volunteering1 = document.getElementById('beforethedat_main');
+        function Volunteering_1() {
+            const h = volunteering1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+
+
+
+
+                <div class="row m-2">
+    <div class="col-lg-12 class-sec p-5">
+        <h3 id="hdpage" style="color: #5680e9;">Before the DAT: Volunteering & Shadowing</h3>
+        <p text-align="left;">
+            <br />
+            <b>Goal: </b> Our goal in this sub-section is to discuss which types of volunteering and shadowing are accepted and how many hours are required. We'll also look at how to find different opportunities.<br />
+            <br />
+            Volunteering and shadowing play a significant role in your application as a pre-dental student, and they are key aspects that dental schools consider when evaluating applicants. It is advisable to start volunteering and shadowing early in your undergraduate journey to gradually accumulate hours and enrich your experiences.
+
+<br />
+            <br />
+        </p>
+        <h4>Volunteering</h4>
+        <br />
+        Volunteering is one of the five experiences you can add to your application, and dental schools often assess your volunteer hours to gain insight into your interests and passions. It is important to note that volunteering does not have to be limited to dental-related activities. Instead, it is an opportunity to engage with diverse fields and communities that resonate with your personal passions.
+<br />
+        <br />
+        <h4>How many hours should you aim for?
+</h4>
+        <br />
+        While there is no strict requirement for volunteer hours, we highly recommend completing a minimum of 100-200 hours to be considered a serious applicant. It is beneficial to diversify your experiences by volunteering in 2-3 different places or fields.
+
+<br />
+        <br />
+        <h4>Finding volunteer opportunities:</h4>
+        <br />
+        Discovering volunteer opportunities is generally accessible, particularly with the option to complete hours online. Below, you will find various resources to help you find volunteering opportunities, along with a template to use when contacting organizations via email. <br />
+        <br />
+        <p style="text-align: center;">
+            <a href="https://www.pointsoflight.org/get-involved/">https://www.pointsoflight.org/get-involved/ </a> <br />
+            <a href="https://www.volunteermatch.org/">https://www.volunteermatch.org/ </a><br />
+            <a href="https://www.idealist.org/en/">https://www.idealist.org/en/ </a><br />
+            <a href="https://www.allforgood.org/search">https://www.allforgood.org/search </a><br />
+            <a href="https://www.unitedway.org/get-involved/volunteer">https://www.unitedway.org/get-involved/volunteer </a><br />
+            <a href="https://americorps.gov/join/find-volunteer-opportunity">https://americorps.gov/join/find-volunteer-opportunity </a>
+        </p>
+        <br />
+        <br />
+        <h4>Volunteering Template Email</h4>
+       
+        
+        <br />
+        <br />
+        Good afternoon,
+        <br />
+        <br />
+        My name is [Full Name], and I am currently a student at [School Name]. I am interested in applying for a volunteer position with [Organization Name], and I am particularly excited about the possibility of serving as a volunteer for your organization.
+ <br />
+        <br />
+        [In the second paragraph, showcase any relevant experience you may have in the specific type of work you'll be undertaking.]
+ <br />
+        <br />
+        <strong> For example:</strong>  I have previously volunteered as a teacher's assistant at Lakeside Middle School in Virginia, where I enjoyed assisting students with various activities. As a teacher's assistant, I was responsible for organizing classroom projects, providing tutoring sessions, and addressing students' questions. Interacting with the students and building connections with them was the highlight of my experience, as it made the learning process more enjoyable. <br />
+        <br />
+
+       If you are still seeking volunteers for [Organization Name], I would be thrilled to have the opportunity to contribute to your team. I believe that my experiences and skills would make me a valuable asset to your organization. Moreover, I hope that by serving as a volunteer, I can gain additional insights and experiences that will benefit my future career in dental medicine. I am flexible and willing to volunteer on [Choose Days] or whenever suits your needs. <br />
+        <br />
+        I look forward to hearing from you soon and exploring the possibility of becoming a volunteer at [Organization Name]. Thank you for considering my application.
+Sincerely, [Full Name]
+ <br />
+        <br />
+       
+        <h4>Shadowing</h4>
+        <br />
+        Shadowing is a crucial component of your preparation for dental school. It allows you to observe and familiarize yourself with the various roles and responsibilities of dentists, while also reaffirming your interest in dentistry. When shadowing, it is important to respect the dentist's space and avoid becoming a hindrance. Additionally, ask questions only when appropriate, irrespective of the topic. <br />
+        <br />
+        <h4>Whom should you shadow?</h4>
+        <br />
+        Dental schools primarily aim to train students as general dentists. Therefore, they expect applicants to possess a genuine interest in and willingness to pursue general dentistry. With this in mind, we recommend allocating most of your shadowing hours to a general dentist. However, diversifying your experiences by shadowing specialty dentists can also be beneficial. Regardless of the dental professional you choose to shadow, the focus should be on completing the required number of hours.
+
+ <br />
+        <br />
+        <h4>How many hours are typically required?</h4>
+        <br />
+        The number of shadowing hours required can vary among dental schools, with most schools stipulating a range of 20 to 200 hours, averaging around 80 hours. While some schools may not explicitly state the number of hours required, they emphasize the importance of shadowing experience in their admissions process. Therefore, we highly recommend aiming for the highest requirement among any dental school, which is 200 hours. This will not only ensure that you meet the requirements of any dental school in the United States but also strengthen your overall application.
+ <br />
+        <br />
+        <h4><i>Figure 7: Shadowing Hours Required by Dental Schools:</i></h4>
+        <br />
+        In the table below, you will find a list of all dental schools in the US and the number of shadowing hours they require. <br />
+        <br />
+        <iframe
+            style="width: -webkit-fill-available; height: 700px;"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6EP0CNm2mWVqBEsYbenk9oWcNlmwRT5dI_u8-za2ofGQyT3xwizSRpfkippusm2KErMCpbWErMDFv/pubhtml?widget=true&amp;headers=false"
+        ></iframe>
+        <br />
+        <br />
+        Finding shadowing opportunities can be challenging, particularly considering the impact of COVID-19 restrictions. As we adapt to life amidst the pandemic, there have been significant changes in how students can complete their shadowing hours. Online organizations now offer virtual shadowing experiences, which, although may not provide the same level of hands-on learning, are widely accepted by dental schools.
+
+<br />
+        <br />
+        <h4>How can you find someone to shadow?</h4>
+        <br />
+        Virtual shadowing opportunities are easily accessible, and you can visit social media platforms to find organizations offering such experiences. You can check out Instagram accounts like "freshdentalshadowing" and "dentalshadowers" for more information.
+ <br />
+        <br />
+        In-person shadowing can be more challenging to arrange. The most effective approach is to call different dental offices and inquire about their policy on allowing students to shadow. Alternatively, you can search for nearby dental offices online and find their contact information on their websites. The email template below can be helpful when reaching out to dental offices. <br />
+        <br />
+        <h4>Shadowing Template Email</h4>
+        <br />
+        
+        <br />
+        Good afternoon, <br />
+      
+        My name is [Full Name], and I am currently a [Class Attribute: Freshman/Sophomore/Junior/Senior] at the University of [School Name]. I am actively pursuing a career in dental medicine and seeking shadowing opportunities to gain a deeper understanding of the dental profession.
+I would be extremely grateful for the opportunity to quietly observe you and gain insights into your work as a dentist, for however long you are available. If you have any questions or concerns, please do not hesitate to contact me via email or phone at [Number]. I appreciate your consideration, and I look forward to hearing from you.
+ <br />
+        <br />
+      
+        Sincerely, <br />
+        <br />
+        [Full Name] <br />
+        <br />
+        <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help! </strong>
+        </p>
+    </div>
+</div>
+
+
+                    </p><br><br>
+
+
+
+                    
+                </div>
+            </div>
+        </div>`
+
+
+        }
+        const Extracurricular1 = document.getElementById('beforethedat_main');
+        function Extracurricular_1() {
+            const h = Extracurricular1.innerHTML = ` <div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+
+
+
+                <div class="row m-2">
+    <div class="col-lg-12 class-sec p-5">
+        <h3 id="hdpage" style="color: #5680e9;">Before the DAT: Extracurricular activities, Work, & Research</h3>
+        <p text-align="left;">
+            <br />
+            <b>Goal: </b> Our goal in this sub-section is to discuss the importance of extracurricular activities and how to get involved. We’ll also look at the significance of leadership roles. Finally, we’ll introduce work and research
+            and how they can be a part of your application. <br />
+            <br />
+        </p>
+        <h4>Extracurricular Activities</h4>
+        <br />
+        While extracurricular activities are not mandatory for dental school applications, we believe that their inclusion can make a significant difference. Participating in extracurricular activities showcases your outgoing nature and demonstrates important qualities that dental schools value, such as leadership, teamwork, and a well-rounded personality. Moreover, involvement in extracurricular activities can be beneficial for students who may face academic challenges, as it provides an opportunity to strengthen their overall application. <br />
+        <br />
+        <h4>What can I get involved in?</h4>
+        <br />
+        One crucial extracurricular activity for pre-dental students is joining their school's pre-dental organization. Almost every university has its own pre-dental organization, and becoming actively involved is highly encouraged. If your university does not have a pre-dental organization, consider taking the initiative to establish one. Seek guidance from your advisors on how to initiate the process of registering an organization and gathering like-minded individuals who share the same aspirations.
+ <br />
+        <br />
+        While your extracurricular activities do not necessarily have to be dental-related, we recommend exploring clubs or organizations that align with your personal interests. Joining any club or organization that captivates your curiosity can provide valuable experiences and broaden your perspective. It is particularly advantageous to seek leadership roles within these organizations, as they can significantly enhance your application. By getting involved early on, you can position yourself for potential leadership positions by the time you reach your junior year. Make an effort to leave a lasting impression on current officers and actively apply for available positions within the organizations you are engaged in.
+ <br />
+        <br />
+        <h4>Work and Research:</h4>
+        <br />
+        Engaging in work and research experiences is not mandatory for dental school applications, but they can serve as strong assets in strengthening your application. While it is important to prioritize your academic performance and ensure it remains your primary focus, working students can highlight their job experiences as a testament to their ability to manage a demanding schedule and effectively balance their commitments. Dental schools value individuals who exhibit excellent time management skills, and the experience gained from employment can demonstrate your capacity to handle multiple responsibilities. <br />
+        <br />
+        <br />
+        Similarly, research involvement can greatly contribute to your application's strength. If your schedule permits and you have an interest in pursuing research, consider approaching your professors or admission advisors to inquire about available research opportunities. Participating in research projects allows you to cultivate critical thinking skills, develop a deeper understanding of scientific concepts, and showcase your intellectual curiosity. It is essential to discuss your research experiences in your application, emphasizing the skills and knowledge gained through these endeavors.
+
+<br><br>
+
+Remember, while involvement in extracurricular activities, work, and research can enhance your application, it is equally important to strike a balance and prioritize your academic success. Consider your personal strengths, interests, and available time to determine the extent of your involvement in these areas. Ultimately, a well-rounded application reflects your dedication, passion, and commitment to becoming a successful dental professional.
+<br><br>
+<p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help! </strong>
+        </p>
+    </div>
+</div>
+
+                    </p><br><br>
+                </div>
+            </div>
+        </div>`
+
+
+
+
+        }
+    </script>
+    <script src="../dist/js/keys.js"></script>
+     <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

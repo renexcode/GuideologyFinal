@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script>
+
+        var config = {
+            apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+            authDomain: "guideology-cc2b5.firebaseapp.com",
+            databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+            projectId: "guideology-cc2b5",
+            storageBucket: "guideology-cc2b5.appspot.com",
+            messagingSenderId: "130250364586",
+            appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+            measurementId: "G-RSC5CNSPEG"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+    <style type="text/css">
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        #txt {
+            background-color: #fff;
+            border: none;
+            box-shadow: 0px 5px 20px 5px rgba(211, 211, 211, 0.541) !important;
+        }
+
+        .referafriend_heading {
+            font-size: 24px;
+            line-height: inherit;
+        }
+
+        #compost {
+            width: 215px;
+            height: 45px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background: #5680E9 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            font: normal normal 614 15px/12px Montserrat;
+            letter-spacing: 0px;
+            /* margin-left: -606px; */
+        }
+
+        #beforedat_a {
+            color: #707070;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+            text-align: centers;
+            /* margin-left: 150px; */
+
+        }
+
+        #navbtn {
+            background-color: #fff !important;
+            height: auto;
+            box-shadow: 0px 5px 20px 5px rgba(211, 211, 211, 0.541) !important;
+            padding: 5px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .active1,
+        .btn1:hover {
+            /* background-color: none !important; */
+            color: #5680E9 !important;
+        }
+
+
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+            #beforedat_a {
+                font-size: 11px;
+            }
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-container {
+            /* position: absolute; */
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .card-container .card {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+            height: 250px;
+            padding: 20px;
+            overflow: hidden;
+            background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+            transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+            z-index: 2;
+            transition: all 1s;
+        }
+
+        .card-container .card h1 {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .card-container .card h1:nth-of-type(2) {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .card-container .card h3 {
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-container .card h3:nth-of-type(2) {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .card-container .card .circle {
+            position: absolute;
+            margin: auto;
+            top: 10%;
+            bottom: 0;
+            right: -50%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: linear-gradient(135deg, #667eea 5%, #764ba2 90%);
+            z-index: -2;
+        }
+
+        .card-container .card .circle:nth-of-type(2) {
+            width: 100px;
+            height: 100px;
+            top: 90%;
+            right: -20%;
+            z-index: -1;
+            background-image: linear-gradient(135deg, #667eea 10%, #764ba2 90%);
+        }
+@media only screen and (min-width: 290px) and (max-width: 600px){
+    #navbtn{
+        border-bottom: 2px solid #5680E9 !important;
+        margin-left: 13px;
+    }
+    #introImg{
+    width: 310px !important;
+    margin-left: -45px;
+    }
+}
+        @media only screen and (max-width: 780px) {
+            .card-container .card {
+                width: 270px;
+                height: 200px;
+                transition: none;
+            }
+
+            .referafriend_heading {
+                font-size: 12px;
+                line-height: inherit;
+            }
+
+            .card-container .card h1 {
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: -3px;
+            }
+
+            #name {
+                margin-bottom: 3px;
+                margin-top: 6px;
+            }
+
+            .card-container .card h1:nth-of-type(2) {
+                font-size: 16px;
+            }
+
+            .card-container .card h3 {
+                font-size: 14px;
+            }
+
+            .card-container .card h3:nth-of-type(2) {
+                font-size: 12px;
+            }
+
+            .card-container .card .circle {
+                right: -70%;
+            }
+        }
+
+        .disabled a {
+            /* pointer-events: none; */
+            pointer-events: none;
+            display: none;
+            /* color: grey; */
+            /* display: block; */
+            /* background-color: lightgray; */
+            /* margin-top: 3px; */
+            /* cursor: pointer; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="min-height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar"
+            data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/Introduction.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Introduction</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">All-In-One Guide</span>
+                                        <!-- <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"> -->
+                                   
+                                   </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat" aria-expanded="false"> <img
+                                    src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2"
+                                    style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat" aria-expanded="false"><img
+                                    src="../assets/images/white_icons/beforedat_white.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">The Application Process</span></a>      
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interviewing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interviewing</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img
+                                src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/academics.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/experience.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Experiences</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./evaluations" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/evaluations.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Evaluations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./dat" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./writing" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/writing_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">School Stats & Prereqs.</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Application Status</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewquestion" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interview_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interview Questions</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img
+                                src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./statementediting" aria-expanded="false">
+                                <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Personal Statement
+                                    Editing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./scheduleinterviews" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Schedule Mock Interview</span></a>
+                        </li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./personalizeschoolselection" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Personalized School Selection</span></a></li> -->
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>  
+                                            <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="./podcast.html" aria-expanded="false"><img
+                                                    src="../assets/images/grey_icons/podcast.svg" alt=""><span
+                                                    style="font-size: 12px;" class="hide-menu ml-2 ">Podcast</span></a></li> -->
+                                   <!--salman-->                                                                                                           
+<li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+    style="font-size: 16px; font-weight: 600; margin-left: 15px;">Other</span>
+   
+    <img
+    src="../assets/images/grey_icons/podcast.svg" alt="" class="ml-3">
+   </li>
+   <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="./merch.html" aria-expanded="false"><img
+        src="../assets/images/grey_icons/product.svg" alt=""><span
+        style="font-size: 12px;" class="hide-menu ml-2 ">Merch</span></a></li>
+  <!-- salman --> 
+                                                    <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                        href="./products.html" aria-expanded="false"><img
+                                                            src="../assets/images/grey_icons/product.svg" alt=""><span
+                                                            style="font-size: 12px;" class="hide-menu ml-2 ">Products</span></a></li> -->
+
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img
+                                src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/contactus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">Forums</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img
+                                src="../assets/images/grey_icons/me.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/myaccount.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/collaboration.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/referafriend.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Refer a Friend</span></a></li>
+
+                        <div id="bottom_becomeamember"></div>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="margin-bottom: 50px;">
+            <div id="become"></div>
+            <div class="mt-5" style="max-width: 1920px;" id="creditCard">
+            <div class="container">
+                <div class="row col-lg-12 d-none d-md-block" style="max-width:100% !important;">
+
+                    <ul id="navbtn" class="d-flex flex-direction-row ml-3" style="margin-top: 50px;">
+                        <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                id="beforedat_a" href="#" class="btn1">Introduction</a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#" >DAT Introduction</a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#" >Scheduling your Exam </a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#">Resources</a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#">Making a Schedule</a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#">Tips & Closing thoughts</a>
+                        </li></a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                    <ul id="navbtn" class="d-flex flex-direction-row" style="margin-top: 20px;">
+                        <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                id="beforedat_a" href="#" class="btn1">Introduction</a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#" >DAT Introduction</a></li>
+
+                    </ul>
+                </div>
+                <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                    <ul id="navbtn" class="d-flex flex-direction-row">
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#" >Scheduling your Exam</a></li>
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#">Resources</a></li>
+
+                    </ul>
+                </div>
+                <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                    <ul id="navbtn" class="d-flex flex-direction-row"  style="justify-content: center; align-items: center; display: flex;">
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#">Making a Schedule</a></li>
+
+                    </ul>
+                </div>
+                <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                    <ul id="navbtn" class="d-flex flex-direction-row" style="justify-content: center; align-items: center; display: flex;">
+                        <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                href="#">Tips & Closing thoughts </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="row m-2">
+                <div class="col-lg-9 col-md-8 class-sec p-5" style="border: none;
+                background: white;
+                box-shadow: 0px 5px 20px 5px rgb(211 211 211 / 54%) !important;">
+                <div style="display: flex; justify-content:center; align-items:center;">
+                <img src="../assets/images/premium-quality.png" alt="image" style="width: 20%; margin-bottom: 5px;">
+             </div>
+                      <h3 class="referafriend_heading" style="color:#5680E9; font-size: 18px; text-align: center;line-height: inherit;"> Thanks for creating an account with DentXcel </h3>
+                      <p style="text-align: center; font-size: 14px;">
+                       <strong> 
+                         This page is exclusive to “Dent-Quest” or “Set to Xcel” members. 
+                          <br>
+                            <!-- <i class="bi bi-check-circle-fill" style="color: #19e919;"></i>  To view our plans, click below. <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> 9-Page Software <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> 4 Extra Services
+                            <br>
+                            <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> Student Forums <i class="bi bi-check-circle-fill" style="color: #19e919;"></i> & Live Support  -->
+                       </strong>
+                      
+                    </p>
+
+                    <!-- <h3 id="hdpage" style="color:#5680E9; text-align: center; font-size: 18px; font-weight: 800;"> By Becoming A Member Below </h3> -->
+                    <!-- <div style="display: flex; justify-content:center; align-items:center;">
+                    <a href="./becomeamember.html" style="font-weight: 800;
+                    margin: auto; background-color: #8860d0; color: #fff; padding: 12px 24px; border-radius: 10px; margin-top: 5px;">Take me there </a></div> -->
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <a href="./introduction.html" style="font-weight: 800;
+                          margin: auto; background-color: #8860d0; color: #fff; padding: 12px 24px; border-radius: 10px; margin-top: 5px;">
+                          Take me there
+                          <img src="https://www.iconpacks.net/icons/2/free-rocket-icon-3432-thumb.png" alt="Rocket Icon" class="Rocimage" 
+                          style="width: 30px; height: 30px; margin-right: 5px;"
+                          >
+                        </a>
+                      </div>
+                      
+                      
+                  </div>
+               </div>
+               </div>
+            <!-- <div class="card-container" id="creditCard">
+                <div class="card">
+                    <div style="display: flex; flex-direction:row;">
+                  <h1><i aria-hidden="true"></i>Guideology</h1>
+                  <img src="../assets/images/white-logo.png"  style="width: 30px; height:30px; margin-left: 10px;">
+                  
+                </div>
+                <div style="display: flex; flex-direction:row;">
+                <img src="../assets/images/chip.png"  style="width: 50px; height:50px; margin-top: -10px; margin-left: 10px; margin-bottom: 10px;">
+              </div>
+                  <h1>1776 420 XXX XXXX</h1>
+                  <h3 id="name"></h3>
+                  <a href="./becomeamember.html" style="font-weight: 800;
+                  margin: auto; background-color: #fff; color: #8860d0; padding: 5px 10px; border-radius: 10px; margin-top: 5px;"> Become a Member</a>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div> -->
+            <div id="show" style="display: none;">
+                <div class="container">
+                    <div class="row col-lg-12 d-none d-md-block" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row ml-3" style="margin-top: 50px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">DAT Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Scheduling your Exam </a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Resources</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Making a Schedule</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Extracurricular_1()">Tips & Closing thoughts</a>
+                            </li></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="margin-top: 20px;">
+                            <li id="beforedat_li" class="list-group-item border-0 " style="width: auto;"><a
+                                    id="beforedat_a" href="#" onclick="introduce_1()" class="btn1">Introduction</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="pick_1()">DAT Introduction</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="choose_1()">Scheduling your Exam</a></li>
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Academics_1()">Resources</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row"  style="justify-content: center; align-items: center; display: flex;">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Volunteering_1()">Making a Schedule</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="row col-lg-12 d-md-none" style="max-width:100% !important;">
+
+                        <ul id="navbtn" class="d-flex flex-direction-row" style="justify-content: center; align-items: center; display: flex;">
+                            <li id="beforedat_li" class="list-group-item border-0 "><a id="beforedat_a" class="btn1"
+                                    href="#" onclick="Extracurricular_1()">Tips & Closing thoughts </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- <div id="down_container"> -->
+                <div class="container" style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+                    <div class="row m-2">
+                        <div class="col-lg-12 class-sec p-5">
+                            <h3 id="hdpage" style="color:#5680E9; "> Taking the DAT: Introduction </h3>
+                            <p text-align=left;>
+                                <br>
+                                In the following pages, we will delve into various aspects of the Dental Admission Test (DAT) to help you understand the exam, its significance, and how to maximize your chances of success. This introductory section will provide a brief overview of what you can expect to find in the subsequent pages, covering topics such as DAT introduction, scheduling your exam, available resources, creating an effective study schedule, and valuable tips and closing thoughts to aid your preparation journey.
+
+                            </p>
+                            <br>
+
+                            <h4>DAT Introduction:
+                            </h4>
+                             <br>
+                             <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                                In this section, we will acquaint you with the DAT by delving into its core components. You will gain insights into what the DAT is, including its purpose, dental school statistics, and an understanding of the subjects covered. We will also address crucial aspects such as scoring mechanisms, pricing, fee waivers, and considerations for retakes.
+
+                            </p>
+                             <br>
+
+                           
+
+                             <h4>Scheduling Your Exam: 
+                             </h4>
+                              <br>
+                              <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                                Timing is of utmost importance when it comes to the DAT. Here, we will guide you through the process of creating an appropriate timeline for your exam. We will discuss when to begin preparing, how to optimize your study time, and provide comprehensive instructions on scheduling your DAT exam to align with your preparation timeline effectively.
+
+ 
+                             </p>
+                              <br>
+
+                              
+
+                              <h4>Making a Schedule: 
+
+                              </h4>
+                               <br>
+                               <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                                A well-structured study schedule is essential for conquering the DAT. In this section, we will explore what you can expect during your preparation journey. We will outline our recommended schedule, which breaks down the content into manageable segments, ensuring efficient progress. Additionally, we will offer strategies for utilizing DAT resources effectively and provide tips on pacing and managing the exam format.
+
+  
+                              </p>
+                               <br>
+
+                               <h4>Resources: 
+
+                               </h4>
+                                <br>
+                                <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                                    Access to the right study materials and resources is crucial for achieving a competitive DAT score. We will provide a comprehensive overview of the resources available to you, including primary and secondary sources. This section will discuss various methods and pricing options, along with our recommended primary sources to enhance your preparation.
+ 
+   
+                               </p>
+
+                               <br>
+
+                               <h4>Tips and Closing Thoughts:
+
+                               </h4>
+                                <br>
+                                <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                                    To conclude our guide, we will share valuable tips and insights to optimize your DAT performance. We will outline the scores to aim for and offer guidance on determining if a retake is necessary. Furthermore, we will provide a breakdown of the score components and address considerations for rescheduling your DAT, ensuring you are well-informed and confident in your decision-making process.
+
+ 
+   
+                               </p>
+
+                               <br>
+
+                              
+                                <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                                    By the end of this comprehensive guide, you will have gained a thorough understanding of the DAT, learned effective scheduling techniques, discovered essential resources, and acquired valuable tips to aid your preparation. Let's dive into each section, unraveling the secrets to success on your DAT journey.
+ 
+   
+                               </p>
+
+                              
+                               <!-- -------------------------------------------------------- -->
+
+                            <h3 class="referafriend_heading" style="color:#5680E9; text-align: center;"> *All school
+                                statistics, as well as the cost of various applications, are researched and obtained
+                                from the 2021 school year* </h3>
+
+                            <!-- <img src="../assets/images/takingDat.jpg" alt="" style="width: inherit; height:auto;" id="introImg">    -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="text-center m-5">
+                <img src="../assets/images/introduction_icon.png" alt="" style="width: 30px;">
+                All Rights Reserved © 2022 by Guideology. Designed and Developed by <a
+                    href="https://renexcode.com/">Renexcode</a>.
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+        </div>
+        <!-- ################        #################################### -->
+       
+        <!-- #################################################### -->
+
+        <!-- ============================================================== -->
+
+
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../dist/js/header.js"></script>
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/showUserData.js"></script>
+    <script src="../dist/js/showdb/card.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script>
+        // var okay = prompt('Write your id here')
+
+
+        // document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (event.keyCode == 17) {
+                return false;
+            }
+            if (event.keyCode == 67) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    // if (role !== "accept") {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .addClass("disabled")
+    //   .find("a").prop("disabled", true);
+    //   title = 'Become a Member'
+    // } else {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .removeClass("disabled")
+    //   .find("a").prop("disabled", false);
+    // }
+    </script>
+    <script>
+        var a = document.getElementById("navbtn");
+        var b = a.getElementsByClassName("btn1");
+        for (var i = 0; i < b.length; i++) {
+            b[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active1");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active1", "");
+                }
+                this.className += " active1";
+            });
+        }
+        const introduce1 = document.getElementById('beforethedat_main');
+        function introduce_1() {
+            const g = introduce1.innerHTML = `
+                    <div class="row m-2">
+                        <div class="col-lg-12 class-sec p-5">
+                            <h3 id="hdpage" style="color:#5680E9; "> Taking the DAT: Introduction </h3>
+                            <p text-align=left;>
+                                <br>
+                                This section will discuss the steps necessary to successfully complete your application
+                                to dental school. This section is essential as the quality of your application is a
+                                significant factor in dental school decisions. This section is split into four
+                                subsections to help you maximize your chances of getting accepted.
+                            </p>
+                            <br>
+                            <h3 class="referafriend_heading" style="color:#5680E9; text-align: center;"> *All school
+                                statistics, as well as the cost of various applications, are researched and obtained
+                                from the 2021 school year* </h3>
+
+                            <img src="../assets/images/takingDat.png" alt=""
+                                style="width: inherit; height:auto;">
+
+                        </div>
+                    </div>`
+        }
+        const pick1 = document.getElementById('beforethedat_main');
+        function pick_1() {
+            const h = pick1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+            <div class="row m-2">
+                <div class="col-lg-12 class-sec p-5">
+                    <h3 id="hdpage" style="color: #5680E9;"> Taking the DAT: DAT Introduction </h3> 
+                    <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+                        <br> <strong> Goal: </strong> This subsection aims to introduce you to the DAT. We’ll discuss the importance of your entrance exam, the different subjects tested on the DAT, and share dental school’s DAT averages. We’ll conclude by discussing the exam cost, fee waivers, and retakes.<br><br>
+                    <h4>Introduction</h4> <br>The Dental Admission Test (DAT) holds paramount importance in your undergraduate journey as it stands as the pivotal exam that dental schools consider alongside your GPA when evaluating your application. Realizing the significance of the DAT in determining your candidacy, students dedicate considerable time and effort to prepare for this comprehensive assessment.<br>
+                    <br>
+
+<h4>Exploring the DAT:
+
+</h4>
+ <br>
+ <p text-align=left; font-family=Poppins; font-style=normal; font-weight=normal; font-size=25px;>
+    Spanning approximately five hours, the DAT comprises multiple-choice questions across six subjects, covering a wide range of knowledge and skills. Referencing Figure 1 below, we can observe the breakdown of subjects, the number of questions allocated per section, and the corresponding time limit. It is important to note that the three sciences are merged into a single section and assessed together.
+</p>
+
+                    <br><br>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="color: #5680E9;">Subject</th>
+                                    <th scope="col" style="color: #5680E9;"># of Questions</th>
+                                    <th scope="col" style="color: #5680E9;">Time Given</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> Biology</td>
+                                    <td>40</td>
+                                    <td rowspan="3" style="text-align:center;">90 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>General Chemistry</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Organic Chemistry</td>
+                                    <td>30</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td>Perceptual Ability</td>
+                                    <td>90</td>
+                                    <!-- <td><strong>Total Subjects: 6</strong></td> -->
+                                    <td>60 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>Reading Comprehension</td>
+                                    <td>50</td>
+                                    <td>60 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>Quantitative Reasoning</td>
+                                    <td>40</td>
+                                    <td>50 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total Subjects: </strong>6</td>
+                                    <td><strong>Total Questions: </strong>280</td>
+                                    <td><strong>Total Time: </strong>4 hrs 20 mins</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br><br>For a comprehensive understanding of the content within each subject, please refer to pages 5-6, accessible through the following link:<a href="https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/education/dat_examinee_guide.pdf?rev=bd7f12191ff246d48889adcd0f5b8d75&hash=3DA38971B005E45458BFF508E23115C8" target="_blank" rel="noopener noreferrer">[Link]</a> 
+                    <br><br> 
+                    <h4>Scoring System:</h4>
+                    <br> 
+                    The DAT is scored on a scale of 1 to 30, reflecting your performance across various domains. Eight scores are generated, including six section-specific scores and two overarching scores: Total Science and Academic Average. Total Science assesses your aptitude in the Survey of Natural Sciences section, which includes biology, general chemistry, and organic chemistry. It is important to note that biology carries slightly more weight than the two chemistry subjects. On the other hand, Academic Average represents your overall performance in the three sciences, reading comprehension, and quantitative reasoning.
+                     <br><br> 
+                     <h4>Figure 2: Dental School DAT averages</h4> <br>
+                     Figure 2 provides a comprehensive overview of the academic averages, perceptual ability (PAT) scores, and Total Science averages for dental schools across the United States. While the average score among all schools hovers around 20, it is important to aim higher and strive for a score of 19 or above to remain competitive. However, it is worth mentioning that achieving a score between 17 and 19 does not necessarily disqualify you from dental school, as long as you possess a well-rounded application. In our Tips and Closing Thoughts subsection, we will delve further into the implications of DAT scores.
+                        <br> <br>
+
+                       <iframe  style="width: -webkit-fill-available;height: 700px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZbRyZHYFIW5imZ8llDjxgtFgH3_SCOUGnvOMZQnLlPBoRegN3Ioe1hrhEI-sup7YKr3J9eaGMpUEt/pubhtml?widget=true&amp;headers=false"></iframe><br><br><h4>Exam Costs:</h4><br>To undertake the DAT, a registration fee of $495 is required. Once paid, you will have a window of approximately six months to schedule and complete the exam. It is important to note that this fee is nonrefundable. Should you need to reschedule, specific fees apply based on the proximity of your original exam date. For rescheduling more than 30 days in advance, the fee is $25. If the reschedule occurs within 5-29 days before the exam, the fee increases to $60. Finally, for reschedules within 1-4 days of the exam, the fee amounts to $150.
+ <br><br> <h4>Fee Waivers:</h4><br>The American Dental Association (ADA) provides fee waivers for the DAT, covering 50% of the examination cost. However, certain criteria must be met to be eligible. Applicants must be first-time examinees, demonstrate financial hardship, and receive financial aid from their educational institution. It is important to monitor the ADA website regularly to stay informed about fee waiver availability and deadlines. For further details and the fee waiver application, please refer to the following link: [Link]
+: <a href="https://www.ada.org/404">[Link]</a><br><br><h4>Retaking the DAT:</h4><br>According to ADA regulations, students can only retake the DAT after a minimum of 90 days has elapsed since their last attempt. Moreover, individuals who have attempted the DAT three or more times are required to seek permission for retesting.
+ <br>
+<br>With these preliminary insights into the DAT, we have established a foundation for your journey towards dental school. In the subsequent sections, we will delve deeper into scheduling your exam, discovering valuable resources, creating an effective study schedule, and providing essential tips and closing thoughts to optimize your DAT preparation. 
+ <br><br>
+ <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                         </strong></p></p><br><br>
+                </div>
+            </div>
+        </div>`
+
+
+        }
+        const choose1 = document.getElementById('beforethedat_main');
+        function choose_1() {
+            const h = choose1.innerHTML = `<div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+            <div class="row m-2">
+                <div class="col-lg-12 class-sec p-5">
+                    <h3 id="hdpage" style="color: #5680E9;"> Taking the DAT: Scheduling Your Exam </h3> <br>
+                    <h3 id="hdpage"></h3>
+                    <p text-align=left;><strong> Goal: </strong> Our goal for this section is to discuss the best time to start preparing for and take the Dental Admissions Test. We will also provide you with all the links and steps needed to schedule the DAT properly. <br><br><h4>Timeline Introduction</h4><br>Embarking on the path to dental school entails a year-long process, beginning from the moment you commence your DAT preparations until the day you receive an acceptance letter. To align your dental school admission with your undergraduate graduation, it is ideal to apply during the summer between your junior and senior years. This timeline allows you to undergo interviews during your senior year and commence dental school in the subsequent fall. However, if you plan to take a gap year, applying in the summer following your senior year would be more suitable.
+            
+ <br><br>Now that we have a general understanding of the typical timeline, let us delve into the optimal timing for taking the DAT.
+ <br><br>It is crucial to note that timelines may vary for each individual, and the following discussion outlines an ideal scenario. Adjusting the timeline by a month or two is entirely acceptable and adaptable to personal circumstances.
+ <br><br>To maximize your chances of success, it is advisable to complete the DAT before your intended application submission date. For instance, for the 2023 application cycle, the submission process commences on June 1st. Thus, the best-case scenario would involve completing your DAT before June, allowing you to submit your application as early as possible.
+ <br><br>While completing the DAT before June is not mandatory, it is worth noting that submitting your application early significantly enhances your chances of acceptance, as highlighted in the application section of our guide.
+ <br><br>Assuming you aim to submit your application on the day it opens (June 1st), it is advisable to schedule your exam date at least two weeks prior to that. This time buffer accounts for the processing duration required to obtain your official scores.
+
+ <br><br>In conclusion, it is advantageous to complete your DAT as early as possible, preferably before June 1st, allowing you to submit your application promptly and providing ample time for a potential retake, if necessary.
+ <br><br>Determining when to begin your DAT preparations depends on various factors unique to each individual. While some individuals may choose to study for two months, allowing for a retake if needed, others opt for a more comprehensive study period of 4-5 months. We recommend allocating 3-4 months for DAT preparation. This timeframe ensures that you perform at your best on your initial attempt, reducing the likelihood of a retake. Additionally, it allows for potential retakes and updates to your DAT scores during the application process.
+ <br><br>Ideally, studying for the DAT from January to April presents a favorable scenario. This schedule enables you to complete the DAT well before the submission date, provides flexibility for rescheduling if required, and allows for an early retake of the DAT within the application process, if necessary.
+
+
+ <br><br> <h4>So, when should you start scheduling your DAT?</h4> <br>
+ We highly recommend scheduling your exam as early as possible, with at least a one-month advance timeframe, to secure a convenient exam day and location that suits your needs.
+
+   
+   <br><br> <h4>Instructions on Scheduling your DAT:</h4><br>To register for the DAT, you must first create a DENTPIN, which will serve as your unique identifier for scheduling the exam. Please follow the link below and provide the necessary information. Expect to receive your DENTPIN via email within 1-3 business days.
+
+   <a href="https://dts.ada.org/CustomerServices_ADA/NewUser.aspx?transaction=DAT" target="_blank" rel="noopener noreferrer">[Link]</a>
+
+ <br><br>Once you receive your DENTPIN, use the subsequent link to log in and complete the application process. Ensure that you select ALL schools to receive your scores on the second page, as there is no price difference based on the number of schools chosen.
+ 
+ <a href="https://dts.ada.org/login/login__ADA.aspx" target="_blank" rel="noopener noreferrer">[Link]</a>
+ 
+ <br><br> 
+
+ After submitting your application, you will receive a DAT Eligibility email in the following days. This email contains essential information for scheduling your exam. Click on the Prometric link provided in the email and follow the instructions accordingly. Note that your eligibility ID, found within the email, will be required during the scheduling process. <br><br> 
+
+ By adhering to these instructions and scheduling your DAT exam strategically, you set a solid foundation for a smooth and organized preparation journey. In the upcoming sections, we will explore the diverse resources available, effective study schedules, and essential tips to optimize your DAT performance.
+
+ <br><br> <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                         </strong></p>
+
+
+                    </p>
+                    </p><br><br>
+                </div>
+            </div>
+        </div>`
+
+
+        }
+        const Academics1 = document.getElementById('beforethedat_main');
+        function Academics_1() {
+            const h = Academics1.innerHTML = `  <div style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main">
+        <div class="row m-2">
+            <div class="col-lg-12 class-sec p-5">
+                <h3 id="hdpage" style="color: #5680E9;">Taking the DAT: Resources</h3><br>
+                <h3 id="hdpage"></h3><br>
+                <p text-align=left;><strong> Goal: </strong> Our goal for this section is to provide you with programs we highly recommend you use. We’ll introduce each one and discuss their methods and prices.<br> <br>When it comes to preparing for the DAT, the range of available resources can be overwhelming. To simplify your decision-making process, we have compiled a list of highly recommended programs and resources to enhance your preparation efforts. While numerous options exist, we will focus on a select few that have garnered widespread popularity among pre-dental students. <br><br>
+
+                    <strong>  DAT Bootcamp:  </strong>DAT Bootcamp stands out as one of the most sought-after programs in the DAT preparation landscape. This comprehensive online program offers a plethora of resources, including practice tests, question banks, notes, videos, and more. With materials tailored to each of the six sections, DAT Bootcamp closely emulates the actual DAT exam experience. Membership options include a 3-month plan priced at $497 and a 180-day plan available for $897. Exploring DAT Bootcamp's free trial option allows you to peruse their content, providing an opportunity to determine its compatibility with your learning style. <br> <br>
+
+                    <strong>  DAT Booster: </strong>Similar to DAT Bootcamp, DAT Booster is another highly recommended online program. With comprehensive study materials, practice tests, and question banks, DAT Booster covers all sections of the DAT exam. Priced at $299 for a 3-month membership, it offers an affordable option without compromising on quality. While DAT Booster is slightly more challenging than DAT Bootcamp, both programs boast exceptional content and proven results. Signing up for the free trial of both programs and exploring their offerings can help you decide which program aligns best with your preferences and goals.
+ <br> <br>
+
+                    <strong>  DAT Destroyer  : </strong>Distinct from the online programs mentioned above, DAT Destroyer is a physical book that focuses on Biology, Chemistry, Organic Chemistry, and Quantitative Reasoning. With practice questions designed to strengthen your understanding in these core subjects, DAT Destroyer offers a valuable resource for targeted practice. Notably, it does not cover the Reading Comprehension or Perceptual Ability sections. The DAT Destroyer book is priced around $170, and there is an additional book available for extra Quantitative Reasoning practice, costing approximately $90. To supplement your biology preparation, we highly recommend utilizing the free biology notes PDF provided on the DAT Destroyer's Facebook page. <br> <br>
+
+                   <h4>Recommendations</h4><br>
+Considering our thorough evaluation of available resources, we highly recommend either DAT Booster or DAT Bootcamp for your DAT preparations. Both programs offer comprehensive content and an array of resources necessary for success on the exam. By enrolling in either program, you will gain access to practice tests, question banks, notes, videos, and more, ensuring a comprehensive and well-rounded preparation experience.
+                   
+                   <br> <br>
+                   Additionally, if you feel the need for extra practice problems to enhance your proficiency in the biology section, we suggest incorporating the DAT Destroyer book into your study routine. This physical resource provides targeted practice questions specifically tailored to biology, chemistry, organic chemistry, and quantitative reasoning. Utilizing DAT Destroyer alongside your chosen online program will offer a well-rounded approach, allowing you to strengthen your skills and improve your performance.
+                   <br> <br>
+
+                   For those seeking additional practice in the Quantitative Reasoning section, we recommend considering the purchase of the DAT quantitative reasoning book, providing extra practice opportunities to strengthen your skills.
+                   <br> <br>
+                   By incorporating these recommended programs and resources into your study plan, you will equip yourself with the necessary tools to confidently tackle the DAT exam. Remember, regardless of the program you choose, consistent practice, thorough understanding of the material, and effective time management are key to achieving success on the DAT.
+                   <br> <br>
+
+                   
+
+                   <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                     </strong></p>
+                </p><br><br>
+            </div>
+        </div>
+    </div>`
+
+
+        }
+        const volunteering1 = document.getElementById('beforethedat_main');
+        function Volunteering_1() {
+            const h = volunteering1.innerHTML = `  <div  style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"> <div class="col-lg-12 class-sec p-5"> <h3 id="hdpage" style="color: #5680E9;">Taking the DAT: Making a Schedule</h3><p text-align=left;> <strong> Goal: </strong> This section aims to provide you with our ideal schedule to prepare for the DAT. <br><br>Preparing for the DAT while juggling coursework and other commitments can be challenging. However, our carefully designed schedule aims to seamlessly integrate DAT preparation into your busy life without compromising your mental well-being. We have crafted an efficient, stress-free, and successful study plan that will accommodate your schedule and maximize your chances of success.
+ <br><br>Our recommended timeline spans four months, although our method can be adapted to fit any preparation duration. Throughout this timeline, we will utilize DAT Booster or DAT Bootcamp, two highly regarded programs.
+
+ <br><br>Divided into two sections, our schedule ensures thorough coverage of the material over the first three months, with the fourth month dedicated to review and consolidation of knowledge before the exam.
+
+ <br><br>The initial 1.5 months will focus on Biology and Chemistry, while the subsequent 1.5 months will delve into Organic Chemistry and Quantitative Reasoning. Throughout the entire three-month period, consistent practice of Reading Comprehension and Perceptual Ability is essential.
+
+ <br><br> <h4>Biology/Chemistry (Month 0-1.5):</h4> <br> During the first 45 days, your goal is to work through all the Biology and Chemistry material provided in DAT Bootcamp/Booster. To achieve this, we recommend dividing the material into 45-day segments. This approach allows you to tackle a fair number of questions and topics while simultaneously managing your undergraduate courses. <br><br>
+   For instance, in Bootcamp Biology, which comprises 24 topics and corresponding question banks, question bites, and videos, aim to complete around half a section of question banks, question bites, and videos per day. In Chemistry, which includes 13 question banks and video topics, strive to complete approximately one-third of a section per day.
+
+ <br><br>In addition to the daily completion of designated topics, allocate time to review supplementary worksheets and notes. For Biology, thorough examination of the Bootcamp Biology Notes and/or DAT Destroyer Biology Notes is recommended. For Chemistry, familiarize yourself with the Chemistry Equation Sheet.
+  <br><br>
+  Towards the end of the 45-day period, we suggest completing practice tests #1 through #5 for the Biology and Chemistry sections (practice tests #6-#10 will be done later in the schedule).
+
+            <br><br>It is important to note that the pace of covering content may vary depending on the complexity of the topics involved. Some days, you may find yourself able to cover a larger amount of content, while on other days, you may progress at a slower pace. Flexibility is key in adapting the schedule to accommodate variations in content difficulty and personal learning style.<br><br>
+
+          
+
+            <h4>Organic Chemistry/Quantitative Reasoning (Month 1.5-3):
+</h4> <br>Days 46 to 90 will follow a similar structure, with a focus on completing all the question banks and accompanying videos for Organic Chemistry and Quantitative Reasoning. Divide the material into 45-day segments and diligently work towards meeting your daily minimum targets.
+ <br><br>
+ Upon completing the daily set of Organic Chemistry materials, concentrate on familiarizing yourself with the Organic Chemistry Reaction Sheet. For Quantitative Reasoning, once you have completed the material, begin memorizing the Quantitative Reasoning Formulas Cheat Sheet.
+
+   <br><br> Similar to the previous section, practice tests #1 through #5 for Organic Chemistry and Quantitative Reasoning should be completed towards the end of the 90-day period.
+
+   <br><br>
+
+<h4>Reading Comprehension and Perceptual Ability (Throughout the 3 Months):
+</h4> <br>Mastering Reading Comprehension and Perceptual Ability sections requires consistent exposure and repetition. Therefore, we highly recommend making these sections a daily habit in addition to the two main focus areas. Allocate approximately 15 minutes per section each day throughout the three-month period. If you find it challenging to balance these sections alongside your science subjects, consider practicing them on designated rest days.
+
+ <br><br>
+ For Reading Comprehension, complete question banks and watch videos as desired. Also, ensure you complete practice tests #1-#5 within the three-month timeframe, but prioritize your time accordingly.
+
+
+   <br><br> Regarding Perceptual Ability, begin by tackling each section individually until you are familiar with all five. Once you have gained proficiency in each section, gradually increase your practice by working on multiple sections per day. Remember that mastery in all five sections is not mandatory; many students focus on excelling in a few sections while accepting a lower performance in areas that pose more significant challenges.
+   <br><br>
+   <h4>Days 90-120: Review and Strengthening:
+</h4> <br>The final month of the schedule is dedicated to reviewing all four sections' question banks and practice tests #1-#5. Focus on the topics that require additional attention and utilize videos, notes, and supplementary resources to fill any knowledge gaps.
+
+
+ <br><br>
+ The goal during this month is to refresh and reinforce your understanding of the material you have already mastered while identifying and addressing any weaknesses. Utilize practice tests #6-#10 as full-length exams, scheduling them on days that simulate the actual exam experience, such as a Saturday or a day free from other commitments.
+
+
+
+   <br><br> 
+   Throughout the final two weeks, take practice tests #7-#10, making note of your pace and time management during the exams. Review and study the questions afterward, utilizing the feedback to focus on topics that require further attention, be it in the Perceptual Ability section or any of the science subjects.
+
+   <br><br>
+
+<h4>Rest Days:
+</h4> <br>By following this comprehensive schedule, which carefully balances the demands of your coursework and DAT preparation, you will set yourself up for success on exam day. Take care of your mental well-being, maintain focus, and approach your studies with dedication and perseverance.
+
+
+
+ <br><br>
+ The goal during this month is to refresh and reinforce your understanding of the material you have already mastered while identifying and addressing any weaknesses. Utilize practice tests #6-#10 as full-length exams, scheduling them on days that simulate the actual exam experience, such as a Saturday or a day free from other commitments.
+ <br><br>
+           
+ <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                         </strong></p>
+
+
+
+        </p><br><br></div></div></div>`
+
+
+        }
+        const Extracurricular1 = document.getElementById('beforethedat_main');
+        function Extracurricular_1() {
+            const h = Extracurricular1.innerHTML = ` <div  style="max-width: 1920px; margin-top: 20px;" id="beforethedat_main"> <div class="row m-2"> <div class="col-lg-12 class-sec p-5"> <h3 id="hdpage" style="color: #5680E9;">Taking the DAT: Scores & Rescheduling</h3><p text-align=left;><strong> Goal: </strong>In this section, we'll discuss some final points regarding the scoring of your DAT, whether a retake is warranted, and rescheduling your exam. <br><br> <h4>Setting Your DAT Score Goals:</h4> <br>
+                Determining the target score for your DAT is a highly individualized decision that hinges on various factors, including your overall application, GPA, and the specific dental schools you aspire to attend. It is essential not to blindly adhere to general recommendations without considering your unique circumstances.
+                
+                <br><br>
+                If you perceive your application or GPA as relatively weak, aiming for a competitive DAT score becomes paramount. As highlighted earlier, the average DAT scores across all 67 dental schools hover around 20 for both the Academic Average and Total Science sections. Therefore, achieving a score of 20 or higher is generally considered competitive and should not necessarily warrant a retake, irrespective of the strength of your application.
+
+                
+
+                 <br><br>
+                 For scores ranging from 18 to 19, the decision of retaking the DAT should be contingent on the previously mentioned factors. If you are not particularly focused on attending a specific school, scoring in this range can still be considered competitive, and additional applications to a broader range of schools can compensate for any potential shortcomings.
+                  <br><br>
+                  A score of 17 requires careful consideration. Depending on the strength of your overall application, it may be worth applying with this score. While a retake could be warranted, students have been interviewed and accepted with a score of 17. Therefore, if you possess a robust application and GPA, it may be worth exploring the application route with your current score.
+
+                   <br><br>
+                   If you obtained a score of 16 on a non-science section, we recommend applying with your current scores, especially if your application is strong. However, if you scored a 16 or lower on a science section or any other section, we advise applying with your existing scores, scheduling a retake, and updating your scores later during the application cycle.
+
+                   <br><br>
+                   It is important to note that these suggestions are provided as general guidelines, and we strongly advise reaching out to us with more detailed information about your application before making any decisions solely based on the recommendations above. This will allow for a more personalized and informed approach to determining your best course of action.
+
+
+                    <br><br> <h4>Rescheduling your DAT:</h4><br>
+                    Feeling unprepared or overwhelmed as your exam day approaches is a common experience. In such cases, rescheduling the exam may be a consideration. However, the decision to reschedule should be based on the underlying reasons behind your hesitation.
+                    
+                    <br><br>
+                    If you find that your performance on practice exams is not aligning with your desired level of preparedness, we recommend rescheduling your exam by a few weeks. This additional time can provide valuable opportunities to refine your skills and bolster your confidence.
+                    <br><br>
+                    On the other hand, if your desire to reschedule stems from a lack of confidence or self-doubt, it is important to recognize that such feelings are common during the preparation process. It is often the case that you possess more knowledge and skills than you realize. In these situations, we encourage you to push through those doubts and proceed with taking the exam, trusting in your preparation and capabilities.
+                    <br><br>
+                    Ultimately, the decision to reschedule should be based on a thoughtful evaluation of your readiness and confidence. Trust your instincts, assess your progress objectively, and consider seeking guidance from our team to make an informed decision that aligns with your goals and circumstances.
+
+                 
+                    
+
+                    <br><br>
+                    <p style="text-align: center;"><strong>If you have any questions or concerns, feel free to reach out to us through live chat,
+                   emailing us at  <a href="mailto:support@guideology.co">Support@DentXcel.us</a>, or messaging us at (305) 391-3202.
+                    We're here to help!
+                         </strong></p>     </p><br><br></div></div></div> `
+
+
+        }
+    </script>
+         <script src="../dist/js/keys.js"></script>
+     <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

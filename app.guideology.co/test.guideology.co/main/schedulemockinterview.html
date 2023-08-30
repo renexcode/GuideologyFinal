@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.css">
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/calender.css">
+      <!-- Firebase -->
+      <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+      <script>
+          
+   var config = {
+      apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+      authDomain: "guideology-cc2b5.firebaseapp.com",
+      databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+      projectId: "guideology-cc2b5",
+      storageBucket: "guideology-cc2b5.appspot.com",
+      messagingSenderId: "130250364586",
+      appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+      measurementId: "G-RSC5CNSPEG"
+    };
+    
+    firebase.initializeApp(config);
+      </script>
+<style>
+      #active{
+        background: #5680E9;
+        border-radius: 10px;
+    }
+    #active>a>span{
+       color: #fff;
+    }
+    .notes{
+            width: 420px !important;
+        }
+        @media screen and (min-width : 320px) and (max-width : 600px) {
+    
+        .notes{
+            width: 300px !important;
+        }
+        .datepicker {
+  width: 110px;
+}
+   
+ }
+        @media (min-width : 992px) {
+    
+      #customizedExperienceBoxes{
+        margin-top: -146px !important;
+      }
+      textarea{
+          margin-left: -15px !important;
+      }
+   
+ }
+        @media screen and (min-width : 620px) and (max-width : 900px) {
+    
+        .notes{
+            width: 600px !important;
+        }
+   
+ }
+ /* body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #C5CAE9 !important;
+    background-repeat: no-repeat;
+    padding: 0px !important;
+} */
+
+
+/*  */
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+.datepicker {
+  background-color: #5680e9 !important;
+  color: #fff !important;
+  border: none !important;
+  padding: 10px !important;
+  text-align: center !important;
+  outline: none !important;
+  /* margin-top: 20px !important; */
+  border-radius: 14px !important;
+}
+.ui-widget.ui-widget-content {
+    border: 1px solid #d3d3d3;
+    background-color: #5680e9;
+   
+}
+.ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: 0.2em 0;
+    background: white;
+}
+th{
+    color: white;
+    font-size: 12px;
+}
+.ui-widget-header {
+    color: #5680e9;
+}
+</style>
+  <!-- Facebook Meta Pixel Code  Start-->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction.html" aria-expanded="false"><img src="../assets/images/grey_icons/Introduction.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Introduction</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat.html" aria-expanded="false"> <img src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2" style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat.html" aria-expanded="false"><img src="../assets/images/grey_icons/takingdat.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess.html" aria-expanded="false"><img src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">The Application Process</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing.html" aria-expanded="false"><img src="../assets/images/grey_icons/interviewing.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Interviewing</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+                      
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline.html" aria-expanded="false"><img src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics.html" aria-expanded="false"><img src="../assets/images/grey_icons/academics.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience.html" aria-expanded="false"><img src="../assets/images/grey_icons/experience.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Experiences</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./evaluations.html" aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt=""> <span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Evaluations</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./dat.html" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">DAT</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./writing.html" aria-expanded="false"><img src="../assets/images/grey_icons/writing_grey.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools.html" aria-expanded="false"><img src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Schools</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus.html" aria-expanded="false"><img src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Application Status</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./interviewquestion.html" aria-expanded="false"><img src="../assets/images/grey_icons/interview_grey.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2">Interview Questions</span></a></li>
+                                            <li class="sidebar-item" id="dashboard-main-hading"><span
+                                                class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./statementediting.html" aria-expanded="false">
+                                            <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personal Statement Editing</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./schedulemockinterview" aria-expanded="false"><img src="../assets/images/white_icons/scheduledmockinterviews.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Schedule Mock Interview</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./personalizeschoolselection.html" aria-expanded="false"><img src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personalized School Selection</span></a></li>
+                                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                    href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                                        class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>  
+        
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus.html" aria-expanded="false"><img src="../assets/images/grey_icons/contactus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter.html" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums.html" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Forums</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img src="../assets/images/grey_icons/me.svg" alt=""  class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount.html" aria-expanded="false"><img src="../assets/images/grey_icons/myaccount.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration.html" aria-expanded="false"><img src="../assets/images/grey_icons/collaboration.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram.html" aria-expanded="false"><img src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend.html" aria-expanded="false"><img src="../assets/images/grey_icons/referafriend.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Refer a Friend</span></a></li>
+                       
+                                    <div id="bottom_becomeamember"></div>
+                    </ul>
+  
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="margin-bottom: 50px;">
+            <div id="become"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      
+                            <img src="../web2/images/guidology-color.png" alt="" style="width: 250px;" class="mt-5 mb-0">
+                            <h1 class="referafriend_heading mt-4 ml-1" style="font-size: 30px; color: #585858;"> Schedule Mock Interview </h1>
+                            <p class="mt-3" style="font-weight: 700; font-size: 24px;" >1 on 1 Interview </p>
+                            <i class="bi bi-clock-fill" style="font-size: 20px; margin-right: 15px; color: #5680E9;"></i> <strong> 1 hr </strong> <br />
+                            <i class="bi bi-credit-card-fill" style="font-size: 20px; margin-right: 15px; color: #5680E9;"></i> <strong>$79 USD </strong><br />
+                            <p class="mt-3">Your interview is the last determining step in the application process. We highly recommend being fully prepared before tackling this last intimidating step.</p>
+                            <!-- Datepicker -->
+                            <form autocomplete="off">
+                                <!-- <p class="mt-3" style="font-weight: 600;" >Select Date & Time:</p>
+                                <div style="display: flex; flex-direction:row;">
+                                    <input type="text" id="dp1" class="datepicker" placeholder="Pick Date" name="date" readonly>
+                                <select style="border:1px solid #5680e9; border-radius: 10px; margin-top:5px !important;margin-left:5px; height:35px;" name="Term" id="Term" class=" form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                                    <option value=""> Time</option>
+                                    <option value="1:00pmEST–2:00pmEST">1:00pm EST – 2:00pm EST </option>
+                                    <option value="2:00pmEST–3:00pmEST">2:00pm EST – 3:00pm EST </option>
+                                    <option value="3:00pmEST–4:00pmEST ">3:00pm EST – 4:00pm EST </option>
+                                    <option value="4:00pmEST–5:00pmEST">4:00pm EST – 5:00pm EST </option>
+                                    <option value="5:00pmEST–6:00pmEST">5:00pm EST – 6:00pm EST </option>
+                                    <option value="6:00pmEST–7:00pmEST">6:00pm EST – 7:00pm EST </option>
+                                    <option value="6:00pmEST–7:00pmEST">7:00pm EST – 8:00pm EST </option>
+                                    <option value="6:00pmEST–7:00pmEST">8:00pm EST – 9:00pm EST </option>
+                                    <option value="6:00pmEST–7:00pmEST">9:00pm EST – 10:00pm EST </option>
+                            </select> 
+                                </div> -->
+                              
+                               
+                                <!-- <div class="card-header bg-dark">
+                                  <div class="mx-0 mb-0 row justify-content-sm-center justify-content-start px-1">
+                                    <input type="text" id="dp1" class="datepicker" placeholder="Pick Date" name="date" readonly><span class="fa fa-calendar"></span>
+                                  </div>
+                                </div> -->
+                              </form>
+                            <!-- Datepicker -->
+                            <!-- <p class="mt-3" style="font-weight: 600;" >Choose Your Interview Type:</p>
+                            <div>
+                                <input class="mt-1 ml-2" type="radio" id="Group Interview" name="interview_type" value="Group Interview" disabled>
+                                  <label for="Group Interview">Group Interview</label><br>
+                                  <input type="checkbox" id="1On1Interview" name="interview_type" value="1 On 1 Interview" onclick="customizedExperienceFun()">
+                                  <label for="1 On 1 Interview">1 On 1 Interview</label><br>
+                            </div> -->
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="light">
+                                    <div class="coachCard">
+                                        <div class="d-flex flex-direction-row justify-content-center mt-4">
+                                            <img src="../assets/images/mock_interview.png" alt="" style="width: 150px;  ">
+                                        </div>
+                                       
+                                        <p style="text-align: center; margin-top: 20px; color: darkgray; font-size: 14px;"> <em style="font-weight: 600;"> Interview Coach </em><br>
+                
+                                           <strong style="color: black;"> Dr. Sheneman, PharmD </strong> <br>
+                                           <em style="font-weight: 600;">  PGY1 Resident </em>
+                                            </p>
+                                            <p style="color: #5680E9; font-size: 28px !important; font-weight: 700; text-align: center;"> Price $79 </p>
+                                           <p style="text-align: center; font-size:14px;"> <strong style="color: black;"> Includes post-interview written feedback </strong> </p>
+                                            <div style="display: flex; justify-content:center; align-items:center;">
+                                                <a href="https://calendly.com/guideology/mockinterview">
+                                                <button type="button" class="btn long-btn-su" style="background-color: #5680E9; color: #fff;  border-radius: 16px; box-shadow: 0px 5px 20px #5680E929; width: 200px; height: 50px; margin-bottom: 25px;"> Schedule Interview </button> </a>
+                                            </div>
+                                           <!-- https://checkout.stripe.com/pay/cs_live_a1uQuWlEdGkBrcYFRWB0JOBVOikDqTW66AEA7G91Yk8zvO9JVz2ofOp2OV#fidkdWxOYHwnPyd1blppbHNgWjA0Tm9%2FVX9NRz0yQzMyaDBpdm5TfGBgPU5DfTFLRElPc0pJdWF%2FR3VQSG00b09TXzRTYGNgVmtoUjNuXGAxNGhTNlFoZ0xGbUpvS2d8XzZ2TzVMRDdmVV1ANTVhZER0aXNVTicpJ3VpbGtuQH11anZgYUxhJz8nZ0xcPX10MjxLZ21gNDFuY181J3gl -->
+                                           
+                                    </div>
+                                </div>
+                                    </div>
+                                    </div>
+                            
+                            <!-- <div style="display: none;" id="xyz">
+                             
+                           
+                     
+                       </div> -->
+                       <div style="display: none;" id="customizedExperience">
+                        <div class="row">
+                            <!-- style="display: flex; flex-direction:row" -->
+                            <div class="col-lg-6 col-md-12" id="customizedExperienceBoxes">
+                                <h1 class="referafriend_heading mt-4 ml-1" style="font-size: 18px; line-height: 1.5; color: #5680e9;"> The following responses will help customize your experience.</h1>
+                                <p class="mt-3" style="font-weight: 600;" >List the name of schools you are Interviewing at: </p>
+                                <div class="col-lg-5 col-md-4 ">
+                                    <textarea style="width: auto;" class="form-control notes" type="text" rows="4" required> </textarea>
+                               </div>
+                               <p class="mt-3" style="font-weight: 600;" >List any leadership roles: </p>
+                               <div class="col-lg-5 col-md-4 ">
+                                   <textarea style="width: auto;" class="form-control notes" type="text" rows="4" required> </textarea>
+                              </div>
+                              <p class="mt-3" style="font-weight: 600;" >List any Volunteering/Shadowing experiences: </p>
+                              <div class="col-lg-5 col-md-4 ">
+                                  <textarea style="width: auto;" class="form-control notes" type="text" rows="4" required> </textarea>
+                             </div>
+                         
+                               </div>
+                               <div class="col-lg-6 col-md-12">
+                               <p class="mt-3" style="font-weight: 600;" >List any D/F’s on your transcript:  </p>
+                               <div class="col-lg-5 col-md-4 ">
+                                   <textarea style="width: auto;" class="form-control notes" type="text" rows="4" required> </textarea>
+                              </div>
+                              <button class="mt-4" type="button" style="background-color: #5680E9; border: none; outline: none; border-radius: 10px; width: 250px; height: 50px; color: #fff;"> Submit </button>
+                               </div>
+                        </div>
+                          
+                         
+                       </div>
+                     
+
+               <!-- <div class="row">
+                  
+                  
+                    <div class="col-lg-6 col-md-12">
+                        <div class="light">
+                            <div class="coachCard">
+                                <div class="d-flex flex-direction-row justify-content-center mt-4">
+                                    <img src="../assets/images/mock_interview.png" alt="" style="width: 150px;  ">
+                                </div>
+                               
+                                <p style="text-align: center; margin-top: 20px; color: darkgray; font-size: 14px;"> <em style="font-weight: 600;"> Interview Coach </em><br>
+        
+                                   <strong style="color: black;"> Dr. Sheneman, PharmD </strong> <br>
+                                   <em style="font-weight: 600;">  PGY1 Resident </em>
+                                    </p>
+                                    <p style="color: #5680E9; font-size: 28px !important; font-weight: 700; text-align: center;"> Price $79 </p>
+                                    <div style="display: flex; justify-content:center; align-items:center;">
+                                        <button type="button" class="btn long-btn-su" style="background-color: #5680E9; color: #fff;  border-radius: 16px; box-shadow: 0px 5px 20px #5680E929; width: 200px; height: 50px; margin-bottom: 25px;"> Proceed To Checkout </button>
+                                    </div>
+                                   
+                                   
+                            </div>
+                        </div>
+                            </div>
+                  
+                   <div class="col-lg-6 col-md-12">
+                    <div  class="light">
+                     <div class="calendar">
+                         <div class="calendar-header">
+                             <span class="month-picker" id="month-picker">February</span>
+                             <div class="year-picker">
+                                 <span class="year-change" id="prev-year">
+                                     <pre><</pre>
+                                 </span>
+                                 <span id="year">2021</span>
+                                 <span class="year-change" id="next-year">
+                                     <pre>></pre>
+                                 </span>
+                             </div>
+                         </div>
+                         <div class="calendar-body">
+                             <div class="calendar-week-day">
+                                 <div>Sun</div>
+                                 <div>Mon</div>
+                                 <div>Tue</div>
+                                 <div>Wed</div>
+                                 <div>Thu</div>
+                                 <div>Fri</div>
+                                 <div>Sat</div>
+                             </div>
+                             <div class="calendar-days"></div>
+                         </div>
+                         <div class="calendar-footer">
+                         </div>
+                         <div class="month-list"></div>
+                     </div>
+                    </div>
+                 
+                     </div>
+               
+               </div> -->
+        </div>
+        </div>
+
+  
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../dist/js/calender.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/header.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script>
+
+        const customizedExperienceFun = () => {
+         var x =   document.getElementById('customizedExperience');
+         if (x.style.display === "none") {
+             
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+    // document.getElementById('1On1Interview') = disabled
+  }
+        }
+        </script>
+
+        <script>
+            $('.datepicker').datepicker({
+  disable: [
+    new Date(2015,3,13),
+    new Date(2015,3,29)
+  ]
+})
+        </script>
+        <script>
+            $(document).ready(function(){
+        
+        $('.datepicker').datepicker({
+            format: 'dd-mm-yyyy',
+            autoclose: true,
+            startDate: '0d'
+        });
+        
+        $('.cell').click(function(){
+            $('.cell').removeClass('select');
+            $(this).addClass('select');
+        });
+        Sunday = 0
+        Monday = 1
+        Tuesday = 2
+        Wednesday = 3
+        Thursday = 4
+        Friday = 5
+        Saturday = 6 
+        
+        var arr = [0,2,3,4,5,6] //these are the array of days numbers return from controller
+        
+        $('#dp1').datepicker('option', 'beforeShowDay', function(date){
+                    var day = date.getDay();
+                    return [(arr.indexOf(day) != -1)];
+            });
+        });
+        </script>
+         <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

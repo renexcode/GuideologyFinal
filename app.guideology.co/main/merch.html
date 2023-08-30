@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Bootstrap -->
+    <link href="../forum/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom -->
+    <link
+        href="https:..//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="../forum/css/custom.css" rel="stylesheet">
+
+
+
+    <!-- fonts -->
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../forum/font-awesome-4.0.3/css/font-awesome.min.css">
+
+    <!-- CSS STYLE-->
+    <link rel="stylesheet" type="text/css" href="../forum/css/style.css" media="screen" />
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" href="../forum/rs-plugin/css/settings.css" media="screen">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Favicon  -->
+    <link rel="stylesheet" href="../forum/images/icon.png">
+
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+        var config = {
+            apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+            authDomain: "guideology-cc2b5.firebaseapp.com",
+            databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+            projectId: "guideology-cc2b5",
+            storageBucket: "guideology-cc2b5.appspot.com",
+            messagingSenderId: "130250364586",
+            appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+            measurementId: "G-RSC5CNSPEG"
+        };
+
+        firebase.initializeApp(config);
+    </script>
+    <style>
+        #main-wrapper[data-layout="horizontal"] .topbar .top-navbar .navbar-header[data-logobg="skin6"],
+        #main-wrapper[data-layout="vertical"] .topbar .top-navbar .navbar-header[data-logobg="skin6"] {
+            padding: 20px 0px !important;
+        }
+
+        #main-wrapper[data-layout="vertical"][data-sidebartype="full"] .topbar .top-navbar .navbar-header {
+            width: 253px;
+        }
+
+        .form-box-su {
+            background: #ffff !important;
+        }
+    .leftRightIcon{
+        color: black;
+        font-size: 50px;
+        margin-top: 119px;
+        margin-left: -25px;
+    }
+        @media (max-width: 767px) {
+
+            /* #search_bar{
+                margin-top: -60px;
+            } */
+            #new_topic {
+                margin-top: -15px;
+                margin-bottom: -30px;
+            }
+              .leftRightIcon{
+       display: none;
+    }
+            .containar {
+   background-image: url(../assets/images/product/mobileviewbg.jpg) !important;
+    background-color: #5680e9;
+}
+#hoodie_heading_mbl{
+    font-family: fred;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: block !important;
+      }
+        }
+
+        @media only screen and (max-width: 600px) {
+            #startbtn {
+
+                margin-left: 9px !important;
+                width: 280px !important;
+            }
+        }
+
+        /* @media only screen and (max-width: 600px) {
+            #forum_search{
+                width: 290px !important;
+                margin-left: -56px !important;
+            }
+            #search_icon{
+                margin-left: -10px;
+
+
+            }
+
+        } */
+
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-container {
+            /* position: absolute; */
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            max-width: 500px;
+            height: 500px;
+        }
+
+        .card-container .card {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+            height: 250px;
+            padding: 20px;
+            overflow: hidden;
+            background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%);
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+            transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+            z-index: 2;
+            transition: all 1s;
+        }
+
+        .card-container .card h1 {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 20px;
+        }
+
+        .card-container .card h1:nth-of-type(2) {
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+        }
+
+        .card-container .card h3 {
+            color: white;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-container .card h3:nth-of-type(2) {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .card-container .card .circle {
+            position: absolute;
+            margin: auto;
+            top: 10%;
+            bottom: 0;
+            right: -50%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: linear-gradient(135deg, #667eea 5%, #764ba2 90%);
+            z-index: -2;
+        }
+
+        .card-container .card .circle:nth-of-type(2) {
+            width: 100px;
+            height: 100px;
+            top: 90%;
+            right: -20%;
+            z-index: -1;
+            background-image: linear-gradient(135deg, #667eea 10%, #764ba2 90%);
+        }
+.cards_main{
+  display: flex;
+  flex-direction: row;
+}
+        @media only screen and (max-width: 780px) {
+            .card-container .card {
+                width: 270px;
+                height: 200px;
+                transition: none;
+            }
+
+            .card-container .card h1 {
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: -3px;
+            }
+
+            #name {
+                margin-bottom: 3px;
+                margin-top: 6px;
+            }
+
+            .card-container .card h1:nth-of-type(2) {
+                font-size: 16px;
+            }
+
+            .card-container .card h3 {
+                font-size: 14px;
+            }
+
+            .card-container .card h3:nth-of-type(2) {
+                font-size: 12px;
+            }
+
+            .card-container .card .circle {
+                right: -70%;
+            }
+            .cards_main{
+  flex-direction: column;
+  /* margin-top: 184px; */
+}
+.containar {
+    height: auto !important;
+    margin-top: 32px;
+}
+
+   
+        }
+ 
+        .row {
+  display: flex;
+  /* width: 100%; */
+  /* overflow-x: scroll; */
+  /* justify-content: flex-end; */
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+::-webkit-scrollbar {
+  display: none;}
+
+.card1 {
+  flex-basis: calc(50% - 10px); /* set the width of each card to half the row minus the space between them */
+  margin-right: 10px; /* add some space between the cards */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.card1 img {
+  max-width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h3 {
+  margin-top: 0;
+}
+
+.card-body p {
+  margin-bottom: 20px;
+}
+
+.card-body a {
+  display: inline-block;
+  padding: 10px 20px;
+  /* background-color: #333; */
+  /* color: #fff; */
+  text-decoration: none;
+  /* border-radius: 5px; */
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* #content2{
+  content: "\a";
+    white-space: pre;
+} */
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media screen and (min-width: 768px) {
+  .card1 {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card1 {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card1 {
+    flex-basis: calc(33.33% - 10px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card1 {
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 849px) {
+  .cards_main {
+    flex-direction: column;
+}
+.containar {
+    height: auto !important;
+   background-image: url(../assets/images/product/ipad-bg.jpg) !important;
+    background-color: #5680e9;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 100% !important;
+    }
+    .img1 {
+    width: 180px !important;
+    margin-top: -58px !important;
+    margin-left: 338px !important;
+}
+#hoodie_heading_mbl {
+    display: block !important;
+    font-family: fred;
+    text-align: center;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 5px;
+    display: block !important;
+   margin-left: 30px;
+}
+#thirdCard{
+margin-bottom: 20px;
+}
+
+}
+.buy-now-button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.buy-now-button:hover {
+  background-color: #006080;
+}
+.airpodtext{
+    font-size: 34px;
+    font-weight: bold;
+}
+.airpodprice{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0000FF;
+}
+.airpoddiscount{
+    font-size: 25px;
+    font-weight: 600;
+ color:  #FF8500;
+}
+.card1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySlides {
+  width: 500px;
+  height: 500px;
+}
+
+.thumbnail-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.thumbnail-images img {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.thumbnail-images {
+  display: flex;
+  /* flex-wrap: wrap; */
+  height: 500px;
+  overflow-y: scroll;
+
+}
+.thumbnail-images::-webkit-scrollbar {
+  display: none;
+}
+/* new  */
+/* body {
+        background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg");
+        background-size: cover;
+      } */
+      
+    
+      .containar {
+  background-image: url("../assets/images/product/Product_Back.png");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  align-items: flex-end;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  
+}
+
+/* .containar::-webkit-scrollbar {
+  display: none;
+} */
+
+
+
+
+.crdcolors{
+    background-color: #fff;
+}
+.crdcolor{
+    background-color: #000;
+}
+.card {
+    width: 430px;
+    height: 300px;
+    margin: 35px 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    /* text-align: center; */
+    align-self: self-end;
+    justify-content: flex-start;
+    align-items: center;
+}
+      #hoodie_heading{
+    font-family: fred;
+    text-align: left;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 5px;
+      }
+      #hoodie_heading_mbl{
+    display: none;
+      }
+      #hoodie_color{
+    font-family: fred;
+    text-align: left;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 400;
+      }
+      #hoodie_para{
+        font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+      }
+      #hoodie_price{
+    font-family: fred;
+    text-align: left;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    color: #0EC42D;
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-weight: 400;
+      }
+      .hoodie_btn{
+        font-size: 18px;
+        padding: 5px 15px;
+        font-weight: 600;
+        border-radius: 30px;
+        background: none;
+        border: 1px solid black;
+        color: black;
+      }
+      
+      /* Media query for screens smaller than 600px */
+      @media (max-width: 600px) {
+        .card {
+          width: 90%; /* Reduce width to fit smaller screens */
+          height: auto; /* Allow height to adjust to content */
+          margin: 10px auto; /* Center cards horizontally */
+        }
+      }
+      /* 2nd new */
+      .container2 {
+        background-color: #5680E9; /* Add a background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .card2 {
+        width: 90%;
+        height: auto;
+        margin: 10px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+      }
+      
+      .card2:first-child {
+        margin: 0 auto; /* Center the first card horizontally */
+      }
+      
+      /* Media query for screens smaller than 600px */
+      @media (max-width: 600px) {
+        .card2 {
+          width: 90%; /* Reduce width to fit smaller screens */
+          height: auto; /* Allow height to adjust to content */
+          margin: 10px auto; /* Center cards horizontally */
+        }
+      }
+      .img1 {
+        width: 180px;
+    margin-top: -77px;
+    margin-left: 78px;
+}
+      .image2{
+        align-self: flex-end;
+      }
+      ::-webkit-scrollbar-track {
+    background: #e8e8e8
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fb5496
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: -webkit-linear-gradient(45deg, #ffbd84, #ff1f8e);
+    background-image: -o-linear-gradient(45deg, #ffbd84, #ff1f8e);
+    background-image: linear-gradient(45deg, #ffbd84, #ff1f8e)
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="min-height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar"
+            data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/Introduction.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Introduction</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">All-In-One Guide</span>
+                            <!-- <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"> -->
+
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat.html" aria-expanded="false"> <img
+                                    src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2"
+                                    style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/takingdat.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">The Application Process</span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interviewing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interviewing</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img
+                                src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/academics.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/experience.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Experiences</span></a></li>
+                        <li id="active" class="sidebar-item"> <a
+                                class="sidebar-link waves-effect waves-dark sidebar-link" href="./evaluations.html"
+                                aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt="">
+                                <span style="font-size: 12px;" class="hide-menu ml-2">Evaluations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./dat.html" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg"
+                                    alt=""><span style="font-size: 12px;" class="hide-menu ml-2">DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./writing.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/writing_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">School Stats & Prereqs.</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Application Status</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewquestion.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/interview_grey.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Interview Questions</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img
+                                src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./statementediting.html" aria-expanded="false">
+                                <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Personal Statement
+                                    Editing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./scheduleinterviews.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Schedule Mock Interview</span></a>
+                        </li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="./personalizeschoolselection.html" aria-expanded="false"><img src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Personalized School Selection</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./supplemental-copy-editing.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/supplemental.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2 ">Supplemental
+                                    Copy-Editing</span></a></li>
+                                    <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./podcast.html" aria-expanded="false"><img
+                                            src="../assets/images/grey_icons/podcast.svg" alt=""><span
+                                            style="font-size: 12px;" class="hide-menu ml-2 ">Podcast</span></a></li> -->
+
+                                            <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                href="./products.html" aria-expanded="false"><img
+                                                    src="../assets/images/grey_icons/product.svg" alt=""><span
+                                                    style="font-size: 12px;" class="hide-menu ml-2 ">Products</span></a></li> -->
+
+<!--  salman-->
+<li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+  style="font-size: 16px; font-weight: 600; margin-left: 15px;">Other</span>
+ 
+  <img
+  src="../assets/images/grey_icons/podcast.svg" alt="" class="ml-3">
+ </li>
+ <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+  href="./merch.html" aria-expanded="false"><img
+      src="../assets/images/grey_icons/product.svg" alt=""><span
+      style="font-size: 12px;" class="hide-menu ml-2 ">Merch</span></a></li>
+<!-- salman -->
+
+
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img
+                                src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/contactus.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter.html" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/forums.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Forums</span></a></li>
+                        <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu"
+                                style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img
+                                src="../assets/images/grey_icons/me.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/myaccount.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/collaboration.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend.html" aria-expanded="false"><img
+                                    src="../assets/images/grey_icons/referafriend.svg" alt=""><span
+                                    style="font-size: 12px;" class="hide-menu ml-2">Refer a Friend</span></a></li>
+
+                        <div id="bottom_becomeamember"></div>
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- <div id="become"></div> -->
+            <!-- <div id="lockedCard"></div> -->
+            <div>
+                <!-- <h1 class="referafriend_heading ml-4"> Products </h1> -->
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                     
+                      <div class="carousel-item active">
+                        <div class="containar">
+                          <!--<h1 class="mt-5" id="hoodie_heading_mbl">Guideology Merchandise <span class="heading2">Our Collection</span></h1> -->
+                        
+                          <div class="cards_main">
+                            <div class="col-lg-4 col-md-12">
+                                      <a href="./champion-hoodie.html" class="card crdcolors">
+                                        <div class="container">
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <h1 class="mt-5" id="hoodie_heading">Champion Hoodie</h1>
+                                                <h1 id="hoodie_color">Color: <span style="color:#ADADAD">White</span></h1>
+                                               
+                                               
+                                                <p id="hoodie_para">Each tooth symbolizes 1 of 6 dental specialties. <span id="content2"> Wrapped in a lilac color to represent Dentistry. </span> </p>
+                                                <h1 id="hoodie_price">$50</h1>
+                                                
+                                                <button class="hoodie_btn">Shop Now</button>
+                                                <img src="../assets/images/product/product1.png" alt="Example Image" class="img1">
+                                              </div>
+                                              <!-- <div class="col-md-6 mt-5 image2">
+                                                <img src="../assets/images/product/product1.png" alt="Example Image" class="img1">
+                                              </div> -->
+                                            </div>
+                                          </div>
+                                      </a>
+                                      </div>
+                                      <i class="bi bi-arrow-left-right leftRightIcon"></i>
+                                        <div class="col-lg-4 col-md-12">
+                                        <a href="./champion-sweather.html" class="card crdcolors">
+                                          <div class="container">
+                                              <div class="row">
+                                                <div class="col-md-12">
+                                                  <h1 class="mt-5" id="hoodie_heading">Champion Sweater</h1>
+                                                  <h1 id="hoodie_color">Color: <span style="color:#ADADAD">White</span></h1>
+                                                 
+                                                 
+                                                  <p id="hoodie_para">Each tooth symbolizes 1 of 6 dental specialties. <span id="content2"> Wrapped in a lilac color to represent Dentistry. </span> </p>
+                                                  <h1 id="hoodie_price">$40</h1>
+                                                  
+                                                  <button class="hoodie_btn">Shop Now</button>
+                                                  <img src="../assets/images/product/product2.png" alt="Example Image" class="img1">
+                                                </div>
+                                                <!-- <div class="col-md-6 mt-5 image2">
+                                                  <img src="../assets/images/product/product2.png" alt="Example Image" class="img1">
+                                                </div> -->
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </div>
+                                        <i class="bi bi-arrow-left-right leftRightIcon"></i>
+                                          <div class="col-lg-4 col-md-12" id="thirdCard">
+                                          <a href="./champion-t-shirt.html" class="card crdcolors">
+                                            <div class="container">
+                                                <div class="row">
+                                                  <div class="col-md-12">
+                                                    <h1 class="mt-5" id="hoodie_heading">Champion T-Shirt</h1>
+                                                    <h1 id="hoodie_color">Color: <span style="color:#ADADAD">White</span></h1>
+                                                   
+                                                   
+                                                    <p id="hoodie_para">Each tooth symbolizes 1 of 6 dental specialties. <span id="content2"> Wrapped in a lilac color to represent Dentistry. </span> </p>
+                                                    <h1 id="hoodie_price">$25</h1>
+                                                    
+                                                    <button class="hoodie_btn">Shop Now</button>
+                                                    <img src="../assets/images/product/product3.png" alt="Example Image" class="img1">
+                                                  </div>
+                                                  <!-- <div class="col-md-6 mt-5 image2">
+                                                    <img src="../assets/images/product/product3.png" alt="Example Image" class="img1">
+                                                  </div> -->
+                                                </div>
+                                              </div>
+                                            </a>
+                                          </div>
+
+
+                                          </div>
+
+
+                                    </div>
+                      </div>
+                      <!-- <div class="carousel-item">
+                         <div class="container2 ">
+                                      <div class="card2">
+                                        <h1>Card 2</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        </p>
+                                      </div>
+                                    </div>
+                      </div>
+                       <div class="carousel-item ">
+                        <div class="container2 ">
+                                      <div class="card2">
+                                        <h1>Card 3</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        </p>
+                                      </div>
+                                    </div>
+                      </div>
+                      <div class="carousel-item">
+                         <div class="container2 ">
+                                      <div class="card2">
+                                        <h1>Card 4</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        </p>
+                                      </div>
+                                    </div>
+                      </div>
+                      <div class="carousel-item">
+                         <div class="container2 ">
+                                      <div class="card2">
+                                        <h1>Card 5</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        </p>
+                                      </div>
+                                    </div>
+                      </div>
+                      <div class="carousel-item">
+                         <div class="container2 ">
+                                      <div class="card2">
+                                        <h1>Card 6</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices pretium sapien, vel facilisis mi hendrerit eget. Duis fermentum felis sit amet magna pulvinar, at efficitur mi malesuada.
+                                        </p>
+                                      </div>
+                                    </div>
+                      </div> -->
+                    </div>
+                    <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a> -->
+                  </div>
+                  
+                <!-- <div class="container-fluid">
+                    <div class="headernav">
+                        <div class="container">
+                            <div class="row">
+                                
+
+                                <div class="col-lg-6 col-md-8 search" id="search_bar">
+                                    <div class="wrap">
+                                        <form action="#" method="post" class="form">
+                                            <div class="">
+                                                <div class="pull-left txt">
+                                                    <input id="forum_search" type="text" class="form-control"
+                                                        placeholder="Search Topics" onkeyup="myFunction()">
+                                                </div>
+                                                <div class="">
+                                                    <button id="search_icon" class="btn btn-default" type="button"><i
+                                                            class="fa fa-search"></i></button>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-4 avt" id="new_topic">
+                                    <div class="stnt pull-left">
+                                     
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="card1">
+                              <div class="thumbnail-images">
+                                <img src="../assets/images/product/2.PNG" width="40%" height="40%" onclick="changeImage('../assets/images/product/2.PNG')">
+                                <img src="../assets/images/product/Black Fabric copy.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/Black Fabric copy.png')">
+                                <img src="../assets/images/product/mockup-of-a-woman-comfortably-wearing-a-hoodie-32790 (1).png" width="40%" height="40%" onclick="changeImage('../assets/images/product/mockup-of-a-woman-comfortably-wearing-a-hoodie-32790 (1).png')">
+                                <img src="../assets/images/product/mockup-of-a-woman-comfortably-wearing-a-hoodie-32790.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/mockup-of-a-woman-comfortably-wearing-a-hoodie-32790.png')">
+                                <img src="../assets/images/product/Screen Shot 2023-03-09 at 9.48.02 AM copy.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/Screen Shot 2023-03-09 at 9.48.02 AM copy.png')">
+                                <img src="../assets/images/product/Screen Shot 2023-03-09 at 9.48.42 AM copy.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/Screen Shot 2023-03-09 at 9.48.42 AM copy.png')">
+                                <img src="../assets/images/product/unisex-heavy-blend-hoodie-black-front-6409fcf0b5871.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/unisex-heavy-blend-hoodie-black-front-6409fcf0b5871.png')">
+                                <img src="../assets/images/product/unisex-heavy-blend-hoodie-black-left-640bbb34ec29b.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/unisex-heavy-blend-hoodie-black-left-640bbb34ec29b.png')">
+                                <img src="../assets/images/product/unisex-heavy-blend-hoodie-white-front-6409ff542afbd.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/unisex-heavy-blend-hoodie-white-front-6409ff542afbd.png')">
+                                <img src="../assets/images/product/unisex-heavy-blend-hoodie-white-left-640bba9ca7764.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/unisex-heavy-blend-hoodie-white-left-640bba9ca7764.png')">
+                                <img src="../assets/images/product/White fabric copy.png" width="40%" height="40%" onclick="changeImage('../assets/images/product/White fabric copy.png')">
+                              </div>
+                              <div class="mySlides fad">
+                                <img src="../assets/images/product/1.PNG" style="width:100%;border-radius: 20px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-6">
+                            <div class="card2">
+                              <h3 class="airpodtext">Apple AirPods Pro</h3>
+                              <br>
+                              <h3 class="airpodtext">Master Copy</h3>
+                              <br>
+                              <h4 class="airpodprice">Rs. 2,999</h4>
+                              <br>
+                              <h4 class="airpoddiscount">SAVE 14% Discount</h4>
+                              <br>
+                              <button class="buy-now-button">Buy Now</button>
+                              <br>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+        
+                      
+
+                    
+                  
+                      
+                              
+                           
+                    </div> -->
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div style="font:11px arial; color:gray; text-align:center" class="OPP-linkBack"><a
+                                style="text-decoration:none;" href="https://www.easypolls.net">online polls</a></div>
+                        <script type='text/javascript' src='https://vote.easypolls.net/em.js'
+                            data-id='633b0f1f5bb2130062a63146' data-width="300px" data-height="300px"></script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../dist/js/header.js"></script>
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/showUserData.js"></script>
+    <script src="search.js"></script>
+    <!-- get jQuery from the google apis -->
+
+    <script type="text/javascript" src="../ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+
+
+    <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+    <script type="text/javascript" src="../forum/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="../forum/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script src="../forum/js/bootstrap.min.js"></script>
+    <script src="../dist/js/showdb/card.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script src="../dist/js/lockScreenCard.js"></script>
+    <script type="text/javascript" src="http://www.websitegoodies.com/poll.php?id=118288"></script>
+    <script src="../dist/js/keys.js"></script>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 1500); // Change image every 2 seconds
+        }
+        </script>
+    <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+    <script type="text/javascript">
+
+        var revapi;
+
+        jQuery(document).ready(function () {
+            "use strict";
+            revapi = jQuery('.tp-banner').revolution(
+                {
+                    delay: 15000,
+                    startwidth: 1200,
+                    startheight: 278,
+                    hideThumbs: 10,
+                    fullWidth: "on"
+                });
+
+        });	//ready
+
+    </script>
+    <script>
+
+      const wrapper = document.querySelector('.containar');
+      const content = document.querySelector('.row');
+      
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      
+      wrapper.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - wrapper.offsetLeft;
+        scrollLeft = wrapper.scrollLeft;
+      });
+      
+      wrapper.addEventListener('mouseleave', () => {
+        isDown = false;
+      });
+      
+      wrapper.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+      
+      wrapper.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - wrapper.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        wrapper.scrollLeft = scrollLeft - walk;
+      });
+      
+      
+      </script>
+    <script>
+        function changeImage(imageUrl) {
+          var mainImage = document.querySelector('.card1 .mySlides img');
+          mainImage.src = imageUrl;
+        }
+</script>        
+    <!-- Live Chat -->
+    <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+    <!-- End Live Chat -->
+</body>
+
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+           content="">
+        <meta name="author" content="">
+     
+        <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+        <meta property="og:site_name" content="" /> <!-- website name -->
+        <meta property="og:site" content="" /> <!-- website link -->
+        <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+        <meta property="og:type" content="article" />
+     
+        <!-- Website Title -->
+        <title>Guideology</title>
+     
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+           rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/fontawesome-all.css" rel="stylesheet">
+        <link href="../css/swiper.css" rel="stylesheet">
+        <link href="../css/magnific-popup.css" rel="stylesheet">
+        <link href="../css/styles.css" rel="stylesheet">
+        
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+     
+        <!-- Favicon  -->
+        <link rel="icon" href="../images/transparent_logo.png">
+      
+  
+          <!-- Facebook Meta Pixel Code  Start-->
+     <script>
+         !function(f,b,e,v,n,t,s)
+         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '1664602053919785');
+         fbq('track', 'PageView');
+         </script>
+         <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+         /></noscript>
+            <!-- Facebook Meta Pixel Code  End-->
+         
+            <!-- Tiktok Meta Pixel Code  Start-->
+         <script>
+               !function (w, d, t) {
+                 w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+         )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+               
+                 ttq.load('CBTU83BC77U963VQB180');
+                 ttq.page();
+               }(window, document, 'ttq');
+            </script>    
+         <!-- End Tiktok Meta Pixel Code -->
+         <style>
+               .navbar-nav {
+              margin-left: auto;
+           }
+          .card_main {
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border-radius: 50px;
+    box-shadow: 10px 10px 80px #7B7BFD26 !important;
+    max-width: 94%;
+    height: 600px;
+    margin: 50px;
+    padding: 50px;
+}
+    #hoodie_heading{
+        font-family: fred;
+        text-align: left;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        opacity: 1;
+        color: #000;
+        font-size: 42px;
+        margin-bottom: 5px;
+          }
+          #hoodie_color{
+        font-family: fred;
+        text-align: left;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        opacity: 1;
+        color: #000;
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-weight: 400;
+          }
+          #hoodie_para{
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #585858;
+          }
+          #hoodie_price{
+        font-family: fred;
+        text-align: left;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        opacity: 1;
+        color: #0EC42D;
+        font-size: 40px;
+        margin-bottom: 5px;
+        font-weight: 400;
+          }
+          .hoodie_btn{
+            font-size: 18px;
+            padding: 5px 15px;
+            font-weight: 600;
+            border-radius: 30px;
+            background: none;
+            border: 1px solid black;
+            color: black;
+          }
+         
+      .s-btn {
+    background-color: #FFFFFF;
+    /* padding: 8px 18px; */
+    width: 52px;
+    height: 52px;
+    border-radius: 100%;
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+    border: 1px solid;
+    margin-left: 12px;
+    margin-bottom: 14px;
+}
+.s-btn.active {
+  background-color: #5680e9;
+  color: #fff;
+}
+    
+          
+    
+    
+         
+    
+    .card1 {
+      flex-basis: calc(50% - 10px); /* set the width of each card to half the row minus the space between them */
+      margin-right: 10px; /* add some space between the cards */
+      /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    }
+    
+    .card1 img {
+      max-width: 45%;
+    }
+    
+    .greyBgImg>img{
+        max-width: 80%;
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    @media screen and (min-width: 768px) {
+      .card1 {
+        flex-basis: 50%;
+      }
+    }
+    
+    @media screen and (min-width: 992px) {
+      .card1 {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+    
+    @media screen and (min-width: 1200px) {
+      .card1 {
+        flex-basis: calc(33.33% - 10px);
+      }
+    }
+    
+    @media screen and (max-width: 767px) {
+      .card1 {
+        flex-basis: 100%;
+      }
+      #hoodie_heading {
+        font-size: 28px;
+        margin-top: -270px !important;
+    }
+    .stars{
+        width: 35% !important;
+    }
+    .card_main {
+        height: auto;
+    }
+    .thumbnail-images img {
+    width: 170px;
+}
+.card1 img {
+    max-width: 100%;
+}
+    .card_main {
+   margin: 0px !important;
+}
+    }
+    @media screen and (min-width: 768px) and (max-width: 900px){
+    .card_main {
+        height: auto;
+        margin: auto !important;
+    }
+    }
+    .buy-now-button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .buy-now-button:hover {
+      background-color: #006080;
+    }
+  
+    .card1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    .thumbnail-images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5px;
+    }
+    
+    .thumbnail-images img {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+    .thumbnail-images {
+      display: flex;
+      /* flex-wrap: wrap; */
+      height: 500px;
+      overflow-y: scroll;
+    
+    }
+    .thumbnail-images::-webkit-scrollbar {
+      display: none;
+    }
+    .mySlides {
+    width: 500px;
+    height: 500px;
+}
+        </style>
+     </head>
+<body>
+      <!-- Preloader -->
+   <div class="spinner-wrapper">
+    <div class="spinner">
+       <div class="bounce1"></div>
+       <div class="bounce2"></div>
+       <div class="bounce3"></div>
+    </div>
+ </div>
+ <!-- end of preloader -->
+
+
+ <!-- Navigation -->
+<div id="navbar"></div>
+ <br>
+ <br>
+ <br>
+ <br>
+    <div>
+        <div class="container-fluid" >
+            
+            <!-- yaha se shoro karna hai -->
+            <div class="container card_main">
+                <div class="row">
+                  <!-- <a href="./products.html">
+                    <img src="../images/back.svg" alt="" style="width: 80px; margin-top: -20px;">
+                </a> -->
+                  <div class="col-lg-6">
+                   
+                    <div class="card1" style="margin-top: 20px;">
+                      <div class="thumbnail-images">
+                        <img src="../images/product/first_bordrer.png" onclick="changeImage('../images/product/first.png')">
+                        <img src="../images/product/second_border.png" onclick="changeImage('../images/product/second.png')">
+                        <img src="../images/product/third_border.png" onclick="changeImage('../images/product/third.png')">
+                        <!--<img src="../images/product/forth_border.png" onclick="changeImage('../images/product/forth.png')">-->
+                        <img src="../images/product/fifth_border.png" onclick="changeImage('../images/product/fifth.png')">
+                      </div>
+                      <div class="mySlides fad greyBgImg">
+                        <img src="../images/product/first.png">
+                      </div>
+                     
+                    </div>
+                  </div>
+                    <div class="col-lg-6">
+                        <div class="card2" style="margin-top:45px;">
+                            <!-- <a href="./products.html">
+                            <img src="../images/back.svg" alt="" style="width: 20%;">
+                        </a> -->
+                            <h1 class="mt-4" id="hoodie_heading">Champion Hoodie</h1>
+                         
+                          <h1 id="hoodie_color">Color: <span style="color:#ADADAD">White</span></h1>
+                         
+                          <p id="hoodie_para">Each tooth symbolizes 1 of 6 dental specialties. Wrapped in a lilac color to represent Dentistry.</p>
+                        
+                                 <div style="display: flex; flex-direction: row;">
+                                 <img src="../images/truck.svg" alt="" style="width: 20px;">
+                                 <p id="hoodie_para" class="mt-3 ml-2">Shipping Fees <span style="font-weight: 900;">$5</span></p> 
+
+                                 <div style="display: flex; flex-direction: row;" class="ml-3">
+                                  <img src="../images/stars.svg" alt="" style="width: 20%;">
+                                  <p id="hoodie_para" class="mt-3 ml-2" style="color: #000;">5.0 (16)</p> </div>
+                                </div>
+
+                                <!-- slection_area_start -->
+
+<div class="selection_container">
+  <h2>Select Size</h2>
+  <div class="btn_container">
+     <input type="submit" value="S" class="s-btn" id="size-s">
+<input type="submit" value="M" class="s-btn" id="size-m">
+<input type="submit" value="L" class="s-btn" id="size-l">
+<input type="submit" value="XL" class="s-btn" id="size-xl">
+  </div>
+    
+</div>
+                                <!-- slection_area_end -->
+                          <h1 id="hoodie_price">$50</h1>
+                         
+                          <button class="hoodie_btn mt-3" onclick="buy()">Buy Now</button>
+                         
+                        </div>
+                      </div>
+                  
+                 
+                </div>
+              </div>
+              
+              
+
+              
+
+            
+          <!-- yaha khatam karna hai -->
+              
+                      
+                   
+            </div>
+        </div>
+        <div id="footer">
+
+        </div>
+        <!-- Footer end-->
+     
+        <!-- Scripts -->
+        <script src="../js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+        <script src="../js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+        <script src="../js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+        <script src="../js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+        <script src="../js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+        <script src="../js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+        <script src="../js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+        <script src="../js/scripts.js"></script> <!-- Custom scripts -->
+        <script src="../js/affiliate.js"></script> <!-- Custom scripts -->
+        <script src="../js/footer.js"></script>  <!--footer-->
+        <script src="../js/navbar.js"></script>
+        <!-- <script src="../js/subscribe.js"></script> -->
+        <script>
+          function buy() {
+            window.location.href = 'https://buy.stripe.com/3cs2920LpgBy00g00r'
+          }
+        </script>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 1500); // Change image every 2 seconds
+            }
+            </script>
+        <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+        <script type="text/javascript">
+    
+            var revapi;
+    
+            jQuery(document).ready(function () {
+                "use strict";
+                revapi = jQuery('.tp-banner').revolution(
+                    {
+                        delay: 15000,
+                        startwidth: 1200,
+                        startheight: 278,
+                        hideThumbs: 10,
+                        fullWidth: "on"
+                    });
+    
+            });	//ready
+    
+        </script>
+        <script>
+            function changeImage(imageUrl) {
+              var mainImage = document.querySelector('.card1 .mySlides img');
+              mainImage.src = imageUrl;
+            }
+    </script> 
+     <script>
+       var sizeS = document.getElementById("size-s");
+var sizeM = document.getElementById("size-m");
+var sizeL = document.getElementById("size-l");
+var sizeXL = document.getElementById("size-xl");
+
+sizeS.addEventListener("click", function() {
+  sizeS.classList.toggle("active");
+  sizeM.classList.remove("active");
+  sizeL.classList.remove("active");
+  sizeXL.classList.remove("active");
+});
+
+sizeM.addEventListener("click", function() {
+  sizeS.classList.remove("active");
+  sizeM.classList.toggle("active");
+  sizeL.classList.remove("active");
+  sizeXL.classList.remove("active");
+});
+
+sizeL.addEventListener("click", function() {
+  sizeS.classList.remove("active");
+  sizeM.classList.remove("active");
+  sizeL.classList.toggle("active");
+  sizeXL.classList.remove("active");
+});
+
+sizeXL.addEventListener("click", function() {
+  sizeS.classList.remove("active");
+  sizeM.classList.remove("active");
+  sizeL.classList.remove("active");
+  sizeXL.classList.toggle("active");
+});
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Guideology</title>
+    <!-- Styles -->
+     <!-- Styles -->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+       <!-- <link href="../css/bootstrap.css" rel="stylesheet"> -->
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link href="./web2/css/styles.css" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             	<!-- Favicon  -->
+      <link rel="icon" href="./assets/images/icon.png">
+       <!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+       <script>
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD5DMyubSCOcqQzqFWboc7NziRYclrdOxg",
+    authDomain: "guideology-cc2b5.firebaseapp.com",
+    databaseURL: "https://guideology-cc2b5-default-rtdb.firebaseio.com",
+    projectId: "guideology-cc2b5",
+    storageBucket: "guideology-cc2b5.appspot.com",
+    messagingSenderId: "130250364586",
+    appId: "1:130250364586:web:2e9d6427edb6a9e67ce2d3",
+    measurementId: "G-RSC5CNSPEG"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+	<style type="text/css">
+         .navbar-nav {
+         margin-left: auto;
+         }
+         #show_password{
+            margin-top: 45px;
+         }
+         #phone_number{
+            width: 410px;
+         }
+         
+      @media only screen and (min-width: 299px) and (max-width: 699px) {
+        .form-control{
+           width: 250px;
+        }
+        #phone_number{
+            width: 250px;
+         }
+         #program{
+            width: 250px;
+         }
+      }
+      @media only screen and (min-width: 700px) and (max-width: 991px) {
+         #phone_number{
+            width: 280px;
+         }
+      }
+         @media (max-width: 550px){
+            #show_password{
+               margin-top: 5px;
+            }
+         }
+         #email{
+            text-transform: lowercase;
+         }
+      </style>
+        <!-- Facebook Meta Pixel Code  Start-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+        <!-- Navigation -->
+        <a class="navbar-brand logo-image" href="https://guideology.co/"><img class="m-3" style="width: 60%;" src="./assets/images/guidology-color.png" alt="alternative"></a>
+      <!-- Signup Form Start Here -->
+	<div class="container form-box-su" style="margin-top: 10px;">
+	<div class="inner-box-su"  >
+			<h1>Sign Up</h1>
+       
+<form action="#" onsubmit="return false" id="registerForm">
+  
+   <div class="form-row">
+      <div class="form-group col-md-12">
+         <label class="uname"> Choose Your Program</label>
+            <select onchange="window.location.href = this.value"; name="program" id="program" class="custom-select" style="border-color: #5680E9;" required>
+                <option value="Dental"> Dental</option>
+                <!-- <option value="Dental" required> Dental</option> -->
+                <option value="https://guideology.co/pages/optometry" required>Optometry</option>
+                <option value="https://guideology.co/pages/pharmacy" required> Pharmacy</option>
+                <option value="https://guideology.co/pages/medical" required> Medical</option>
+                <option value="https://guideology.co/pages/pa" required> PA</option>
+            </select>
+       </div>
+   </div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label class="uname">Full Name</label>
+    <input type="text" class="form-control uname-box" id="full_name" aria-describedby="emailHelp"  placeholder="Full Name" required>
+  </div>
+  <div class="form-group col-md-6">
+   <label class="uname">Phone #</label> <br>
+   <input type="tel" class="form-control uname-box" id="phone_number" aria-describedby="emailHelp"  placeholder="Phone #" required>
+ </div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-12">
+    <label class="uname">Email</label>
+    <input type="email" class="form-control uname-box" id="email" aria-describedby="emailHelp"  placeholder="Email" required>
+  </div>
+  <!-- <div class="form-group col-md-6">
+    <label class="uname">Username</label>
+    <input type="text" class="form-control uname-box" id="username" aria-describedby="emailHelp"  placeholder="Username" required>
+  </div> -->
+ 
+</div>
+<div class="form-row">
+  <div class="form-group col-md-9">
+    <label class="uname">Create Password</label>
+    <input type="password" class="form-control uname-box" id="password" aria-describedby="emailHelp"  placeholder="Create New Password" required>
+  </div>
+  <div class="col-md-3">
+   <input type="checkbox" onclick="showPassword()" id="show_password">  <a href="#" onclick="showPassword()"> Show Password </a>  </div>
+</div>	
+	
+
+	
+	<div class="form-group">
+		<label class="already-txt">Already have an account? <a href="./login.html" style="text-decoration: none;"> <b>Login</b> </a></label>
+	</div>
+<!-- data-toggle="modal" data-target="#exampleModalCenter" id="verifyEmailBtn" -->
+      <button type="submit" class="btn btn-primary long-btn-su" onclick="register()">Sign Up</button>
+      <p id="success" style="color: green; font-size:14px; margin-top:10px;"></p>
+      <p id="notsuccess" style="color: red; font-size:14px; margin-top:10px;"></p>
+</form>
+		
+		
+	</div>
+	</div>
+   
+	 <!-- Signup Form End Here -->
+     <!-- Modal Start -->
+     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body">
+              
+                  <img style="margin-left:35%; margin-bottom: 20px; width: 25%;" src="./assets/images/check.png" alt="">
+  
+                  <h3 style="text-align:center; font-size: 12px;"> Registered Successfully  </h3>
+                  <br>
+                  <div class="modal-footer" style="display: flex;  justify-content:center; align-items:center;">
+                      <!-- <button type="button" id="modal_btn" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                      <button type="button" id="modal_btn" class="btn btn-primary" onclick="change()" >Okay</button>
+                    </div>
+                  <!-- <button style="margin-left:21%;" type="button" class="btn btn-primary">Done</button> -->
+  
+  
+              
+               <!-- <img src="../Admin_dashboard/assets/images/loginimage/tick_green.svg" alt=""> -->
+            
+          </div>
+          
+      </div>
+    </div>
+  </div>
+	<!-- Footer start -->
+   <div id="footer">
+
+   </div>
+   <!-- Footer end-->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./web2/js/jquery.min.js"></script> <!--jQuery for Bootstrap's JavaScript plugins -->
+    <script src="./web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- <script src="./dist/js/security.js"></script> -->
+    <script src="./dist/js/auth/auth.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- <script src="./dist/js/auth/auth.js"></script> --> 
+<script src="../js/subscribe.js"></script>
+<!-- <script src="./dist/js/auth/flags.js"></script> -->
+<script>
+    const change = () => {
+        window.location.href = 'congratulation.html'
+    }
+</script>
+             <!-- Phone Country Code start -->
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css">
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.js"></script>
+            <script>
+             // Vanilla Javascript
+             var input = document.querySelector("#phone_number");
+             window.intlTelInput(input,({
+                   // options here
+             }));
+             </script>
+             
+             <script>
+              $(document).ready(function() {
+                 $('.iti__flag-container').click(function() { 
+                   var countryCode = $('.iti__selected-flag').attr('title');
+                   var countryCode = countryCode.replace(/[^0-9]/g,'')
+                   $('#phone_number').val("");
+                   $('#phone_number').val("+"+countryCode+" "+ $('#phone_number').val());
+                });
+             });
+             </script>
+                 <!-- Phone Country Code End -->
+                 
+   </body>
+</html>

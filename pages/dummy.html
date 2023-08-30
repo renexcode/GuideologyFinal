@@ -1,0 +1,130 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--  <head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <title>OKEx Convert API Test</title>-->
+<!--  </head>-->
+<!--  <body>-->
+<!--    <button onclick="convert()">Convert</button>-->
+<!--    <script>-->
+<!--      function convert() {-->
+<!--        const apiKey = 'c3312723-2446-4cdb-87e5-329ce307f700';-->
+<!--        const from = 'BTC';-->
+<!--        const to = 'USDT';-->
+<!--        const amount = 1;-->
+
+<!--        const headers = new Headers();-->
+<!--        headers.append('Content-Type', 'application/json');-->
+<!--headers.append('OK-ACCESS-KEY', apiKey);-->
+
+<!--        fetch(-->
+<!--          `https://www.okex.com/api/v5/asset/convert/currencies`,-->
+<!--          {-->
+<!--            method: 'GET',-->
+<!--            headers: headers,-->
+<!--            mode: 'no-cors',-->
+<!--            cache: 'default',-->
+<!--          }-->
+<!--        )-->
+<!--          .then((response) => response.json())-->
+<!--          .then((data) => console.log(data))-->
+<!--          .catch((error) => console.error(error));-->
+<!--      }-->
+<!--    </script>-->
+<!--  </body>-->
+<!--</html>-->
+
+<html>
+<head>
+  <script src="https://js.ramper.xyz/v1/ethereum"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.6.umd.min.js"
+  type="application/javascript"></script>
+</head>
+<body>
+  <script>
+    window.onload = () => {
+      window.ramper.init({
+        appName: "Ethereum Test App",
+        chainName: "ethereum",
+        defaultTokenAddresses: [],
+        theme: "dark",
+        network: "maticmum",
+        authProviders: ["twitter", "google", "facebook", "apple", "email"],
+      })
+    }
+    
+    async function signIn() {
+      if (window.ramper.getUser()) {
+        alert("Error: You are already signed in.")
+        return
+      }
+      const userData = await window.ramper.signIn()
+      console.log(userData)
+    }
+
+    function openWallet() {
+      if (!window.ramper.getUser()){
+        alert("Error: You are signed out.")
+        return
+      }
+      window.ramper.openWallet()
+    }
+
+    async function sendTransaction() {
+      console.log("Send Transaction using ether.js is in the process of being fully migrated to our Vanilla JS SDK. Please check back in 1-2 days.")
+
+      if (!window.ramper.getUser()){
+        alert("Error: You are signed out.")
+        return
+      }
+      const wallet = window.ramper.getUser().wallets["ethereum"]
+
+      const alchemy = new ethers.providers.AlchemyProvider(80001, 'pEWvHrkSkkyWGZmezdGMk_LjYu8DAx1k')
+      const ramperSigner = await window.ramper.getRamperSigner(alchemy)
+      try {
+        if (!ramperSigner || !wallet) {
+          throw new Error('No wallet')
+        }
+
+        const fromAddress = wallet.publicKey
+        const toAddress = '0x1AC3579278105a1870803B1394c428a14fb6e3dC'
+        const value = '0.00001'
+
+        const tx = {
+          type: 2,
+          from: fromAddress,
+          to: toAddress,
+          value: ethers.utils.parseEther(value),
+          chainId: 80001,
+          nonce: alchemy.getTransactionCount(fromAddress),
+          gasLimit: alchemy.estimateGas({
+            to: toAddress,
+            value: ethers.utils.parseEther(value),
+          }),
+          maxFeePerGas: alchemy.getFeeData().then((x) => x.maxFeePerGas),
+          maxPriorityFeePerGas: alchemy.getFeeData().then((x) => x.maxPriorityFeePerGas),
+        }
+        console.log(tx)
+        const signedTx = await ramperSigner.signTransaction(tx)
+        const txResult = await alchemy.sendTransaction(signedTx)
+
+        console.log('RESULTS ' + txResult.hash)
+      } catch (ex) {
+        console.log(ex)
+      }
+    }
+
+    function signOut() {
+      if (!window.ramper.getUser()){
+        alert("Error: You are already signed out.")
+        return
+      }
+      window.ramper.signOut()
+    }
+  </script>
+  <button onclick="signIn()">Sign In</button>
+  <button onclick="openWallet()">View Wallet</button>
+  <button onclick="sendTransaction()">Send Transaction (Not Fully Ported)</button>
+  <button onclick="signOut()">Sign Out</button>
+</body>
+</html>

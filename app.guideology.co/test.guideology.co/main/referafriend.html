@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+        <style>
+            @media screen and (min-width: 299px) and (max-width:600px) {
+                .referafriend_heading{
+                    margin-left: 0px !important;
+                }
+                #referText{
+                    margin-left: 30px;
+                }
+                .btn-primary{
+                    margin-left: 10px;
+                }
+            }
+        </style>
+          <!-- Facebook Meta Pixel Code  Start-->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+       <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="height: 100%; position: fixed;" id="leftCol" class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img src="../assets/images/grey_icons/Introduction.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Introduction</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat" aria-expanded="false"> <img src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2" style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat" aria-expanded="false"><img src="../assets/images/grey_icons/takingdat.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess" aria-expanded="false"><img src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">The Application Process</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing" aria-expanded="false"><img src="../assets/images/grey_icons/interviewing.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Interviewing</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;" >Your Progress</span> <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+                      
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline" aria-expanded="false"><img src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics" aria-expanded="false"><img src="../assets/images/grey_icons/academics.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience" aria-expanded="false"><img src="../assets/images/grey_icons/experience.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Experiences</span></a></li>
+                        <li id="active" class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./evaluations" aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt=""> <span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Evaluations</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./dat" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">DAT</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./writing" aria-expanded="false"><img src="../assets/images/grey_icons/writing_grey.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools" aria-expanded="false"><img src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Schools</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus" aria-expanded="false"><img src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Application Status</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./interviewquestion" aria-expanded="false"><img src="../assets/images/grey_icons/interview_grey.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2">Interview Questions</span></a></li>
+                                            <li class="sidebar-item" id="dashboard-main-hading"><span
+                                                class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;" >Extras</span> <img src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./statementediting" aria-expanded="false">
+                                            <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personal Statement Editing</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./scheduleinterviews" aria-expanded="false"><img src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Schedule Mock Interview</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./personalizeschoolselection" aria-expanded="false"><img src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personalized School Selection</span></a></li>
+                                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                    href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                                        class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>  
+        
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus" aria-expanded="false"><img src="../assets/images/grey_icons/contactus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Forums</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;" >Me</span> <img src="../assets/images/grey_icons/me.svg" alt=""  class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount" aria-expanded="false"><img src="../assets/images/grey_icons/myaccount.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration" aria-expanded="false"><img src="../assets/images/grey_icons/collaboration.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram" aria-expanded="false"><img src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend" aria-expanded="false"><img src="../assets/images/white_icons/referafriend.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Refer a Friend</span></a></li>
+                       
+                                    <div id="bottom_becomeamember"></div>
+                    </ul>
+  
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <div id="become">
+
+            </div>
+            <!-- ===========================Collaburation Start here=================================== -->
+            <div class="container" style="align-items: center; margin-top: 50px;">
+                <div class="row">
+                   <div class="col-lg-6" style="padding-right: 50px;">
+                      <div >
+          
+                         <img src="../assets/images/referafriend.png" class="rounded mx-auto d-block" alt="referafreiend" id="referafriend">
+                      </div>
+                      <br>
+                      <p style="text-align: center;" id="referText">
+                        Although we’ll be by your side throughout the entire pre-graduate process, having a classmate or friend alongside you will certainly ensure you are on top of your tasks.
+                         <br>
+                         <br>
+                         If you have a friend who’d like to join our community, feel free to fill out the form below. Once the person you refer signs up, <strong> you’ll receive $10 via Venmo or Cashapp.</strong>
+                      </p>
+          
+          
+                   </div>
+                   <div class="col-lg-6">
+                      <h1 class="referafriend_heading"> Refer A Friend </h1>
+                      <p style="margin-right: -11px;">
+                          Fill the form below and our team will get back to your shortly.</p>
+                      <form style="align-items: center;" onsubmit="return false" id="referAFriend" class="referAFriend">
+                         <div class="form-row">
+                            <div class="col-md-6 col-12">
+                               <div class="form-group mx-0">
+                                  <label class="uname">Guideology Member</label>
+                                  <input type="hidden" id="hiddenId">
+                                  <input type="text" class="form-control uname-box" id="member1_name"
+                                     aria-describedby="emailHelp" placeholder="Name" required>
+                               </div>
+                               <div class="form-group mx-0">
+                                  <input type="email" class="form-control uname-box" id="member1_email" aria-describedby="emailHelp"
+                                     placeholder="Email">
+                               </div>
+                               
+                               <div class="form-group mx-0">
+                                  <input type="number" class="form-control uname-box" id="member1_phone"
+                                     aria-describedby="emailHelp" placeholder="Phone #" required>
+                               </div>
+                               <div class="form-group mx-0">
+                                  <input type="text" class="form-control uname-box" id="venmo_Username "
+                                     aria-describedby="emailHelp" placeholder="Venmo Username" value="" required>
+                               </div>
+                               <div class="form-group mx-0">
+                                  <input type="text" class="form-control uname-box" id="cashapp_Username "
+                                     aria-describedby="emailHelp" placeholder="Cashapp Username" value="" required>
+                               </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                               <div class="form-group mx-0">
+                                  <label class="uname">Future Member</label>
+                                  <input type="text" class="form-control uname-box" id="member2_name"
+                                     aria-describedby="emailHelp" placeholder="Name" required>
+                               </div>
+                               <div class="form-group mx-0">
+                                  <input type="email" class="form-control uname-box" id="member2_email" aria-describedby="emailHelp"
+                                     placeholder="Email" required>
+                               </div>
+                               
+                               <div class="form-group mx-0">
+                                  <input type="number" class="form-control uname-box" id="member2_phone"
+                                     aria-describedby="emailHelp" placeholder="Phone #" required>
+                               </div>
+                            </div>
+             
+                            
+                            <div class="form-group mx-0 col-md-6">
+                               <button type="submit" class="btn btn-primary long-btn-su" id="referafriendbtn" style="width: 300px !important;">Submit</button>
+                            </div>
+                            <p style="color: #5680E9; text-align: left; margin-top: 13px;" id="referafreiend_para"></p>
+                         </form>
+                         </div>
+                         
+                   </div>
+                </div>
+            <!-- ===========================Collaburation End here=================================== -->
+        </div>
+           <!-- Modal Start here -->
+           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                    
+                        <img style="margin-left:35%; margin-bottom: 20px; width: 25%;" src="../assets/images/check.png" alt="">
+        
+                        <h3 style="text-align:center; font-size: 16px;"><b> Saved successfully <i class="bi bi-check-circle" style="color:green"></i> </b></h3>
+                        <br>
+                        <div class="modal-footer" style="display: flex; justify-content:center; align-items: center;">
+                            <button style="background-color: #5680E9;" type="button" id="modal_btn" class="btn btn-secondary" data-dismiss="modal" onclick="change()">Done</button>
+                            <!-- <button type="button" id="modal_btn" class="btn btn-primary" onclick="subscribeNow()" >Okay</button> -->
+                          </div>
+                        <!-- <button style="margin-left:21%;" type="button" class="btn btn-primary">Done</button> -->
+        
+        
+                    
+                     <!-- <img src="../Admin_dashboard/assets/images/loginimage/tick_green.svg" alt=""> -->
+                  
+                </div>
+                
+            </div>
+          </div>
+        </div>
+   <!-- Modal End here -->
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../dist/js/header.js"></script>
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/db/referafriend.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script>
+        function change(){
+     window.location.reload()
+  } 
+  </script>
+   <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Flexy Admin Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/Flexy-admin-lite/" />
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+<style>
+    .afterSaveInputs{
+        border: none;
+    outline: none;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    }
+    #text{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px !important;
+    color: #000;
+    font-weight: 600;
+}
+    @media screen and (min-width : 320px) and (max-width : 600px) {
+        .card {
+            margin-top: 57px;
+    width: 360px;
+    margin-left: 2px;
+}
+a{
+        font-size: 12px;
+      }
+    }
+    @media screen and (min-width : 601px) and (max-width : 1200px) {
+      a{
+        font-size: 12px;
+      }
+      .afterSaveInputs {
+    width: 108% !important;
+}
+    }
+    html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container {
+  /* position: absolute; */
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 500px;
+  height: 500px;
+}
+.card-container .card {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+  z-index: 2;
+  transition: all 1s;
+}
+
+.card-container .card h1 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+.card-container .card h1:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.card-container .card h3 {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.card-container .card h3:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-container .card .circle {
+  position: absolute;
+  margin: auto;
+  top: 10%;
+  bottom: 0;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #667eea 5%, #764ba2 90%); 
+  z-index: -2;
+}
+.card-container .card .circle:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  top: 90%;
+  right: -20%;
+  z-index: -1;
+  background-image: linear-gradient(135deg, #667eea 10%, #764ba2 90%); 
+}
+@media only screen and (max-width: 780px) {
+  .card-container .card {
+    width: 270px;
+    height: 200px;
+    transition: none;
+    top: 140px;
+  }
+
+  .card-container .card h1 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: -3px;
+  }
+  #name{
+    margin-bottom: 3px;
+    margin-top: 6px;
+  }
+  .card-container .card h1:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .card-container .card h3 {
+    font-size: 14px;
+  }
+  .card-container .card h3:nth-of-type(2) {
+    font-size: 12px;
+  }
+  .card-container .card .circle {
+    right: -70%;
+  }
+}
+.add:hover{
+    cursor: pointer;
+}
+
+.container-fluid {
+    margin-top: 80px;
+    margin-bottom: 80px
+}
+
+.card {
+    background-color: #424242;
+    padding: 40px 10px
+}
+
+.text-grey {
+    color: #9E9E9E
+}
+
+.fa {
+    font-size: 25px;
+    cursor: pointer
+}
+
+input,
+select {
+    padding: 2px 6px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: none;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center !important
+}
+
+input:focus,
+select:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid #00C853;
+    outline-width: 0
+}
+
+select option:focus {
+    background-color: #00C853 !important
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+:-ms-input-placeholder {
+    color: #fff
+}
+
+::-ms-input-placeholder {
+    color: #fff
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.btn {
+    border-radius: 50px;
+    width: 120px
+}
+
+.exit {
+    border: 1px solid #9E9E9E;
+    color: #9E9E9E;
+    background-color: transparent
+}
+
+.exit:hover {
+    border: 1px solid #9E9E9E;
+    color: #000 !important;
+    background-color: #9E9E9E
+}
+
+@media screen and (max-width: 768px) {
+    .mob {
+        width: 70%
+    }
+
+    select.mob {
+        width: 50%
+    }
+}
+.afterSaveInputs{
+    color: #000 !important;
+}
+.disableBtn{
+    background-color: #9E9E9E !important;
+}
+</style>
+  <!-- Facebook Meta Pixel Code  Start-->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1664602053919785');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1664602053919785&ev=PageView&noscript=1"
+    /></noscript>
+       <!-- Facebook Meta Pixel Code  End-->
+    
+       <!-- Tiktok Meta Pixel Code  Start-->
+    <script>
+          !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++
+    )ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=i+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+          
+            ttq.load('CBTU83BC77U963VQB180');
+            ttq.page();
+          }(window, document, 'ttq');
+       </script>    
+    <!-- End Tiktok Meta Pixel Code -->
+</head>
+
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="min-height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar scrolling-wrapper" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img src="../assets/images/grey_icons/Introduction.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Introduction</span></a></li>
+                        <li class="sidebar-item" id="beforeDat"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat" aria-expanded="false"> <img src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2" style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item" id="takingDat"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat" aria-expanded="false"><img src="../assets/images/grey_icons/takingdat.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item" id="applicationProcess"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess" aria-expanded="false"><img src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">The Application Process</span></a></li>
+                        <li class="sidebar-item" id="interviewing"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing" aria-expanded="false"><img src="../assets/images/grey_icons/interviewing.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Interviewing</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+                      
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline" aria-expanded="false"><img src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item" id="academics"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./addacademics" aria-expanded="false"><img src="../assets/images/white_icons/academics.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience" aria-expanded="false"><img src="../assets/images/grey_icons/experience.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Experiences</span></a></li>
+                        <li id="active" class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./evaluations" aria-expanded="false"> <img src="../assets/images/grey_icons/evaluations.svg" alt=""> <span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Evaluations</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./dat" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">DAT</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./writing" aria-expanded="false"><img src="../assets/images/grey_icons/writing_grey.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools" aria-expanded="false"><img src="../assets/images/grey_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Schools</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus" aria-expanded="false"><img src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Application Status</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewquestion" aria-expanded="false"><img src="../assets/images/grey_icons/interview_grey.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Interview Questions</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"><span
+                                        class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="./statementediting" aria-expanded="false">
+                                    <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Personal Statement Editing</span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="./scheduleinterviews" aria-expanded="false"><img src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Schedule Mock Interview</span></a></li>
+                            <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                    href="./personalizeschoolselection" aria-expanded="false"><img src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Personalized School Selection</span></a></li>
+                                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li>
+                                        <li class="sidebar-item"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus" aria-expanded="false"><img src="../assets/images/grey_icons/contactus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Forums</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img src="../assets/images/grey_icons/me.svg" alt=""  class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount" aria-expanded="false"><img src="../assets/images/grey_icons/myaccount.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration" aria-expanded="false"><img src="../assets/images/grey_icons/collaboration.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram" aria-expanded="false"><img src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend" aria-expanded="false"><img src="../assets/images/grey_icons/referafriend.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Refer a Friend</span></a></li>
+                                        <div id="bottom_becomeamember"></div>
+                           
+                        
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="margin-bottom: 50px;">
+            <div id="become"></div>
+            <h1 class="referafriend_heading mx-2 mt-2">Add Academics </h1>
+            <p text-align="left;" font-style="normal;" font-weight="normal;" font-size="18px;" id="text">This page is very similar to what you’ll see on your actual application, use this to fill out your academic history and plan out your future semesters.
+
+                This will help speed up the process of completing your application by having this information ready to be filled out.
+                
+                </p>
+                <!-- <div class="container mt-5" style="max-width: 1920px;" id="creditCard">
+                    <div class="row m-2">
+                       <div class="col-lg-9 col-md-8 class-sec p-5" style="border: none;
+                       background: white;
+                       box-shadow: 0px 5px 20px 5px rgb(211 211 211 / 54%) !important;">
+                             <h3 class="referafriend_heading" style="color:#5680E9; font-size: 18px; text-align: center;line-height: inherit;"> Thanks for creating an account with DentXcel </h3>
+                             <p style="text-align: center; font-size: 14px;">
+                              <strong>
+                                This page is exclusive to “Dent-Quest” or “Set to Xcel” members. 
+                                 <br>
+                                 47-page guide
+                                 <br>
+                                 9-page software
+                                 <br>
+                                 3 extra services
+                                 <br>
+                                 student forums
+                                 <br>
+                                 & Live support 
+                              </strong>
+                             
+                           </p>
+                        
+                           <h3 id="hdpage" style="color:#5680E9; text-align: center; font-size: 18px; font-weight: 800;"> By becoming a member below </h3>
+                           <div style="display: flex; justify-content:center; align-items:center;">
+                           <a href="./becomeamember.html" style="font-weight: 800;
+                           margin: auto; background-color: #8860d0; color: #fff; padding: 12px 12px; border-radius: 10px; margin-top: 5px;"> Become a Member</a></div>
+                         </div>
+                      </div>
+                   </div> -->
+            <!-- <div class="card-container" id="creditCard">
+                <div class="card">
+                    <div style="display: flex; flex-direction:row;">
+                  <h1><i aria-hidden="true"></i>Guideology</h1>
+                  <img src="../assets/images/white-logo.png"  style="width: 30px; height:30px; margin-left: 10px;">
+                  
+                </div>
+                <div style="display: flex; flex-direction:row;">
+                <img src="../assets/images/chip.png"  style="width: 50px; height:50px; margin-top: -10px; margin-left: 10px; margin-bottom: 10px;">
+              </div>
+                  <h1>1776 420 XXX XXXX</h1>
+                  <h3 id="name"></h3>
+                  <a href="./becomeamember.html" style="font-weight: 800;
+                  margin: auto; background-color: #fff; color: #8860d0; padding: 5px 10px; border-radius: 10px; margin-top: 5px;"> Become a Member</a>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div> -->
+              <div>
+                <!-- id="show" style="display: none;" -->
+            <!-- ===========================Acadimics Start here=================================== -->
+          
+
+            <br>
+            <h1 class="referafriend_heading mx-2" style="color: black; font-size: 26px;">Add Semester</h1>
+            <div class="container d-none d-md-block mx-2">
+                <!-- d-none d-md-block -->
+                <div style="background-color: #5680E9; width: 100%;" class="row">
+                    <div class="col-3 col-sm-3 ">
+                        <li  class="list-group-item border-0   " style="width: auto; background-color: #5680E9 !important;"><a
+                                style="color: white; font-weight: 600;" href="#">TERM</a></li>
+
+
+                    </div>
+                    <div class="col-3 col-sm-3 ">
+                        <li class="list-group-item border-0  " style="width: auto; background-color: #5680E9;"><a
+                                style="color: white; font-weight: 600;" href="#">YEAR</a></li>
+
+
+                    </div>
+                    <div class="col-3 col-sm-3 ">
+                        <li class="list-group-item border-0  " style="width: auto; background-color: #5680E9;"><a
+                                style="color: white; font-weight: 600;" href="#">ACADEMIC STATUS</a></li>
+
+
+                    </div>
+                    <div class="col-3 col-sm-3 ">
+                        <li class="list-group-item border-0  " style="width: auto; background-color: #5680E9;"><a
+                                style="color: white; font-weight: 600;" href="#">COMPLETION STATUS</a></li>
+
+
+
+                    </div>
+                </div>
+                <form onsubmit="return false">
+                <div style="background-color: #5680E929;padding: 19px; width: 100%;" class="row">
+                    <div class="col-3">
+                        <input type="hidden" id="hiddenId">
+                        <select name="Term" id="Term" class=" form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                            <option value=""> Select...</option>
+                            <option value="Winter">Winter</option>
+                            <option value="Spring">Spring</option>
+                            <option value="Summer ">Summer</option>
+                            <option value="Fall">Fall</option>
+                    </select>
+                    </div>
+                    <div class="col-3">
+                        <select name="Year" id="Year" class=" form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                            <option value=""> Select...</option>
+                            <option value="2005 ">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select name="academicStatus" id="academicStatus" class="form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                            <option value=""> Select...</option>
+                            <option value="Freshman">Freshman</option>
+                            <option value="Sophmore">Sophmore</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Senior ">Senior</option>
+                            <option value="Graduate">Graduate</option>
+                            <option value="Post-Bacc">Post-Bacc</option>
+
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select name="completionStatus" id="completionStatus" class=" form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                            <option value=""> Select...</option>
+                            <option value="Inprogress/Planned">Inprogress</option>
+                            <option value="Completed">Planned/Completed</option>
+                        </select>
+                    </div>
+
+
+                </div>
+                <button class="btn-primary mt-3" type="submit" id="formSave" style="outline: none;" onclick="topDataFun()"> Save </button>
+                <p style="color: #5680E9; margin-top: 10px; font-size: 16px; font-weight: 600; margin-left: 10px;" id="topForm"></p>
+                </form>
+                <form onsubmit="return false" id="courseForm">
+                <button id="show/hide" type="button" id="writebtn" style="  background-color:#8860D0 !important; border: none; outline: none; justify-content: center; align-items: center; display: flex; font-weight: 600; padding: 11px; border-radius: 10px; width: 220px; margin-left: -13px;" class="col-lg-3 col-sm-6 col-md-3  mt-3 btn btn-info text-white add" onclick="addExperience()"> <i  class="bi bi-plus-circle-fill mx-2" style="margin-bottom: 2px;"></i> Add Course</button>
+                <!-- <div style="display: flex; flex-direction: row; margin-left: -30px;" class="upload_document_btn add"> -->
+                   
+                    <!-- <div class="d-flex flex-direction-row">
+                        <i class="bi bi-plus-circle" style="    color: #5AB9EA;
+                        font-size: 32px;
+                        margin-left: 28px;
+                        margin-top: 14px;"></i>
+                        <button type="button" class="btn long-btn-su" style="border-radius: 16px; margin-left: -38px; box-shadow: 0px 12px 20px #5680e929; width: 194px; height: 50px; font-weight: 600; " id="show/hide">Add Course</button>
+                    </div> -->
+                    <!-- </div> -->
+                <div id="afterSave" style="display: none; margin-top: 20px;">
+                    <div class=" mx-2">
+                        <!-- d-none d-md-block -->
+                        <div class="list"></div>
+                        <!-- <button class="btn-primary mt-3" type="submit" onclick="academicsDataFun()" style="border: none; outline: none;"> Save </button>
+                        <a href="./myacademics.html" class="btn-primary w-25 m-3" style="border:none; outline:none;padding: 10px;">Check your Academics</a>
+                        <p style="color: #5680E9; margin-top: 10px; font-size: 16px; margin-left: 10px;" id="academicsPara2"></p> -->
+                        <div class="col-sm-4 mt-2" style="display: flex; flex-direction:row; margin-left: -30px;">
+                            <div class="fa fa-plus-circle text-success add"></div>
+                            <p class="text-success add ml-2">Add New</p>
+                        </div>
+                        <button class="btn-primary mt-3" type="submit" onclick="academicsDataFun()" style="border: none; outline: none;"> Save </button>
+                        <!-- <a href="./myacademics.html" class="btn-primary w-25 m-3" style="border:none; outline:none;padding: 10px;">Check your Academics</a> -->
+                        <!-- <p style="color: #5680E9; margin-top: 10px; font-size: 16px; margin-left: 10px;" id="academicsPara2"></p> -->
+                    </div>
+                </div>
+                <div class=" mx-2">
+                    <!-- d-none d-md-block      -->
+                   
+              
+                </div>
+                <!-- <input class="btn-primary mx-lg-4 mt-3" type="button" value="Cancel"> -->
+            </form>
+            </div>
+            <!-- Form for Mobile Start here -->
+            <div class="container d-block d-md-none">
+                <!-- d-block d-md-none -->
+                <form onsubmit="return false" id="academicsForm">
+                <div style="background-color: #5680E9; padding-bottom: 8px; margin:5px -5px;" class="row">
+                    <div class="col-12" style="display: flex; flex-direction: row;">
+                        <li  class="list-group-item border-0   " style="width: 125px; background-color: #5680E9 !important; margin-top: 5px;"><a
+                                style="color: white; font-weight: 600; font-size: 12px;" href="#">TERM</a></li>
+
+                                <input type="hidden" id="hiddenId">
+                                <select name="Term" id="Term" class=" form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                                    <option value=""> Select...</option>
+                                    <option value="Winter">Winter</option>
+                                    <option value="Spring">Spring</option>
+                                    <option value="Summer ">Summer</option>
+                                    <option value="Fall">Fall</option>
+                            </select>
+                    </div>
+                    </div>
+                    <div style="background-color: #5680E9; padding-bottom: 8px; margin:5px -5px;" class="row">
+                        <div class="col-12" style="display: flex; flex-direction: row;">
+                            <li  class="list-group-item border-0   " style="width: 125px; background-color: #5680E9 !important; margin-top: 5px;"><a
+                                    style="color: white; font-weight: 600; font-size: 12px;" href="#">YEAR</a></li>
+                                    <select name="Year" id="Year" class=" form-control form-select uname-box mt-2" placeholder="select" style="border:none; outline:none;" required>
+                                        <option value=""> Select...</option>
+                                        <option value="2005 ">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                        <option value="2027">2027</option>
+                                        <option value="2028">2028</option>
+                                        <option value="2029">2029</option>
+                                        <option value="2030">2030</option>
+            
+                                    </select>
+
+                    </div>
+                    </div>
+                    <div style="background-color: #5680E9; padding-bottom: 8px; margin:5px -5px;" class="row">
+                        <div class="col-12" style="display: flex; flex-direction: row;">
+                            <li  class="list-group-item border-0   " style="width: 95px; background-color: #5680E9 !important; margin-top: 5px;"><a
+                                    style="color: white; font-weight: 600; font-size: 12px;" href="#"> ACADEMIC STATUS</a></li>
+                                    <select name="academicStatus" id="academicStatus" class="form-control form-select uname-box mt-3" placeholder="select" style="border:none; outline:none;" required>
+                                        <option value=""> Select...</option>
+                                        <option value="Freshman">Freshman</option>
+                                        <option value="Sophmore">Sophmore</option>
+                                        <option value="Junior">Junior</option>
+                                        <option value="Senior ">Senior</option>
+                                        <option value="Graduate">Graduate</option>
+                                        <option value="Post-Bacc">Post-Bacc</option>
+            
+                                    </select>
+
+                    </div>
+                    </div>
+                    <div style="background-color: #5680E9; padding-bottom: 8px; margin:5px -5px;" class="row">
+                        <div class="col-12" style="display: flex; flex-direction: row;">
+                            <li  class="list-group-item border-0   " style="width: 95px; background-color: #5680E9 !important; margin-top: 5px;"><a
+                                    style="color: white; font-weight: 600; font-size: 12px;" href="#"> COMPL STATUS </br></a></li>
+
+                                    <select name="completionStatus" id="completionStatus" class=" form-control form-select uname-box mt-3" placeholder="select" style="border:none; outline:none;" required>
+                                        <option value=""> Select...</option>
+                                        <option value="Inprogress/Planned">Inprogress</option>
+                                        <option value="Completed">Planned/Completed</option>
+                                    </select>
+
+                    </div>
+                </div>
+                <button class="btn-primary mt-3" type="submit" style="outline: none; margin-left: 0px;" > Save </button>
+            </form>
+                <button  type="button" id="writebtn" style="  background-color:#8860D0 !important; border: none; outline: none; justify-content: center; align-items: center; display: flex; font-weight: 600; padding: 11px; border-radius: 10px; width: 220px;" class="col-lg-3 col-sm-6 col-md-3  mt-3 btn btn-info text-white add2"> <i  class="bi bi-plus-circle-fill mx-2" style="margin-bottom: 2px;"></i> Add Course</button>
+                <form onsubmit="return false" id="courseForm">
+                <div id="afterSave2" style="margin-top: 20px;">
+                    <div class=" mx-2 d-block d-md-none">
+                        <!-- d-none d-md-block -->
+                        <div class="list2 d-block d-md-none"></div>
+                        <div class="col-sm-4 mt-2" style="display: flex; flex-direction:row; margin-left: -20px;">
+                            <div class="fa fa-plus-circle text-success add2"></div>
+                            <p class="text-success add2 ml-2">Add New</p>
+                        </div>
+                        <button class="btn-primary mt-3" type="submit" onclick="academicsDataFun()"style="border: none; outline: none; margin-left: 0px;"> Save </button>
+                    </form>
+                        <!-- <p style="color: #5680E9; margin-top: 10px; font-size: 16px; margin-left: 10px;" id="academicsPara2"></p> -->
+                    </div>
+                </div>
+                <div class=" mx-2">
+                    <!-- d-none d-md-block      -->
+                   
+              
+                </div>
+                <!-- <input class="btn-primary mx-lg-4 mt-3" type="button" value="Cancel"> -->
+       <!-- Second Form for Mobile End here -->
+    
+                </div>
+            <!-- Form for Mobile End here -->
+              </div>
+
+            
+        </div>
+        <!-- Modal Start here -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                    
+                        <img style="margin-left:35%; margin-bottom: 20px; width: 25%;" src="../assets/images/check.png" alt="">
+        
+                        <h3 style="text-align:center; font-size: 16px;"><b> Saved Successfully <i class="bi bi-check-circle" style="color:green"></i> </b></h3>
+                        <br>
+                        <div class="modal-footer" style="display: flex; justify-content:center; align-items: center;">
+                            <button style="background-color: #5680E9;" type="button" id="modal_btn" class="btn btn-secondary" data-dismiss="modal" onclick="change()">Done</button>
+                            <!-- <button type="button" id="modal_btn" class="btn btn-primary" onclick="subscribeNow()" >Okay</button> -->
+                          </div>
+                        <!-- <button style="margin-left:21%;" type="button" class="btn btn-primary">Done</button> -->
+        
+        
+                    
+                     <!-- <img src="../Admin_dashboard/assets/images/loginimage/tick_green.svg" alt=""> -->
+                  
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <!-- Modal End here -->
+        <!-- ===========================Acadimics End here=================================== -->
+
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page wrapper  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../dist/js/header.js"></script> 
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/db/academics.js"></script>
+    <script src="../dist/js/db/academicsHeader.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/card.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script src="../dist/js/lockScreenCard.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    function change(){
+        window.location.href = 'acadmics.html'
+    } 
+    </script>
+    <script>
+        // var okay = prompt('Write your id here')
+    
+
+    // document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+    
+    document.onkeydown = function(e)
+    {
+        if(event.keyCode == 123)
+        {
+            return false;
+        }
+        if(event.keyCode == 17)
+        {
+            return false;
+        }
+        // if(event.keyCode == 67)
+        // {
+        //     return false;
+        // }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+        {
+            return false;
+        }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0))
+    {
+      return false;
+    }
+    }
+    // if (role !== "accept") {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .addClass("disabled")
+    //   .find("a").prop("disabled", true);
+    //   title = 'Become a Member'
+    // } else {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .removeClass("disabled")
+    //   .find("a").prop("disabled", false); 
+    // }
+    </script>
+
+    <script type="text/javascript">
+   document.getElementById('show/hide').onclick = function() {
+   var divTest = document.getElementById('afterSave');
+   if (divTest.style.display === 'none') {
+    divTest.style.display = 'block';
+  } else {
+    divTest.querySelector('#afterSave').appendChild( divTest.querySelector('.col-sm-6').cloneNode(true) );
+  }
+}
+    function showDiv2() {
+   document.getElementById('afterSave2').style.display = "block";
+}
+    </script>
+
+    <script>
+        // var okay = prompt('Write your id here')
+
+var role = ''
+if (role !== "accept") {
+  $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+      .addClass("disabled")
+      .find("a").prop("disabled", true);
+      title = 'Become a Member'
+} else {
+   $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+      .removeClass("disabled")
+      .find("a").prop("disabled", false); 
+}
+    </script>
+
+    <!-- Add Courses -->
+    <script>
+        $(function(){
+   var number = 1;
+   $('.add').click(function(e){
+      e.preventDefault();
+      $('.list').append(`<div id="settings'${number}'"><div style="background-color: #8860D0; width: 100%;" class="row"><div class="col-lg-3 col-md-3 ">
+                                <li  class="list-group-item border-0" style="width: auto; background-color: #8860D0 !important;">
+                                    <a
+                                        style="color: white !important;  font-weight:600;" href="#">COURSE CODE</a></li>
+                             </div>
+                            <div class="col-lg-3 col-md-3 ">
+                                <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                                        style="color: white;  font-weight:600;" href="#">COURSE TITLE</a></li>
+                
+                
+                            </div>
+                            <div class="col-lg-2 col-md-2 ">
+                                <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                                        style="color: white;  font-weight:600;" href="#">SUBJECT</a></li>
+                
+                
+                            </div>
+                            <div class="col-lg-2 col-md-2 ">
+                                <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                                        style="color: white;  font-weight:600;" href="#">CREDITS</a></li>
+                            </div>
+                            <div class="col-lg-2 col-md-2 ">
+                                <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                                        style="color: white;  font-weight:600;" href="#">Grade</a></li>
+                            </div>
+                        </div>
+                        <div style="background-color: #F0EDFA; padding: 19px; width: 100%;" class="row">
+                            <div class="col-lg-3 col-md-3">
+                                <input type="hidden" id="hiddenId">
+                                <input style="width: 235px;"  id="courseCode" class="afterSaveInputs" type="text" placeholder="Course Code" required>
+                            </div>
+                            <div class="col-lg-3 col-md-3">
+                               <input  style="width: 235px;" id="courseTitle" class="afterSaveInputs" type="text" placeholder="Course Title" required>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                               <input id="subject" class="afterSaveInputs" type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <input id="credits" class="afterSaveInputs" type="number" placeholder="Credits" required>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <input id="grade" class="afterSaveInputs" type="text" placeholder="Grade" required>
+                            </div>
+                
+                
+                        </div>
+                        <a href="#" class="mt-1 cancel fa fa-trash text-danger" style="font-size:18px; display:flex; flex-direction:row;"><p style="font-size:18px; font-weight:600;" class="text-danger ml-2"> Delete </p></a></div>`);
+      number++;
+   });
+   $('.list').on('click','a.cancel', function(e){
+      e.preventDefault();
+      $(this).parent().remove();
+   });
+});
+     
+//       $(document).ready(function(){
+
+// $('.add').click(function(){
+// $(".list").append(
+//     '<div class="mb-2 row justify-content-between px-3">' +
+//         '<select class="mob mb-2">' +
+//             '<option value="opt1">Mon-Fri</option>' +
+//             '<option value="opt2">Sat-Sun</option>' +
+//         '</select>' +
+//         '<div class="mob">' +
+//             '<label class="text-grey mr-1">From</label>' +
+//             '<input class="ml-1" type="time" name="from">' +
+//         '</div>' +
+//         '<div class="mob mb-2">' +
+//             '<label class="text-grey mr-4">To</label>' +
+//             '<input class="ml-1" type="time" name="to">' +
+//         '</div>' +
+//         '<div class="mt-1 cancel fa fa-times text-danger">' +
+//         '</div>' +
+//     '</div>');
+// });
+
+// $(".list").on('click', '.cancel', function(){
+// $(this).parent().remove();
+// });
+
+// });
+    function valueTesting(){
+        const a = document.getElementById('title').value;
+        const b = document.getElementById('keyResponsibilities').value;
+    
+        console.log(`A ========>>>>>>> ${a}, B ============> ${b}`)
+    }
+    </script>
+    <script>
+        $(function(){
+   var number = 1;
+   $('.add2').click(function(e){
+      e.preventDefault();
+      $('.list2').append(`<div id="settings'${number}'"> <div style="background-color: #8860D0 ; padding-bottom: 1px; margin:5px -5px;" class="row">
+                    <div class="col-12" style="display: flex; flex-direction: row;">
+                        <li  class="list-group-item border-0   " style="width: 150px; background-color: #8860D0  !important; margin-top: 5px;"><a
+                                style="color: white; font-weight: 600; font-size: 12px;" href="#">COURSECODE</a></li>
+                                <input type="hidden" id="hiddenId">
+                                <input style="width: 235px; height: fit-content; margin-top: 5px;"  id="courseCode" class="afterSaveInputs" type="text" placeholder="Course Code" required>
+                 </div>
+                 </div>
+                 <div style="background-color: #8860D0 ; padding-bottom: 1px; margin:5px -5px;" class="row">
+                    <div class="col-12" style="display: flex; flex-direction: row;">
+                        <li  class="list-group-item border-0   " style="width: 150px; background-color: #8860D0  !important; margin-top: 5px;"><a
+                                style="color: white; font-weight: 600; font-size: 12px;" href="#">COURSETITLE</a></li>
+                                <input  style="width: 235px; height: fit-content; margin-top: 5px;" id="courseTitle" class="afterSaveInputs" type="text" placeholder="Course Title" required>
+        
+                 </div>
+                 </div>
+                 <div style="background-color: #8860D0 ; padding-bottom: 1px; margin:5px -5px;" class="row">
+                    <div class="col-12" style="display: flex; flex-direction: row;">
+                        <li  class="list-group-item border-0   " style="width: 150px; background-color: #8860D0  !important; margin-top: 5px;"><a
+                                style="color: white; font-weight: 600; font-size: 12px;" href="#">SUBJECT</a></li>
+                                <input id="subject" style="width: 235px; height: fit-content; margin-top: 5px;" class="afterSaveInputs" type="text" placeholder="Subject" required>
+        
+                 </div>
+                 </div>
+                 <div style="background-color: #8860D0 ; padding-bottom: 1px; margin:5px -5px;" class="row">
+                    <div class="col-12" style="display: flex; flex-direction: row;">
+                        <li  class="list-group-item border-0   " style="width: 150px; background-color: #8860D0  !important; margin-top: 5px;"><a
+                                style="color: white; font-weight: 600; font-size: 12px;" href="#">CREDITS</a></li>
+                                <input id="credits" style="width: 235px; height: fit-content; margin-top: 5px;" class="afterSaveInputs" type="number" placeholder="Credits" required>
+                 </div>
+                 </div>
+                 <div style="background-color: #8860D0 ; padding-bottom: 1px; margin:5px -5px;" class="row">
+                    <div class="col-12" style="display: flex; flex-direction: row;">
+                        <li  class="list-group-item border-0   " style="width: 150px; background-color: #8860D0  !important; margin-top: 5px;"><a
+                                style="color: white; font-weight: 600; font-size: 12px;" href="#">Grade</a></li>
+                                <input style="width: 235px; height: fit-content; margin-top: 5px;" id="grade" class="afterSaveInputs" type="text" placeholder="Grade" required>
+        
+                 </div>
+                 </div>
+                        <a href="#" class="mt-1 cancel fa fa-trash text-danger" style="font-size:18px; display:flex; flex-direction:row;"><p style="font-size:18px; font-weight:600;" class="text-danger ml-2"> Delete </p></a></div>`);
+      number++;
+   });
+   $('.list2').on('click','a.cancel', function(e){
+      e.preventDefault();
+      $(this).parent().remove();
+   });
+});
+     
+//       $(document).ready(function(){
+
+// $('.add').click(function(){
+// $(".list").append(
+//     '<div class="mb-2 row justify-content-between px-3">' +
+//         '<select class="mob mb-2">' +
+//             '<option value="opt1">Mon-Fri</option>' +
+//             '<option value="opt2">Sat-Sun</option>' +
+//         '</select>' +
+//         '<div class="mob">' +
+//             '<label class="text-grey mr-1">From</label>' +
+//             '<input class="ml-1" type="time" name="from">' +
+//         '</div>' +
+//         '<div class="mob mb-2">' +
+//             '<label class="text-grey mr-4">To</label>' +
+//             '<input class="ml-1" type="time" name="to">' +
+//         '</div>' +
+//         '<div class="mt-1 cancel fa fa-times text-danger">' +
+//         '</div>' +
+//     '</div>');
+// });
+
+// $(".list").on('click', '.cancel', function(){
+// $(this).parent().remove();
+// });
+
+// });
+    function valueTesting(){
+        const a = document.getElementById('title').value;
+        const b = document.getElementById('keyResponsibilities').value;
+    
+        console.log(`A ========>>>>>>> ${a}, B ============> ${b}`)
+    }
+    </script>
+    <script>
+        // Extra for Mobile
+        `  <div class="container  ">
+                <!-- d-block d-md-none -->
+                <form onsubmit="return false">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <li class="list-group-item border-0  " style="width: 100; margin-left: 10px; background-color: #5680E9;"><a
+                                style="color: white;" href="#">TERM</a></li>
+                            </li>
+                            <input type="hidden" id="hiddenId">
+                            <select style="width: 100; margin-left: 10px;" name="Term" id="Term" class=" form-control form-select uname-box mt-2 mb-2" placeholder="select" required>
+                                <option value=""> Select...</option>
+                                <option value="Winter">Winter</option>
+                                <option value="Spring">Spring</option>
+                                <option value="Summer ">Summer</option>
+                                <option value="Fall">Fall</option>
+    
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <li class="list-group-item border-0  " style="width: 100; margin-left: 10px; background-color: #5680E9;"><a
+                                style="color: white;" href="#">YEAR</a></li>
+                            </li>
+                           
+                                <select style="width: 100; margin-left: 10px;" name="Year" id="Year" class=" form-control form-select uname-box mt-2 mb-2 " placeholder="select" required>
+                                    <option value=""> Select...</option>
+                                    <option value="2005 ">2005</option>
+                                    <option value="2006">2006</option>
+                                    <option value="2007">2007</option>
+                                    <option value="2008">2008</option>
+                                    <option value="2009">2009</option>
+                                    <option value="2010">2010</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            <li class="list-group-item border-0  " style="width: 100; margin-left: 10px; background-color: #5680E9;"><a
+                                style="color: white;" href="#">ACADEMIC STATUS</a></li>
+                            </li>
+                            
+                                <select style="width: 100; margin-left: 10px;" name="academicStatus" id="academicStatus" class=" form-control form-select uname-box mt-2 mb-2" placeholder="select" required>
+                                    <option value=""> Select...</option>
+                                <option value="Freshman">Freshman</option>
+                                <option value="Sophmore">Sophmore</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Senior ">Senior</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Post-Bacc">Post-Bacc</option>
+                                </select>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                            
+                                <li class="list-group-item border-0  " style="width: 100; margin-left: 10px; background-color: #5680E9;"><a
+                                    style="color: white;" href="#">COMPLETION STATUS</a></li>
+                                    <select style="width: 100; margin-left: 10px;" name="completionStatus" id="completionStatus" class=" form-control form-select uname-box mt-2 mb-2" placeholder="select" required>
+                                        <option value=""> Select...</option>
+                                        <option value="Inprogress/Planned">Inprogress</option>
+                                        <option value="Completed">Planned/Completed</option>
+                                    </select>
+                        </div>
+    
+                    </div>
+    <div class="row">
+    
+        <button class="btn-primary w-25 m-3 " type="submit" style="border: none; margin-left: 25px !important; outline:none;" onclick="showDiv2()"> Save </button>
+    
+    </div>
+     <!-- Second Form for Mobile Start here -->
+     <div id="afterSave2" style="display: none; margin-top:20px;">
+        <div class="container d-block d-md-none ">
+           <div class="row">
+               <div class="col-lg-3 col-md-3 col-sm-6">
+                   <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                       style="color: white;" href="#">COURSE CODE</a></li>
+                   </li>
+                   <input class="form-control mt-2 mb-2" type="text" placeholder="Course Code" id="courseCode" required>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6">
+                   <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                       style="color: white;" href="#">COURSE TITLE</a></li>
+                   </li>
+                  
+                   <input class="form-control mt-2 mb-2" type="text" placeholder="Course Title" id="courseTitle" required>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6">
+                   <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                       style="color: white;" href="#">SUBJECT</a></li>
+                   </li>
+                   <input class="form-control mt-2 mb-2" type="text" placeholder="Subject" id="subject" required>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6">
+                   
+                       <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                           style="color: white;" href="#">CREDITS</a></li>
+                           <input class="form-control mt-2 mb-2" type="text" placeholder="Credits" id="credits" required>
+               </div>
+               <div class="col-lg-3 col-md-3 col-sm-6">
+                   
+                       <li class="list-group-item border-0  " style="width: auto; background-color: #8860D0;"><a
+                           style="color: white;" href="#">GRADE</a></li>
+                           <input class="form-control mt-2 mb-2" type="text" placeholder="Grade" id="grade" required>
+               </div>
+    
+           </div>
+    <div class="row">
+    
+    <button class="btn-primary w-25 m-3 " type="submit" style="border:none; outline:none;" onclick="academicsDataFun()" > Save </button>
+    <!-- <a href="./myacademics.html" class="btn-primary m-3" style="border:none; outline:none;padding: 10px; width: auto;">Check your Academics</a> -->
+    <p style="color: #5680E9; margin-top: 10px; font-size: 16px; margin-left: 10px;" id="academicsPara2"></p>
+    
+    <!-- <input class="btn-primary w-25 m-3" type="submit" value="Cancel"> -->
+    
+    </div>
+    
+    
+       </div>
+    </div>
+    </form>
+       <!-- Second Form for Mobile End here -->
+    
+                </div>`
+    </script>
+     <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>
+

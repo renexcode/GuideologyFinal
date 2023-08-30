@@ -1,0 +1,2427 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Our goal at Guideology is to provide an inclusive and accurate guide that will cover every step of the path you will take towards your preferred career.">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Guideology</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/icon.png">
+    <!-- Custom CSS -->
+    <link href="../assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../web2/css/bootstrap.css" rel="stylesheet">
+    <link href="../web2/css/fontawesome-all.css" rel="stylesheet">
+    <link href="../web2/css/swiper.css" rel="stylesheet">
+    <link href="../web2/css/magnific-popup.css" rel="stylesheet">
+    <link href="../web2/css/styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <link href="https://docs.google.com/static/spreadsheets2/client/css/1380409507-waffle_k_ltr.css" type="text/css" rel="stylesheet" nonce="">
+    <link href="https://docs.google.com/static/spreadsheets2/client/css/1745889400-trix_widget_ltr.css" type="text/css" rel="stylesheet">
+   <!-- <script src="https://docs.google.com/static/spreadsheets2/client/js/3934234462-trix_widgets.js" nonce=""></script> -->
+   <link rel="" href="https://fonts.googleapis.com/css?kit=o--8Et3j0xElSo4Jk-6CSN_pgL91BiSHK8etQbSopkk">
+</head>
+<style>
+       /* .s3 {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
+} */
+@media (min-width: 768px) {
+  .s3 {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background-color: #f2f2f2;
+  }
+}
+  .ritz .waffle .s5 {
+    background-color: #5781ea;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s4 {
+    background-color: #84ceeb;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s6 {
+    border-right: 1px SOLID #000000;
+    background-color: #84ceeb;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s7 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #c5d4f9;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s8 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #b8caf7;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s9 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #d9e2fb;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s10 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #fcfcff;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s11 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #e0f1fb;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s12 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #c5d3f9;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s13 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #a9bdf4;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s14 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #b9caf6;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s15 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #bae2f4;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s16 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #bee3f4;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s17 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #d1ebf7;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s18 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #daeff9;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s19 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #ddf0f9;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s20 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #c9d6f8;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s21 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #e2f2fb;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s22 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #def0fa;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.ritz .waffle .s23 {
+    border-bottom: 1px SOLID #000000;
+    border-right: 1px SOLID #000000;
+    background-color: #d9eef9;
+    text-align: center;
+    color: #000000;
+    font-family: 'docs-Calibri',Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 2px 3px 2px 3px;
+}
+.topfixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.s01{
+    font-size: 11px;
+    font-weight: bold;
+}
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+       
+      #text{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 14px !important;
+    color: #000;
+    font-weight: 600;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.card-container {
+  /* position: absolute; */
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 500px;
+  height: 500px;
+}
+.card-container .card {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 250px;
+  padding: 20px;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, #764ba2 10%, #667eea 90%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+  z-index: 2;
+  transition: all 1s;
+}
+
+.card-container .card h1 {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+.card-container .card h1:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.card-container .card h3 {
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.card-container .card h3:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.card-container .card .circle {
+  position: absolute;
+  margin: auto;
+  top: 10%;
+  bottom: 0;
+  right: -50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #667eea 5%, #764ba2 90%); 
+  z-index: -2;
+}
+.card-container .card .circle:nth-of-type(2) {
+  width: 100px;
+  height: 100px;
+  top: 90%;
+  right: -20%;
+  z-index: -1;
+  background-image: linear-gradient(135deg, #667eea 10%, #764ba2 90%); 
+}
+@media only screen and (max-width: 780px) {
+  .card-container .card {
+    width: 270px;
+    height: 200px;
+    transition: none;
+    top: 140px;
+  }
+
+  .card-container .card h1 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: -3px;
+  }
+  #name{
+    margin-bottom: 3px;
+    margin-top: 6px;
+  }
+  .card-container .card h1:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .card-container .card h3 {
+    font-size: 14px;
+  }
+  .card-container .card h3:nth-of-type(2) {
+    font-size: 12px;
+  }
+  .card-container .card .circle {
+    right: -70%;
+  }
+}
+</style>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-layout="vertical" data-navbarbg="skin5" data-sidebartype="full"
+        data-sidebar-position="absolute" data-header-position="absolute" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+       <div id="header"></div>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside style="height: 100% !important; position: fixed;" id="leftCol" class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./introduction" aria-expanded="false"><img src="../assets/images/grey_icons/Introduction.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Introduction</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">All-In-One Guide</span>
+                                      <!-- <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"> -->
+                                 
+                                 </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./beforethedat" aria-expanded="false"> <img src="../assets/images/grey_icons/beforedat.svg" alt=""> <span class="hide-menu ml-2" style="font-size: 12px;">Before the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./takingdat" aria-expanded="false"><img src="../assets/images/grey_icons/takingdat.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Taking the DAT</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./theapplicationprocess" aria-expanded="false"><img src="../assets/images/grey_icons/theapplicationprocess.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">The Application Process</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./interviewing" aria-expanded="false"><img src="../assets/images/grey_icons/interviewing.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Interviewing</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Your Progress</span> <img src="../assets/images/grey_icons/progress.svg" alt="" class="ml-3"></li>
+                      
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./timeline" aria-expanded="false"><img src="../assets/images/grey_icons/timeline.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Timeline</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./acadmics" aria-expanded="false"><img src="../assets/images/grey_icons/academics.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Academics</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./experience" aria-expanded="false"><img src="../assets/images/grey_icons/experience.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Experiences</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./evaluations" aria-expanded="false"><img src="../assets/images/grey_icons/evaluations.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2">Evaluations</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./dat" aria-expanded="false"><img src="../assets/images/grey_icons/dat.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">DAT</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                        href="./writing" aria-expanded="false"><img src="../assets/images/grey_icons/writing_grey.svg" alt=""><span style="font-size: 12px;"
+                                        class="hide-menu ml-2">Writing</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./schools" aria-expanded="false"><img src="../assets/images/white_icons/schools.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">School Stats & Prereqs.
+                                </span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./applicationstatus" aria-expanded="false"><img src="../assets/images/grey_icons/applicationstatus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Application Status</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="./interviewquestion" aria-expanded="false"><img src="../assets/images/grey_icons/interview_grey.svg" alt=""><span style="font-size: 12px;"
+                                            class="hide-menu ml-2">Interview Questions</span></a></li>
+                                            <li class="sidebar-item" id="dashboard-main-hading"><span
+                                                class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Extras</span> <img src="../assets/images/grey_icons/extras.svg" alt="" class="ml-3"> </li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./statementediting" aria-expanded="false">
+                                            <img src="../assets/images/grey_icons/personal_statement_editing.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personal Statement Editing</span></a></li>
+                                    <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./scheduleinterviews" aria-expanded="false"><img src="../assets/images/grey_icons/scheduledmockinterviews.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Schedule Mock Interview</span></a></li>
+                                    <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                            href="./personalizeschoolselection" aria-expanded="false"><img src="../assets/images/grey_icons/pss_grey.svg" alt=""><span style="font-size: 12px;"
+                                                class="hide-menu ml-2">Personalized School Selection</span></a></li> -->
+                                                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                    href="./supplemental-copy-editing.html" aria-expanded="false"><img src="../assets/images/grey_icons/supplemental.svg" alt=""><span style="font-size: 12px;"
+                                                        class="hide-menu ml-2 ">Supplemental Copy-Editing</span></a></li> 
+                                                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                            href="./podcast.html" aria-expanded="false"><img
+                                                                src="../assets/images/grey_icons/podcast.svg" alt=""><span
+                                                                style="font-size: 12px;" class="hide-menu ml-2 ">Podcast</span></a></li> -->
+                                               <!--salman-->                                                                                                           
+<li class="sidebar-item" id="dashboard-main-hading"><span class="hide-menu"
+    style="font-size: 16px; font-weight: 600; margin-left: 15px;">Other</span>
+   
+    <img
+    src="../assets/images/grey_icons/podcast.svg" alt="" class="ml-3">
+   </li>
+   <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+    href="./merch.html" aria-expanded="false"><img
+        src="../assets/images/grey_icons/product.svg" alt=""><span
+        style="font-size: 12px;" class="hide-menu ml-2 ">Merch</span></a></li>
+  <!-- salman --> 
+                                                                <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                                                    href="./products.html" aria-expanded="false"><img
+                                                                        src="../assets/images/grey_icons/product.svg" alt=""><span
+                                                                        style="font-size: 12px;" class="hide-menu ml-2 ">Products</span></a></li>  -->
+        
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Support</span> <img src="../assets/images/grey_icons/support.svg" alt="" class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./contactus" aria-expanded="false"><img src="../assets/images/grey_icons/contactus.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Contact Us</span></a></li>
+                        <!-- <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./helpcenter" aria-expanded="false"><img src="../assets/images/grey_icons/helpcenter.svg" alt=""></i><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Help Center</span></a></li> -->
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./forums" aria-expanded="false"><img src="../assets/images/grey_icons/forums.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Forums</span></a></li>
+                                    <li class="sidebar-item" id="dashboard-main-hading"> <span
+                                            class="hide-menu" style="font-size: 16px; font-weight: 600; margin-left: 15px;">Me</span> <img src="../assets/images/grey_icons/me.svg" alt=""  class="ml-3"> </li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./myaccount" aria-expanded="false"><img src="../assets/images/grey_icons/myaccount.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">My Account</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./collaboration" aria-expanded="false"><img src="../assets/images/grey_icons/collaboration.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Collaborations</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./affiliateprogram" aria-expanded="false"><img src="../assets/images/grey_icons/affiliate_program.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-1">Affiliate Program</span></a></li>
+                        <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link"
+                                href="./referafriend" aria-expanded="false"><img src="../assets/images/grey_icons/referafriend.svg" alt=""><span style="font-size: 12px;"
+                                    class="hide-menu ml-2">Refer a Friend</span></a></li>
+                       
+                                    <div id="bottom_becomeamember"></div>
+                    </ul>
+  
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="container-fluid">
+        <div class="page-wrapper" style="background: none !important; margin-bottom: 50px;">
+            <div id="become"></div>
+            <h1 class="referafriend_heading ml-2"> School Stats & Prereqs.
+                            </h1>
+            <p text-align="left;" font-style="normal;" font-weight="normal;" font-size="18px;" id="text">
+                Below, you’ll find a table with all US dental schools. Included are GPA & DAT averages, prerequisite requirements, min. required shadowing hours, in-state/out-of-state statistics, and class size. All of which are important details to consider when choosing which schools to apply to.
+                </p>
+                
+                <div id="lockedCard"></div>
+
+                     <div id="show" style="display: none;">
+        
+                      <!-- <iframe width="100%" height="530px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQpv5C3P9uTpyCAjdSlHb2huH2O3I241apxVGH72guu_y2w7woCe9TjEpWVEOAGAKrMzxulbQCOFVYo/pubhtml?widget=true&amp;headers=false"></iframe> -->
+                      <div id="sheets-viewport" >
+                        <!-- <div id="sheets-viewport" style="width: 1152px; height: 734px;"> -->
+                        <div id="0" style="position: relative;" dir="ltr">
+                            <div class="ritz grid-container" dir="ltr">
+                                <table class="waffle" cellspacing="0" cellpadding="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="row-header freezebar-vertical-handle header-shim row-header-shim"></th>
+                                            <th id="0C0" style="width: 308px;" class="header-shim"></th>
+                                            <th id="0C1" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C2" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C3" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C4" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C5" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C6" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C7" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C8" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C9" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C10" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C11" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C12" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C13" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C14" style="width: 199px;" class="header-shim"></th>
+                                            <th id="0C15" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C16" style="width: 201px;" class="header-shim"></th>
+                                            <th id="0C17" style="width: 182px;" class="header-shim"></th>
+                                            <th id="0C18" style="width: 100px;" class="header-shim"></th>
+                                            <th id="0C19" style="width: 177px;" class="header-shim"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                     
+                                        <!-- <tr style="height: 20px;margin-left: 17%;" class="topfixed" id="myNavbar">
+                                            <th id="0R0" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">1</div></th>
+                                            <td class="s01" dir="ltr">Dental School</td>
+                                            <td class="s01" dir="ltr">Biochemistry</td>
+                                            <td class="s01" dir="ltr">Microbiology</td>
+                                            <td class="s01" dir="ltr">Statistics</td>
+                                            <td class="s01" dir="ltr">Anatomy</td>
+                                            <td class="s01" dir="ltr">Physiology</td>
+                                            <td class="s01" dir="ltr">Psychology</td>
+                                            <td class="s01" dir="ltr">Humanities</td>
+                                            <td class="s01" dir="ltr">Calculus</td>
+                                            <td class="s01" dir="ltr">Zoology</td>
+                                            <td class="s01" dir="ltr">Histology</td>
+                                            <td class="s01" dir="ltr">Sociology</td>
+                                            <td class="s01" dir="ltr">Mean sGPA</td>
+                                            <td class="s01" dir="ltr">Mean cGPA</td>
+                                            <td class="s01" dir="ltr">Mean Academic Average</td>
+                                            <td class="s01" dir="ltr">Mean PAT</td>
+                                            <td class="s01" dir="ltr">Mean Total Science</td>
+                                            <td class="s01" dir="ltr">Shadowing Hours Required</td>
+                                            <td class="s01 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 99px; left: -3px;">Seats Available</div></td>
+                                            <td class="s01" dir="ltr">Out of State Enrolled</td>
+                                        </tr> -->
+                                        <tr style="height: 20px;" >
+                                            <th id="0R0" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">1</div></th>
+                                            <td class="s0" dir="ltr">Dental School</td>
+                                            <td class="s0" dir="ltr">Biochemistry</td>
+                                            <td class="s0" dir="ltr">Microbiology</td>
+                                            <td class="s0" dir="ltr">Statistics</td>
+                                            <td class="s0" dir="ltr">Anatomy</td>
+                                            <td class="s0" dir="ltr">Physiology</td>
+                                            <td class="s0" dir="ltr">Psychology</td>
+                                            <td class="s0" dir="ltr">Humanities</td>
+                                            <td class="s0" dir="ltr">Calculus</td>
+                                            <td class="s0" dir="ltr">Zoology</td>
+                                            <td class="s0" dir="ltr">Histology</td>
+                                            <td class="s0" dir="ltr">Sociology</td>
+                                            <td class="s0" dir="ltr">Mean sGPA</td>
+                                            <td class="s0" dir="ltr">Mean cGPA</td>
+                                            <td class="s0" dir="ltr">Mean Academic Average</td>
+                                            <td class="s0" dir="ltr">Mean PAT</td>
+                                            <td class="s0" dir="ltr">Mean Total Science</td>
+                                            <td class="s1" dir="ltr">Shadowing Hours Required</td>
+                                            <td class="s2 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 99px; left: -3px;">Seats Available</div></td>
+                                            <td class="s0" dir="ltr">Out of State Enrolled</td>
+                                        </tr>
+                                      
+                                        <!-- <tr style="height: 20px;  " >
+                                            <th id="0R1" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">2</div></th>
+                                            <td class="s3" dir="ltr" style="width: 200px
+                                            ;">(AL 01) University of Alabama at Birmingham</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;">N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s5" dir="ltr" style="width: 60px;" >Y</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s4" dir="ltr" style="width: 60px;" >N</td>
+                                            <td class="s6" dir="ltr" style="width: 60px;"  >N</td>
+                                            <td class="s7" dir="ltr" style="width: 60px;"  >3.62</td>
+                                            <td class="s8" dir="ltr" style="width: 60px;"  >3.72</td>
+                                            <td class="s9" dir="ltr" style="width: 60px;"  >21.1</td>
+                                            <td class="s10" dir="ltr" style="width: 60px;"  >20.1</td>
+                                            <td class="s11" dir="ltr" style="width: 60px;"  >21</td>
+                                            <td class="s12" dir="ltr" style="width: 60px;"  >100</td>
+                                            <td class="s13" dir="ltr" style="width: 60px;"  >65</td>
+                                            <td class="s14" dir="ltr" style="width: 60px;"  >17</td>
+                                        </tr> -->
+                                        <tr style="height: 20px; " >
+                                          <th id="0R1" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">2</div></th>
+                                          <td class="s3" dir="ltr" style="width: 302px
+                                          ;">(AL 01) University of Alabama at Birmingham</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s5" dir="ltr" >Y</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s4" dir="ltr" >N</td>
+                                          <td class="s6" dir="ltr"  >N</td>
+                                          <td class="s7" dir="ltr"  >3.62</td>
+                                          <td class="s8" dir="ltr"  >3.72</td>
+                                          <td class="s9" dir="ltr"  >21.1</td>
+                                          <td class="s10" dir="ltr"  >20.1</td>
+                                          <td class="s11" dir="ltr"  >21</td>
+                                          <td class="s12" dir="ltr"  >100</td>
+                                          <td class="s13" dir="ltr"  >65</td>
+                                          <td class="s14" dir="ltr"  >17</td>
+                                      </tr>
+                                        <!-- <tr>
+                                            <th style="height: 3px;" class="freezebar-cell freezebar-horizontal-handle row-header-shim"></th>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                            <td class="freezebar-cell"></td>
+                                        </tr> -->
+                                        <tr style="height: 20px;">
+                                            <th id="0R2" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">3</div></th>
+                                            <td class="s3" dir="ltr">(AZ 01) A.T. Still University of Arizona</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s15" dir="ltr">3.21</td>
+                                            <td class="s16" dir="ltr">3.35</td>
+                                            <td class="s17" dir="ltr">19.2</td>
+                                            <td class="s18" dir="ltr">19.3</td>
+                                            <td class="s19" dir="ltr">19.4</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s20" dir="ltr">75</td>
+                                            <td class="s21" dir="ltr">62</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R3" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">4</div></th>
+                                            <td class="s3" dir="ltr">(AZ 02) Midwestern University (AZ)</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s22" dir="ltr">3.36</td>
+                                            <td class="s23" dir="ltr">3.45</td>
+                                            <td class="s24" dir="ltr">20.1</td>
+                                            <td class="s25" dir="ltr">20.7</td>
+                                            <td class="s26" dir="ltr">20.1</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s27" dir="ltr">140</td>
+                                            <td class="s28" dir="ltr">110</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R4" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">5</div></th>
+                                            <td class="s3" dir="ltr">(CA 01) Herman Ostrow School of Dentistry</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s29" dir="ltr">3.5</td>
+                                            <td class="s30" dir="ltr">3.57</td>
+                                            <td class="s10" dir="ltr">20.4</td>
+                                            <td class="s31" dir="ltr">19.8</td>
+                                            <td class="s32" dir="ltr">20</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s34" dir="ltr">145</td>
+                                            <td class="s35" dir="ltr">26</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R5" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">6</div></th>
+                                            <td class="s3" dir="ltr">(CA 02) Loma Linda University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s36" dir="ltr">3.42</td>
+                                            <td class="s37" dir="ltr">3.5</td>
+                                            <td class="s38" dir="ltr">20.5</td>
+                                            <td class="s39" dir="ltr">20.5</td>
+                                            <td class="s40" dir="ltr">20.3</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s41" dir="ltr">100</td>
+                                            <td class="s41" dir="ltr">34</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R6" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">7</div></th>
+                                            <td class="s3" dir="ltr">(CA 03) University of California, Los Angeles</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s42" dir="ltr">3.75</td>
+                                            <td class="s43" dir="ltr">3.81</td>
+                                            <td class="s44" dir="ltr">23</td>
+                                            <td class="s45" dir="ltr">21.6</td>
+                                            <td class="s46" dir="ltr">23.4</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s47" dir="ltr">90</td>
+                                            <td class="s48" dir="ltr">23</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R7" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">8</div></th>
+                                            <td class="s3" dir="ltr">(CA 04) University of California, San Francisco</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s49" dir="ltr">3.51</td>
+                                            <td class="s50" dir="ltr">3.56</td>
+                                            <td class="s51" dir="ltr">21.8</td>
+                                            <td class="s52" dir="ltr">21.1</td>
+                                            <td class="s53" dir="ltr">22.2</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s47" dir="ltr">90</td>
+                                            <td class="s54" dir="ltr">16</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R8" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">9</div></th>
+                                            <td class="s3" dir="ltr">(CA 05) University of the Pacific</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s24" dir="ltr">3.44</td>
+                                            <td class="s10" dir="ltr">3.58</td>
+                                            <td class="s55" dir="ltr">22</td>
+                                            <td class="s56" dir="ltr">21.4</td>
+                                            <td class="s57" dir="ltr">21.9</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s34" dir="ltr">145</td>
+                                            <td class="s59" dir="ltr">25</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R9" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">10</div></th>
+                                            <td class="s3" dir="ltr">(CA 05) Western University</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s60" dir="ltr">3.13</td>
+                                            <td class="s61" dir="ltr">3.26</td>
+                                            <td class="s62" dir="ltr">19.6</td>
+                                            <td class="s63" dir="ltr">20.2</td>
+                                            <td class="s64" dir="ltr">19.6</td>
+                                            <td class="s65" dir="ltr">30</td>
+                                            <td class="s14" dir="ltr">70</td>
+                                            <td class="s66" dir="ltr">24</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R10" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">11</div></th>
+                                            <td class="s3" dir="ltr">(CO 01) University of Colorado</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s29" dir="ltr">3.5</td>
+                                            <td class="s10" dir="ltr">3.58</td>
+                                            <td class="s67" dir="ltr">19.9</td>
+                                            <td class="s68" dir="ltr">19.9</td>
+                                            <td class="s32" dir="ltr">20</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s69" dir="ltr">80</td>
+                                            <td class="s70" dir="ltr">39</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R11" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">12</div></th>
+                                            <td class="s3" dir="ltr">(CT 01) University of Connecticut</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s71" dir="ltr">3.49</td>
+                                            <td class="s72" dir="ltr">3.59</td>
+                                            <td class="s73" dir="ltr">21.4</td>
+                                            <td class="s39" dir="ltr">20.5</td>
+                                            <td class="s74" dir="ltr">21.4</td>
+                                            <td class="s75" dir="ltr">75</td>
+                                            <td class="s76" dir="ltr">50</td>
+                                            <td class="s35" dir="ltr">26</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R12" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">13</div></th>
+                                            <td class="s3" dir="ltr">(DC 01) Howard University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s77" dir="ltr">2.98</td>
+                                            <td class="s77" dir="ltr">3.13</td>
+                                            <td class="s78" dir="ltr">18.3</td>
+                                            <td class="s79" dir="ltr">18.1</td>
+                                            <td class="s80" dir="ltr">18.4</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s14" dir="ltr">70</td>
+                                            <td class="s81" dir="ltr">66</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R13" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">14</div></th>
+                                            <td class="s3" dir="ltr">(FL 01) Lake Erie College of Osteopathic Medicine</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s24" dir="ltr">3.44</td>
+                                            <td class="s68" dir="ltr">3.55</td>
+                                            <td class="s67" dir="ltr">19.9</td>
+                                            <td class="s82" dir="ltr">19.7</td>
+                                            <td class="s83" dir="ltr">19.7</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s84" dir="ltr">105</td>
+                                            <td class="s85" dir="ltr">67</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R14" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">15</div></th>
+                                            <td class="s3" dir="ltr">(FL 02) Nova Southeastern University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s68" dir="ltr">3.45</td>
+                                            <td class="s37" dir="ltr">3.5</td>
+                                            <td class="s86" dir="ltr">21</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s57" dir="ltr">21.9</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s88" dir="ltr">120</td>
+                                            <td class="s89" dir="ltr">30</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R15" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">16</div></th>
+                                            <td class="s3" dir="ltr">(FL 03) University of Florida</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s90" dir="ltr">3.63</td>
+                                            <td class="s91" dir="ltr">3.71</td>
+                                            <td class="s51" dir="ltr">21.8</td>
+                                            <td class="s92" dir="ltr">20.4</td>
+                                            <td class="s57" dir="ltr">21.9</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s89" dir="ltr">94</td>
+                                            <td class="s93" dir="ltr">7</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R16" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">17</div></th>
+                                            <td class="s3" dir="ltr">(GA 01) Augusta University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s94" dir="ltr">3.54</td>
+                                            <td class="s95" dir="ltr">3.61</td>
+                                            <td class="s96" dir="ltr">20.2</td>
+                                            <td class="s97" dir="ltr">20.9</td>
+                                            <td class="s98" dir="ltr">19.9</td>
+                                            <td class="s99" dir="ltr">200</td>
+                                            <td class="s10" dir="ltr">92</td>
+                                            <td class="s100" dir="ltr">9</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R17" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">18</div></th>
+                                            <td class="s3" dir="ltr">(IA 01) The University of Iowa</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s86" dir="ltr">3.56</td>
+                                            <td class="s101" dir="ltr">3.63</td>
+                                            <td class="s38" dir="ltr">20.5</td>
+                                            <td class="s92" dir="ltr">20.4</td>
+                                            <td class="s89" dir="ltr">20.2</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s102" dir="ltr">81</td>
+                                            <td class="s48" dir="ltr">23</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R18" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">19</div></th>
+                                            <td class="s3" dir="ltr">(IL 01) Midwestern University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s103" dir="ltr">3.31</td>
+                                            <td class="s104" dir="ltr">3.44</td>
+                                            <td class="s105" dir="ltr">19.5</td>
+                                            <td class="s106" dir="ltr">19.6</td>
+                                            <td class="s17" dir="ltr">19.1</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s107" dir="ltr">129</td>
+                                            <td class="s108" dir="ltr">89</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R19" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">20</div></th>
+                                            <td class="s3" dir="ltr">(IL 02) Southern Illinois University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s50" dir="ltr">3.46</td>
+                                            <td class="s109" dir="ltr">3.6</td>
+                                            <td class="s67" dir="ltr">19.9</td>
+                                            <td class="s110" dir="ltr">19.4</td>
+                                            <td class="s111" dir="ltr">19</td>
+                                            <td class="s65" dir="ltr">30</td>
+                                            <td class="s112" dir="ltr">49</td>
+                                            <td class="s113" dir="ltr">4</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R20" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">21</div></th>
+                                            <td class="s3" dir="ltr">(IL 03) University of Illinois at Chicago</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s71" dir="ltr">3.49</td>
+                                            <td class="s72" dir="ltr">3.59</td>
+                                            <td class="s38" dir="ltr">20.5</td>
+                                            <td class="s63" dir="ltr">20.2</td>
+                                            <td class="s114" dir="ltr">20.6</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s115" dir="ltr">72</td>
+                                            <td class="s116" dir="ltr">3</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R21" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">22</div></th>
+                                            <td class="s3" dir="ltr">(IN 01) Indiana University</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s24" dir="ltr">3.44</td>
+                                            <td class="s68" dir="ltr">3.55</td>
+                                            <td class="s37" dir="ltr">19.8</td>
+                                            <td class="s82" dir="ltr">19.7</td>
+                                            <td class="s83" dir="ltr">19.7</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s117" dir="ltr">106</td>
+                                            <td class="s88" dir="ltr">45</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R22" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">23</div></th>
+                                            <td class="s3" dir="ltr">(KY 01) University of Kentucky</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s68" dir="ltr">3.45</td>
+                                            <td class="s50" dir="ltr">3.56</td>
+                                            <td class="s118" dir="ltr">20</td>
+                                            <td class="s119" dir="ltr">19.5</td>
+                                            <td class="s118" dir="ltr">19.8</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s120" dir="ltr">66</td>
+                                            <td class="s121" dir="ltr">33</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R23" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">24</div></th>
+                                            <td class="s3" dir="ltr">(KY 02) University of Louisville</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s50" dir="ltr">3.46</td>
+                                            <td class="s50" dir="ltr">3.56</td>
+                                            <td class="s10" dir="ltr">20.4</td>
+                                            <td class="s68" dir="ltr">19.9</td>
+                                            <td class="s40" dir="ltr">20.3</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s122" dir="ltr">118</td>
+                                            <td class="s123" dir="ltr">73</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R24" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">25</div></th>
+                                            <td class="s3" dir="ltr">(LA 01) Louisiana State University (New Orleans)</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s124" dir="ltr">3.48</td>
+                                            <td class="s30" dir="ltr">3.57</td>
+                                            <td class="s118" dir="ltr">20</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s125" dir="ltr">19.5</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s20" dir="ltr">75</td>
+                                            <td class="s113" dir="ltr">4</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R25" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">26</div></th>
+                                            <td class="s3" dir="ltr">(MA 01) Boston University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s126" dir="ltr">3.38</td>
+                                            <td class="s125" dir="ltr">3.48</td>
+                                            <td class="s127" dir="ltr">20.3</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s32" dir="ltr">20</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s128" dir="ltr">115</td>
+                                            <td class="s81" dir="ltr">66</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R26" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">27</div></th>
+                                            <td class="s3" dir="ltr">(MA 02) Harvard University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s129" dir="ltr">3.89</td>
+                                            <td class="s129" dir="ltr">3.92</td>
+                                            <td class="s45" dir="ltr">23.7</td>
+                                            <td class="s130" dir="ltr">21.3</td>
+                                            <td class="s131" dir="ltr">23.7</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s132" dir="ltr">40</td>
+                                            <td class="s133" dir="ltr">28</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R27" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">28</div></th>
+                                            <td class="s3" dir="ltr">(MA 03) Tufts University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s134" dir="ltr">3.2</td>
+                                            <td class="s135" dir="ltr">3.34</td>
+                                            <td class="s37" dir="ltr">19.8</td>
+                                            <td class="s110" dir="ltr">19.4</td>
+                                            <td class="s125" dir="ltr">19.5</td>
+                                            <td class="s94" dir="ltr">70</td>
+                                            <td class="s136" dir="ltr">193</td>
+                                            <td class="s137" dir="ltr">165</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R28" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">29</div></th>
+                                            <td class="s3" dir="ltr">(MD 01) University of Maryland</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s127" dir="ltr">3.47</td>
+                                            <td class="s50" dir="ltr">3.56</td>
+                                            <td class="s86" dir="ltr">21</td>
+                                            <td class="s94" dir="ltr">20.3</td>
+                                            <td class="s138" dir="ltr">20.8</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s139" dir="ltr">132</td>
+                                            <td class="s107" dir="ltr">50</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R29" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">30</div></th>
+                                            <td class="s3" dir="ltr">(ME 01) University of New England</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s140" dir="ltr">3.29</td>
+                                            <td class="s141" dir="ltr">3.4</td>
+                                            <td class="s142" dir="ltr">19.4</td>
+                                            <td class="s104" dir="ltr">19.2</td>
+                                            <td class="s143" dir="ltr">18.6</td>
+                                            <td class="s65" dir="ltr">30</td>
+                                            <td class="s144" dir="ltr">63</td>
+                                            <td class="s88" dir="ltr">45</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R30" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">31</div></th>
+                                            <td class="s3" dir="ltr">(MI 01) University of Detroit Mercy</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s145" dir="ltr">3.53</td>
+                                            <td class="s72" dir="ltr">3.59</td>
+                                            <td class="s96" dir="ltr">20.2</td>
+                                            <td class="s82" dir="ltr">19.7</td>
+                                            <td class="s89" dir="ltr">20.2</td>
+                                            <td class="s63" dir="ltr">60</td>
+                                            <td class="s27" dir="ltr">140</td>
+                                            <td class="s88" dir="ltr">45</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R31" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">32</div></th>
+                                            <td class="s3" dir="ltr">(MI 02) University of Michigan</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s146" dir="ltr">Y</td>
+                                            <td class="s86" dir="ltr">3.56</td>
+                                            <td class="s147" dir="ltr">3.67</td>
+                                            <td class="s148" dir="ltr">21.5</td>
+                                            <td class="s97" dir="ltr">20.9</td>
+                                            <td class="s149" dir="ltr">21.3</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s150" dir="ltr">110</td>
+                                            <td class="s70" dir="ltr">39</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R32" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">33</div></th>
+                                            <td class="s3" dir="ltr">(MN 01) University of Minnesota</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s151" dir="ltr">3.59</td>
+                                            <td class="s152" dir="ltr">3.66</td>
+                                            <td class="s49" dir="ltr">20.6</td>
+                                            <td class="s94" dir="ltr">20.3</td>
+                                            <td class="s128" dir="ltr">20.5</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s84" dir="ltr">105</td>
+                                            <td class="s84" dir="ltr">37</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R33" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">34</div></th>
+                                            <td class="s3" dir="ltr">(MO 01) A.T. Still University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s153" dir="ltr">3.32</td>
+                                            <td class="s154" dir="ltr">3.43</td>
+                                            <td class="s155" dir="ltr">18.5</td>
+                                            <td class="s119" dir="ltr">19.5</td>
+                                            <td class="s156" dir="ltr">18.7</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s132" dir="ltr">40</td>
+                                            <td class="s41" dir="ltr">34</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R34" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">35</div></th>
+                                            <td class="s3" dir="ltr">(MO 02) University of Missouri - Kansas City</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s157" dir="ltr">3.6</td>
+                                            <td class="s147" dir="ltr">3.67</td>
+                                            <td class="s67" dir="ltr">19.9</td>
+                                            <td class="s104" dir="ltr">19.2</td>
+                                            <td class="s23" dir="ltr">19.3</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s150" dir="ltr">110</td>
+                                            <td class="s158" dir="ltr">31</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R35" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">36</div></th>
+                                            <td class="s3" dir="ltr">(MS 01) University of Mississippi</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s95" dir="ltr">3.52</td>
+                                            <td class="s95" dir="ltr">3.61</td>
+                                            <td class="s142" dir="ltr">19.4</td>
+                                            <td class="s119" dir="ltr">19.5</td>
+                                            <td class="s143" dir="ltr">18.6</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s159" dir="ltr">43</td>
+                                            <td class="s132" dir="ltr">0</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R36" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">37</div></th>
+                                            <td class="s3" dir="ltr">(NC 01) East Carolina University</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s160" dir="ltr">3.37</td>
+                                            <td class="s125" dir="ltr">3.48</td>
+                                            <td class="s118" dir="ltr">20</td>
+                                            <td class="s68" dir="ltr">19.9</td>
+                                            <td class="s19" dir="ltr">19.4</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s161" dir="ltr">51</td>
+                                            <td class="s162" dir="ltr">1</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R37" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">38</div></th>
+                                            <td class="s3" dir="ltr">(NC 02) University of North Carolina at Chapel Hill</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s68" dir="ltr">3.45</td>
+                                            <td class="s24" dir="ltr">3.54</td>
+                                            <td class="s55" dir="ltr">22</td>
+                                            <td class="s163" dir="ltr">21.2</td>
+                                            <td class="s164" dir="ltr">21.7</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s69" dir="ltr">80</td>
+                                            <td class="s165" dir="ltr">21</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R38" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">39</div></th>
+                                            <td class="s3" dir="ltr">(NE 01) Creighton University</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s50" dir="ltr">3.46</td>
+                                            <td class="s50" dir="ltr">3.56</td>
+                                            <td class="s166" dir="ltr">19.1</td>
+                                            <td class="s63" dir="ltr">20.2</td>
+                                            <td class="s167" dir="ltr">19.2</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s41" dir="ltr">101</td>
+                                            <td class="s168" dir="ltr">91</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R39" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">40</div></th>
+                                            <td class="s3" dir="ltr">(NE 02) University of Nebraska</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s90" dir="ltr">3.63</td>
+                                            <td class="s169" dir="ltr">3.7</td>
+                                            <td class="s10" dir="ltr">20.4</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s83" dir="ltr">19.7</td>
+                                            <td class="s170" dir="ltr">35</td>
+                                            <td class="s171" dir="ltr">53</td>
+                                            <td class="s54" dir="ltr">16</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R40" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">41</div></th>
+                                            <td class="s3" dir="ltr">(NJ 01) Rutgers</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s86" dir="ltr">3.56</td>
+                                            <td class="s172" dir="ltr">3.65</td>
+                                            <td class="s51" dir="ltr">21.8</td>
+                                            <td class="s94" dir="ltr">20.3</td>
+                                            <td class="s164" dir="ltr">21.7</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s10" dir="ltr">91</td>
+                                            <td class="s173" dir="ltr">22</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R41" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">42</div></th>
+                                            <td class="s3" dir="ltr">(NV 01) University of Nevada, Las Vegas</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s174" dir="ltr">3.35</td>
+                                            <td class="s174" dir="ltr">3.46</td>
+                                            <td class="s49" dir="ltr">20.6</td>
+                                            <td class="s10" dir="ltr">20.1</td>
+                                            <td class="s89" dir="ltr">20.2</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s175" dir="ltr">82</td>
+                                            <td class="s89" dir="ltr">30</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R42" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">43</div></th>
+                                            <td class="s3" dir="ltr">(NY 01) Columbia University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s176" dir="ltr">3.65</td>
+                                            <td class="s8" dir="ltr">3.72</td>
+                                            <td class="s177" dir="ltr">23.2</td>
+                                            <td class="s163" dir="ltr">21.2</td>
+                                            <td class="s178" dir="ltr">23.2</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s179" dir="ltr">85</td>
+                                            <td class="s180" dir="ltr">70</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R43" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">44</div></th>
+                                            <td class="s3" dir="ltr">(NY 02) New York University</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s181" dir="ltr">3.3</td>
+                                            <td class="s182" dir="ltr">3.42</td>
+                                            <td class="s183" dir="ltr">21.3</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s184" dir="ltr">21.5</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s185" dir="ltr">351</td>
+                                            <td class="s185" dir="ltr">179</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R44" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">45</div></th>
+                                            <td class="s3" dir="ltr">(NY 03) Stony Brook University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s7" dir="ltr">3.62</td>
+                                            <td class="s186" dir="ltr">3.68</td>
+                                            <td class="s73" dir="ltr">21.4</td>
+                                            <td class="s10" dir="ltr">20.1</td>
+                                            <td class="s57" dir="ltr">21.9</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s187" dir="ltr">44</td>
+                                            <td class="s188" dir="ltr">5</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R45" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">46</div></th>
+                                            <td class="s3" dir="ltr">(NY 04) Touro - New York Medical College</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s103" dir="ltr">3.31</td>
+                                            <td class="s141" dir="ltr">3.4</td>
+                                            <td class="s189" dir="ltr">20.9</td>
+                                            <td class="s68" dir="ltr">19.9</td>
+                                            <td class="s114" dir="ltr">20.6</td>
+                                            <td class="s65" dir="ltr">30</td>
+                                            <td class="s150" dir="ltr">110</td>
+                                            <td class="s21" dir="ltr">62</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R46" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">47</div></th>
+                                            <td class="s3" dir="ltr">(NY 05) University of Buffalo</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s67" dir="ltr">3.41</td>
+                                            <td class="s190" dir="ltr">3.53</td>
+                                            <td class="s49" dir="ltr">20.6</td>
+                                            <td class="s106" dir="ltr">19.6</td>
+                                            <td class="s32" dir="ltr">20</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s89" dir="ltr">93</td>
+                                            <td class="s100" dir="ltr">9</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R47" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">48</div></th>
+                                            <td class="s3" dir="ltr">(OH 01) Case Western Reserve University</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s191" dir="ltr">3.55</td>
+                                            <td class="s95" dir="ltr">3.61</td>
+                                            <td class="s118" dir="ltr">20</td>
+                                            <td class="s68" dir="ltr">19.9</td>
+                                            <td class="s98" dir="ltr">19.9</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s20" dir="ltr">75</td>
+                                            <td class="s192" dir="ltr">44</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R48" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">49</div></th>
+                                            <td class="s3" dir="ltr">(OH 02) The Ohio State University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s50" dir="ltr">3.46</td>
+                                            <td class="s10" dir="ltr">3.58</td>
+                                            <td class="s49" dir="ltr">20.6</td>
+                                            <td class="s94" dir="ltr">20.3</td>
+                                            <td class="s40" dir="ltr">20.3</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s88" dir="ltr">120</td>
+                                            <td class="s54" dir="ltr">16</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R49" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">50</div></th>
+                                            <td class="s3" dir="ltr">(OK 01) University of Oklahoma</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s190" dir="ltr">3.43</td>
+                                            <td class="s50" dir="ltr">3.56</td>
+                                            <td class="s119" dir="ltr">19.7</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s17" dir="ltr">19.1</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s171" dir="ltr">53</td>
+                                            <td class="s193" dir="ltr">8</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R50" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">51</div></th>
+                                            <td class="s3" dir="ltr">(OR 01) Oregon Health &amp; Science University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s94" dir="ltr">3.54</td>
+                                            <td class="s95" dir="ltr">3.61</td>
+                                            <td class="s96" dir="ltr">20.2</td>
+                                            <td class="s97" dir="ltr">20.9</td>
+                                            <td class="s128" dir="ltr">20.5</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s194" dir="ltr">73</td>
+                                            <td class="s133" dir="ltr">28</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R51" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">52</div></th>
+                                            <td class="s3" dir="ltr">(PA 01) The Maurice H. Kornberg</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s50" dir="ltr">3.46</td>
+                                            <td class="s83" dir="ltr">3.51</td>
+                                            <td class="s183" dir="ltr">21.3</td>
+                                            <td class="s10" dir="ltr">20.1</td>
+                                            <td class="s74" dir="ltr">21.4</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s27" dir="ltr">140</td>
+                                            <td class="s123" dir="ltr">73</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R52" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">53</div></th>
+                                            <td class="s3" dir="ltr">(PA 02) University of Pennsylvania</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s195" dir="ltr">3.68</td>
+                                            <td class="s196" dir="ltr">3.77</td>
+                                            <td class="s55" dir="ltr">22</td>
+                                            <td class="s56" dir="ltr">21.4</td>
+                                            <td class="s197" dir="ltr">22</td>
+                                            <td class="s198" dir="ltr">0</td>
+                                            <td class="s199" dir="ltr">131</td>
+                                            <td class="s200" dir="ltr">99</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R53" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">54</div></th>
+                                            <td class="s3" dir="ltr">(PA 03) University of Pittsburgh</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s201" dir="ltr">3.67</td>
+                                            <td class="s202" dir="ltr">3.73</td>
+                                            <td class="s38" dir="ltr">20.5</td>
+                                            <td class="s87" dir="ltr">20</td>
+                                            <td class="s26" dir="ltr">20.1</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s20" dir="ltr">75</td>
+                                            <td class="s35" dir="ltr">26</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R54" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">55</div></th>
+                                            <td class="s3" dir="ltr">(PR 01) University of Puerto Rico</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s203" dir="ltr">3.09</td>
+                                            <td class="s204" dir="ltr">3.33</td>
+                                            <td class="s131" dir="ltr">17</td>
+                                            <td class="s79" dir="ltr">18.1</td>
+                                            <td class="s131" dir="ltr">17.2</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s205" dir="ltr">41</td>
+                                            <td class="s116" dir="ltr">3</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R55" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">56</div></th>
+                                            <td class="s3" dir="ltr">(SC 01) Medical University of South Carolina</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s191" dir="ltr">3.55</td>
+                                            <td class="s206" dir="ltr">3.64</td>
+                                            <td class="s67" dir="ltr">19.9</td>
+                                            <td class="s7" dir="ltr">20.6</td>
+                                            <td class="s19" dir="ltr">19.4</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s207" dir="ltr">76</td>
+                                            <td class="s14" dir="ltr">17</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R56" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">57</div></th>
+                                            <td class="s3" dir="ltr">(TN 01) Meharry Medical College</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s60" dir="ltr">3.13</td>
+                                            <td class="s208" dir="ltr">3.29</td>
+                                            <td class="s209" dir="ltr">18.1</td>
+                                            <td class="s131" dir="ltr">17.2</td>
+                                            <td class="s80" dir="ltr">18.4</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s210" dir="ltr">59</td>
+                                            <td class="s88" dir="ltr">45</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R57" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">58</div></th>
+                                            <td class="s3" dir="ltr">(TN 02) University of Tennessee</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s29" dir="ltr">3.5</td>
+                                            <td class="s109" dir="ltr">3.6</td>
+                                            <td class="s118" dir="ltr">20</td>
+                                            <td class="s39" dir="ltr">20.5</td>
+                                            <td class="s98" dir="ltr">19.9</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s89" dir="ltr">94</td>
+                                            <td class="s84" dir="ltr">37</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R58" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">59</div></th>
+                                            <td class="s3" dir="ltr">(TX 01) Texas A&amp;M University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s172" dir="ltr">3.57</td>
+                                            <td class="s152" dir="ltr">3.66</td>
+                                            <td class="s183" dir="ltr">21.3</td>
+                                            <td class="s10" dir="ltr">20.1</td>
+                                            <td class="s149" dir="ltr">21.3</td>
+                                            <td class="s75" dir="ltr">75</td>
+                                            <td class="s84" dir="ltr">105</td>
+                                            <td class="s193" dir="ltr">8</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R59" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">60</div></th>
+                                            <td class="s3" dir="ltr">(TX 02) University of Texas (San Antonio)</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s95" dir="ltr">3.52</td>
+                                            <td class="s95" dir="ltr">3.61</td>
+                                            <td class="s189" dir="ltr">20.9</td>
+                                            <td class="s63" dir="ltr">20.2</td>
+                                            <td class="s89" dir="ltr">20.2</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s158" dir="ltr">96</td>
+                                            <td class="s188" dir="ltr">5</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R60" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">61</div></th>
+                                            <td class="s3" dir="ltr">(TX 03) University of Texas (Houston)</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s211" dir="ltr">3.7</td>
+                                            <td class="s212" dir="ltr">3.78</td>
+                                            <td class="s213" dir="ltr">21.2</td>
+                                            <td class="s39" dir="ltr">20.5</td>
+                                            <td class="s214" dir="ltr">20.9</td>
+                                            <td class="s33" dir="ltr">20</td>
+                                            <td class="s215" dir="ltr">102</td>
+                                            <td class="s116" dir="ltr">3</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R61" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">62</div></th>
+                                            <td class="s3" dir="ltr">(UT 02) University of Utah</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s151" dir="ltr">3.59</td>
+                                            <td class="s206" dir="ltr">3.64</td>
+                                            <td class="s9" dir="ltr">21.1</td>
+                                            <td class="s7" dir="ltr">20.6</td>
+                                            <td class="s216" dir="ltr">21.1</td>
+                                            <td class="s58" dir="ltr">40</td>
+                                            <td class="s112" dir="ltr">49</td>
+                                            <td class="s48" dir="ltr">23</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R62" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">63</div></th>
+                                            <td class="s3" dir="ltr">(UT) Roseman University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s60" dir="ltr">3.13</td>
+                                            <td class="s217" dir="ltr">3.3</td>
+                                            <td class="s37" dir="ltr">19.8</td>
+                                            <td class="s218" dir="ltr">21</td>
+                                            <td class="s125" dir="ltr">19.5</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s41" dir="ltr">100</td>
+                                            <td class="s219" dir="ltr">79</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R63" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">64</div></th>
+                                            <td class="s3" dir="ltr">(VA 01) Virginia Commonwealth University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s29" dir="ltr">3.5</td>
+                                            <td class="s10" dir="ltr">3.58</td>
+                                            <td class="s213" dir="ltr">21.2</td>
+                                            <td class="s25" dir="ltr">20.7</td>
+                                            <td class="s74" dir="ltr">21.4</td>
+                                            <td class="s220" dir="ltr">150</td>
+                                            <td class="s158" dir="ltr">95</td>
+                                            <td class="s10" dir="ltr">29</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R64" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">65</div></th>
+                                            <td class="s3" dir="ltr">(WA 01) University of Washington</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s49" dir="ltr">3.51</td>
+                                            <td class="s72" dir="ltr">3.59</td>
+                                            <td class="s86" dir="ltr">21</td>
+                                            <td class="s39" dir="ltr">20.5</td>
+                                            <td class="s214" dir="ltr">20.9</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s13" dir="ltr">65</td>
+                                            <td class="s221" dir="ltr">11</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R65" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">66</div></th>
+                                            <td class="s3" dir="ltr">(WI 01) Marquette University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s68" dir="ltr">3.45</td>
+                                            <td class="s24" dir="ltr">3.54</td>
+                                            <td class="s118" dir="ltr">20</td>
+                                            <td class="s92" dir="ltr">20.4</td>
+                                            <td class="s32" dir="ltr">20</td>
+                                            <td class="s12" dir="ltr">100</td>
+                                            <td class="s41" dir="ltr">101</td>
+                                            <td class="s222" dir="ltr">46</td>
+                                        </tr>
+                                        <tr style="height: 20px;">
+                                            <th id="0R66" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">67</div></th>
+                                            <td class="s3" dir="ltr">(WV 01) West Virginia University</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s5" dir="ltr">Y</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s4" dir="ltr">N</td>
+                                            <td class="s6" dir="ltr">N</td>
+                                            <td class="s95" dir="ltr">3.52</td>
+                                            <td class="s10" dir="ltr">3.58</td>
+                                            <td class="s223" dir="ltr">18.4</td>
+                                            <td class="s18" dir="ltr">19.3</td>
+                                            <td class="s224" dir="ltr">18.3</td>
+                                            <td class="s10" dir="ltr">50</td>
+                                            <td class="s225" dir="ltr">45</td>
+                                            <td class="s48" dir="ltr">23</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                      <!-- <div  class="row mt-5 ml-2 flex-row"  >
+
+                <div class="col-3 ml-3">
+                    <label style="color:#5680E9; font-size: 29px;" id="explablel"><b> School Name </b></label>
+    
+                </div>
+                <form onsubmit="return false" id="schoolForm">
+                    <div class="col-9">
+                        <input type="hidden" id="hiddenId">
+                        <input id="schoolName" class="form-control w-75" type="text" placeholder="School Name">
+                    </div>
+                        <button type="submit" class="btn-primary mt-4 ml-3"> Submit </button>  
+                        <p style="font-size: 12px; color: #5680E9;" id="schools_para"></p>
+                </form> -->
+            </div>   
+            </div>   
+        </div>
+        </div>
+
+       
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="../dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../dist/js/custom.js"></script>
+    <!--This page JavaScript -->
+    <!--chartis chart-->
+    <script src="../assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="../assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../dist/js/pages/dashboards/dashboard1.js"></script>
+    <script src="../web2/js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="../web2/js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="../web2/js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="../web2/js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="../web2/js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="../web2/js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="../web2/js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="../web2/js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="../dist/js/header.js"></script>
+    <script src="../web2/js/become.js"></script>
+    <script src="../dist/js/bottom_becomeamember.js"></script>
+    <script src="../dist/js/db/school.js"></script>
+    <script src="../dist/js/security.js"></script>
+    <script src="../dist/js/showdb/showUserData.js"></script>
+    <script src="../dist/js/showdb/card.js"></script>
+    <script src="../dist/js/showdb/showprofileData.js"></script>
+    <script src="../dist/js/lockScreenCard.js"></script>
+    <!-- <script>
+    document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
+    
+    document.onkeydown = function(e)
+    {
+        if(event.keyCode == 123)
+        {
+            return false;
+        }
+        if(event.keyCode == 17)
+        {
+            return false;
+        }
+        if(event.keyCode == 67)
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+        {
+            return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+        {
+            return false;
+        }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0))
+    {
+      return false;
+    }
+    }
+    // if (role !== "accept") {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .addClass("disabled")
+    //   .find("a").prop("disabled", true);
+    //   title = 'Become a Member'
+    // } else {
+    // $('#beforeDat, #takingDat, #applicationProcess, #interviewing')
+    //   .removeClass("disabled")
+    //   .find("a").prop("disabled", false); 
+    // }
+    </script> -->
+    <script>
+      // Get the navbar
+var navbar = document.getElementById("myNavbar");
+
+// Get the height of the document
+var docHeight = document.body.scrollHeight;
+
+// When the user scrolls down half the height of the document, show the navbar
+window.onscroll = function() {
+  if (window.pageYOffset > docHeight / 3) {
+    navbar.style.display = "block";
+  } else {
+    navbar.style.display = "none";
+  }
+};
+
+    </script>
+     <!-- Live Chat -->
+   <script src="//code.tidio.co/lylkvjzrbgadcwexx0bulcloz7hmrlne.js" async></script>
+   <!-- End Live Chat -->
+</body>
+
+</html>

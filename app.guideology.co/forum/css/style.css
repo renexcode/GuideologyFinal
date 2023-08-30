@@ -1,0 +1,45 @@
+.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
+
+/*********************************************
+	-	SETTINGS FOR BANNER CONTAINERS	-
+**********************************************/
+
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+@media only screen and (max-width: 600px) {
+	.form{
+		width: 290px !important;
+		margin-left: -56px !important;
+	}
+	/* #search_icon{
+		margin-left: -10px;
+
+
+	} */
+
+}
+
+@media (max-width: 767px){
+   .form{
+		margin-top: -60px;
+	}}
+	@media (min-width: 1200px){
+.form {
+    margin-top: 0px !important;
+    /* width: 157px; */
+}}
